@@ -1,0 +1,34 @@
+{
+  "id": "6950516e748d65f9522e7ddd",
+  "slug": "mas-seguridad-e-iluminacion",
+  "collectionId": "69172c960e54b69c53ea0429",
+  "itemId": "6950516e748d65f9522e7ddd",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 21:36:46 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 21:43:34 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/noticias/mas-seguridad-e-iluminacion",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/mas-seguridad-e-iluminacion.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "¡Más seguridad e iluminación!",
+  "description": null,
+  "bodyHtml": "<p>Una de las principales misiones de la Agrupación Barrio Bisquertt es consolidar la avenida como un polo seguro de entretención para toda la comunidad. Para lograrlo, se instalaron diez nuevas alarmas comunitarias y ocho focos de iluminación -led y solares-, que permitirán tener un mayor control en esta zona patrimonial de Rengo.</p><p>“Hemos apostado por consolidar un lugar que reúne cultura, patrimonio y entretención para ofrecer un panorama seguro, limpio y, sobretodo, muy interesante. Por lo mismo, no queremos sumarnos a la voluntad de la administración de turno, sino que buscamos posicionarnos como una agrupación ciudadana que, con el tiempo, pueda transformarse en un puente entre las personas y las instituciones”, explica Carolina Saldaña, presidenta de laAgrupación.</p><p>Gracias a un proyecto ejecutado por SERCOTEC y financiado por el Gobierno Regional dela Región de O'Higgins, la Agrupación Barrio Bisquertt emprende un nuevo ciclo camino a confirmarse como un barrio esencial de la entretención, la cultura y la gastronomía en el corazón del valle del Cachapoal. </p><p>&nbsp;</p><p>#BarrioBisquertt</p><p>#Rengo</p><p>#Seguridad</p><p>&nbsp;</p><p>‍</p>",
+  "category": "barrio-bisquertt",
+  "authors": null,
+  "instagram": null,
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695052caa016a6340062415b_Luminarias.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695052caa016a6340062415b_Luminarias.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695052caa016a6340062415b_Luminarias.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

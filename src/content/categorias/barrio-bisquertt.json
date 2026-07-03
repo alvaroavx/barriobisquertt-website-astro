@@ -1,0 +1,27 @@
+{
+  "id": "69503bef0a4fe4e02430a83b",
+  "slug": "barrio-bisquertt",
+  "collectionId": "69172c960e54b69c53ea0428",
+  "itemId": "69503bef0a4fe4e02430a83b",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 20:05:03 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 20:10:12 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/categories/barrio-bisquertt",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/barrio-bisquertt.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Barrio Bisquertt",
+  "color": null,
+  "bannerImage": {
+    "original": "",
+    "resolved": null,
+    "publicPath": null,
+    "status": "empty"
+  },
+  "validationStatus": "valid"
+}

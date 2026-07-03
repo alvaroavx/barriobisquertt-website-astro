@@ -1,0 +1,99 @@
+{
+  "id": "694d7080c4b626475b8eef5d",
+  "slug": "dom-black",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d7080c4b626475b8eef5d",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 17:12:32 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 17:13:00 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/dom-black",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/dom-black.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Dom Black",
+  "address": "Av. Bisquertt 362.",
+  "description": "Su estética de container juega con la idea de un ‘embarque’ lleno de entretención: tragos, cafetería, pizzas, hamburguesas, tablas y música. Uno de los spots más movidos en la noche renguina con sus tocatas, djs, fiestas, tocatas y eventos especiales. Su amplia terraza da espacio para que todos lo pasen bien a su propio ritmo. ¿De día? ¡Toda la familia y niños invitados!",
+  "phone": "+569 8302 0742",
+  "link": "https://www.instagram.com/domblackrengo/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d703e2722a5d0ee73c24c_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.05.34.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d703e2722a5d0ee73c24c_Captura de Pantalla 2025-12-25 a la(s) 14.05.34.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d703e2722a5d0ee73c24c_Captura de Pantalla 2025-12-25 a la(s) 14.05.34.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d704becb0b083346130c7_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.10.22.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d704becb0b083346130c7_Captura de Pantalla 2025-12-25 a la(s) 14.10.22.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d704becb0b083346130c7_Captura de Pantalla 2025-12-25 a la(s) 14.10.22.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7056393dae73026fb2cd_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.08.15.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7056393dae73026fb2cd_Captura de Pantalla 2025-12-25 a la(s) 14.08.15.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7056393dae73026fb2cd_Captura de Pantalla 2025-12-25 a la(s) 14.08.15.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d705668be7d26f7377792_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.08.44.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d705668be7d26f7377792_Captura de Pantalla 2025-12-25 a la(s) 14.08.44.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d705668be7d26f7377792_Captura de Pantalla 2025-12-25 a la(s) 14.08.44.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d705655a7dab766cb9506_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.09.29.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d705655a7dab766cb9506_Captura de Pantalla 2025-12-25 a la(s) 14.09.29.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d705655a7dab766cb9506_Captura de Pantalla 2025-12-25 a la(s) 14.09.29.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7067e84750cf1a141834_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.06.19.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7067e84750cf1a141834_Captura de Pantalla 2025-12-25 a la(s) 14.06.19.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7067e84750cf1a141834_Captura de Pantalla 2025-12-25 a la(s) 14.06.19.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7067d671fe91fd083008_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.06.49.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7067d671fe91fd083008_Captura de Pantalla 2025-12-25 a la(s) 14.06.49.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7067d671fe91fd083008_Captura de Pantalla 2025-12-25 a la(s) 14.06.49.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d706632789bcc8d331ae3_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.07.41.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d706632789bcc8d331ae3_Captura de Pantalla 2025-12-25 a la(s) 14.07.41.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d706632789bcc8d331ae3_Captura de Pantalla 2025-12-25 a la(s) 14.07.41.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d707828fe3afdeb6c1b25_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.23.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d707828fe3afdeb6c1b25_Captura de Pantalla 2025-12-25 a la(s) 14.03.23.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d707828fe3afdeb6c1b25_Captura de Pantalla 2025-12-25 a la(s) 14.03.23.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7077f77e1ea70ce1e6c9_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.39.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7077f77e1ea70ce1e6c9_Captura de Pantalla 2025-12-25 a la(s) 14.03.39.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7077f77e1ea70ce1e6c9_Captura de Pantalla 2025-12-25 a la(s) 14.03.39.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d707728379a4e061fdadc_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.53.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d707728379a4e061fdadc_Captura de Pantalla 2025-12-25 a la(s) 14.03.53.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d707728379a4e061fdadc_Captura de Pantalla 2025-12-25 a la(s) 14.03.53.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7077257131b99a933021_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.04.20.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7077257131b99a933021_Captura de Pantalla 2025-12-25 a la(s) 14.04.20.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7077257131b99a933021_Captura de Pantalla 2025-12-25 a la(s) 14.04.20.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

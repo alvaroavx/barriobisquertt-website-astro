@@ -1,0 +1,81 @@
+{
+  "id": "694d7c230a8dec4a7b46a481",
+  "slug": "la-mazza",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d7c230a8dec4a7b46a481",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 18:02:11 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Dec 26 2025 13:21:27 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/la-mazza",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-mazza.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "La Mazza",
+  "address": "Av. Bisquertt 357.",
+  "description": "Pasado y presente de Avenida Bisquertt. La Mazza ocupa el espacio del histórico Club de Pesca y Caza Caupolicán, que hoy tiene el aroma que sale de los hornos donde este negocio cocina sus famosas pizzas artesanales. Muchos llegan hasta su terraza y jardín, mientras que otros las piden para llevar y, también, desde casas y oficina por delivery. Y sus cajas gigantes no pasan inadvertidas cuando ‘pasean’ bajo las centenarias palmeras en busca de una mesa para compartir.",
+  "phone": "+569 8286 4470 / 72 2 5151 26",
+  "link": "https://www.instagram.com/pizzeria_lamazza/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a593a59c0b03542a91d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.50.16.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a593a59c0b03542a91d_Captura de Pantalla 2025-12-25 a la(s) 14.50.16.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a593a59c0b03542a91d_Captura de Pantalla 2025-12-25 a la(s) 14.50.16.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a5f63d1e4847a923bd0_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.48.51.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a5f63d1e4847a923bd0_Captura de Pantalla 2025-12-25 a la(s) 14.48.51.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a5f63d1e4847a923bd0_Captura de Pantalla 2025-12-25 a la(s) 14.48.51.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a649d08b33eec6f595e_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.49.16.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a649d08b33eec6f595e_Captura de Pantalla 2025-12-25 a la(s) 14.49.16.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a649d08b33eec6f595e_Captura de Pantalla 2025-12-25 a la(s) 14.49.16.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a6ca453d629e64bf035_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.49.58.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a6ca453d629e64bf035_Captura de Pantalla 2025-12-25 a la(s) 14.49.58.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a6ca453d629e64bf035_Captura de Pantalla 2025-12-25 a la(s) 14.49.58.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a722949c7b3d6bc6e65_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.51.58.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a722949c7b3d6bc6e65_Captura de Pantalla 2025-12-25 a la(s) 14.51.58.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a722949c7b3d6bc6e65_Captura de Pantalla 2025-12-25 a la(s) 14.51.58.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a76fec367e272d590e8_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.50.55.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a76fec367e272d590e8_Captura de Pantalla 2025-12-25 a la(s) 14.50.55.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a76fec367e272d590e8_Captura de Pantalla 2025-12-25 a la(s) 14.50.55.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a7bee4099a70a3df75f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.52.18.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a7bee4099a70a3df75f_Captura de Pantalla 2025-12-25 a la(s) 14.52.18.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a7bee4099a70a3df75f_Captura de Pantalla 2025-12-25 a la(s) 14.52.18.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a81888933f40e911492_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.53.45.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a81888933f40e911492_Captura de Pantalla 2025-12-25 a la(s) 14.53.45.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a81888933f40e911492_Captura de Pantalla 2025-12-25 a la(s) 14.53.45.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a8616cf704ccb8a4018_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.54.09.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7a8616cf704ccb8a4018_Captura de Pantalla 2025-12-25 a la(s) 14.54.09.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a8616cf704ccb8a4018_Captura de Pantalla 2025-12-25 a la(s) 14.54.09.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

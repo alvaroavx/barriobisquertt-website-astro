@@ -1,25 +1,100 @@
 ---
-import '../styles/global.css';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentCard from '../components/ContentCard.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import { assets, orders, site, sortBySlugOrder } from '../lib/site';
 
-const title = 'Barrio Bisquertt';
+const noticias = sortBySlugOrder(await getCollection('noticias'), orders.noticias);
+const eventos = sortBySlugOrder(await getCollection('eventos'), orders.eventos);
+const patrimonio = sortBySlugOrder(await getCollection('patrimonio'), orders.patrimonio);
+
+const featured = noticias.find((item) => item.data.slug === 'nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo') || noticias[0];
+const latestNews = noticias
+  .filter((item) => item.data.slug !== featured?.data.slug)
+  .slice(0, 3);
+const homeEvents = eventos.slice(0, 4);
+const heritage = patrimonio[1] || patrimonio[0];
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Sitio web oficial de Barrio Bisquertt." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <main class="site-shell" aria-labelledby="page-title">
-      <section class="intro">
-        <p class="eyebrow">Sitio web</p>
-        <h1 id="page-title">{title}</h1>
-        <p class="lead">Base limpia en Astro para desarrollar paginas estaticas.</p>
+<BaseLayout title={site.name} description={site.description}>
+  <main>
+    <section aria-labelledby="home-title">
+      <h1 id="home-title" class="sr-only">Barrio Bisquertt</h1>
+      <a href="https://www.youtube.com/watch?v=7sTgCUDREEo" target="_blank" rel="noopener noreferrer" aria-label="Ver video de Barrio Bisquertt en YouTube">
+        <video class="home-video" autoplay muted loop playsinline>
+          <source src={assets.heroMp4} type="video/mp4" />
+          <source src={assets.heroWebm} type="video/webm" />
+        </video>
+      </a>
+    </section>
+
+    {featured && (
+      <section class="home-section" aria-labelledby="featured-title">
+        <div class="home-section__header">
+          <h2 id="featured-title">Destacado</h2>
+        </div>
+        <ContentCard
+          href={featured.data.route}
+          title={featured.data.title}
+          description={featured.data.description}
+          image={featured.data.mainImage}
+          date={featured.data.publishedOn}
+          category={featured.data.category}
+          variant="news"
+        />
       </section>
-    </main>
-  </body>
-</html>
+    )}
+
+    <section class="home-section" aria-labelledby="news-title">
+      <div class="home-section__header">
+        <h2 id="news-title">Ultimas noticias</h2>
+        <a href="/noticias">Ver Noticias</a>
+      </div>
+      <div class="card-grid">
+        {latestNews.map((item) => (
+          <ContentCard
+            href={item.data.route}
+            title={item.data.title}
+            description={item.data.description}
+            image={item.data.mainImage}
+            date={item.data.publishedOn}
+            category={item.data.category}
+            variant="news"
+          />
+        ))}
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="events-title">
+      <div class="home-section__header">
+        <h2 id="events-title">Eventos</h2>
+      </div>
+      <div class="event-carousel" tabindex="0" aria-label="Eventos de Barrio Bisquertt">
+        {homeEvents.map((item) => (
+          <ContentCard
+            href={item.data.route}
+            title={item.data.title}
+            description={item.data.location}
+            image={item.data.mainImage}
+            date={item.data.publishedOn}
+            variant="event"
+          />
+        ))}
+      </div>
+    </section>
+
+    {heritage && (
+      <a class="heritage-band" href="/patrimonio">
+        <img src={heritage.data.mainImage.publicPath || heritage.data.mainImage.original} alt="Patrimonio Barrio Bisquertt" loading="lazy" />
+        <div class="heritage-band__content">
+          <strong>Barrio Bisquertt</strong>
+          <h2>Tradición, cultura e historia.</h2>
+        </div>
+        <div class="heritage-band__credit">Foto: Cultura Rengo.</div>
+      </a>
+    )}
+
+    <MapEmbed />
+  </main>
+</BaseLayout>

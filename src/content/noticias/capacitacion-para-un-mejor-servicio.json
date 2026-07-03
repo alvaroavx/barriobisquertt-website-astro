@@ -1,0 +1,34 @@
+{
+  "id": "695042f5812baa5c05388d0f",
+  "slug": "capacitacion-para-un-mejor-servicio",
+  "collectionId": "69172c960e54b69c53ea0429",
+  "itemId": "695042f5812baa5c05388d0f",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 20:35:01 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 21:47:42 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/noticias/capacitacion-para-un-mejor-servicio",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/capacitacion-para-un-mejor-servicio.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Capacitación para un mejor servicio",
+  "description": null,
+  "bodyHtml": "<p>Con el fin de potenciar el desarrollo turístico y gastronómico en Barrio Bisquertt, seguimos desarrollando nuestras jornadas de capacitación especialmente dirigidas a garzones, maîtres y encargados de salón.</p><p>En las sesiones, los participantes conocen normas básicas de etiqueta, protocolo de mesa, tipos de servicio (francés, inglés, emplatado buffet). Además de herramientas dirigidas a potenciar la actitud y el lenguaje corporal frente al cliente. Un proceso formativo con clases teóricas y simulaciones en vivo.</p><p>La idea es que los 20 establecimientos comerciales que se unieron para darle una nueva vida al histórico Barrio Bisquertt de Rengo, comiencen una nueva etapa centrada en factores de calidad, compromiso e identidad.</p><p>Este plan formativo ha sido posible gracias a un proyecto ejecutado por SERCOTEC y financiado por el Gobierno Regional de la Región de O'Higgins. De este modo, la Agrupación Barrio Bisquertt da un nuevo paso para a confirmarse como un espacio esencial de la entretención, la cultura y la gastronomía en el corazón del valle del Cachapoal.</p><p>#BarrioBisquertt</p><p>#Rengo</p><p>#Capacitación</p><p>‍</p>",
+  "category": "cursos",
+  "authors": null,
+  "instagram": null,
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace%20d.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

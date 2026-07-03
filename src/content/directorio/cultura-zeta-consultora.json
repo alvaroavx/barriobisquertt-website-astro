@@ -1,0 +1,39 @@
+{
+  "id": "69500e5b994da8e11b47f1ef",
+  "slug": "cultura-zeta-consultora",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "69500e5b994da8e11b47f1ef",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 16:50:35 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 17:05:54 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/cultura-zeta-consultora",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/cultura-zeta-consultora.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Cultura Zeta Consultora",
+  "address": "Fortunato Venegas 75",
+  "description": "Organización enfocada al desarrollo cultural y creativo de la Región de O'Higgins.",
+  "phone": null,
+  "link": "https://www.instagram.com/cz_consultora_spa/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69500cb4bc0d858608af459f_Captura%20de%20Pantalla%202025-12-27%20a%20la(s)%2013.42.10.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69500cb4bc0d858608af459f_Captura de Pantalla 2025-12-27 a la(s) 13.42.10.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69500cb4bc0d858608af459f_Captura de Pantalla 2025-12-27 a la(s) 13.42.10.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69500cc2b6c982850fc9a98d_Captura%20de%20Pantalla%202025-12-27%20a%20la(s)%2013.43.01.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69500cc2b6c982850fc9a98d_Captura de Pantalla 2025-12-27 a la(s) 13.43.01.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69500cc2b6c982850fc9a98d_Captura de Pantalla 2025-12-27 a la(s) 13.43.01.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

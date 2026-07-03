@@ -1,0 +1,27 @@
+{
+  "id": "695043271fac44e8c705ca53",
+  "slug": "cursos",
+  "collectionId": "69172c960e54b69c53ea0428",
+  "itemId": "695043271fac44e8c705ca53",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 20:35:51 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 20:35:55 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/categories/cursos",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cursos.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Cursos",
+  "color": null,
+  "bannerImage": {
+    "original": "",
+    "resolved": null,
+    "publicPath": null,
+    "status": "empty"
+  },
+  "validationStatus": "valid"
+}

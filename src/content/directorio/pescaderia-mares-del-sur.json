@@ -1,0 +1,39 @@
+{
+  "id": "6924aed82eda09a4343f62ff",
+  "slug": "pescaderia-mares-del-sur",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "6924aed82eda09a4343f62ff",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 19:15:36 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 15:20:40 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/pescaderia-mares-del-sur",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/pescaderia-mares-del-sur.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Pescadería Mares del Sur",
+  "address": "Av. Bisquertt 438 A-B",
+  "description": "Cada día llegan a sus vitrinas pescados y mariscos frescos. Variedad de productos de nuestras costas que llegan a las mesas renguinas. Su dueña, Jessica Ibáñez, siempre está dispuesta a recibir pedidos para ocasiones especiales.",
+  "phone": "+569 8 363 4445",
+  "link": "https://www.instagram.com/pescaderia_mares_del_sur/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d555b7be15b3ceacddca0_Mares%20del%20Sur.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d555b7be15b3ceacddca0_Mares del Sur.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d555b7be15b3ceacddca0_Mares del Sur.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5542ccdb6c1d65164b91_Mares.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d5542ccdb6c1d65164b91_Mares.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5542ccdb6c1d65164b91_Mares.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

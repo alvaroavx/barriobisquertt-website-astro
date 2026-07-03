@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Gallery from '../../components/Gallery.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { demoteBodyHeadings, imageSrc, isoDate, plainText } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('patrimonio');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const mainImage = imageSrc(data.mainImage);
+const description = plainText(data.bodyHtml).slice(0, 160);
+---
+
+<BaseLayout title={data.title} description={description} image={mainImage}>
+  <main>
+    <header class="article-header container container--article">
+      <p class="article-meta">
+        {data.category && <span>{data.category}</span>}
+        {data.publishedOn && <time datetime={isoDate(data.publishedOn) || undefined}>{data.publishedOn}</time>}
+      </p>
+      <h1>{data.title}</h1>
+    </header>
+    {mainImage && (
+      <figure class="article-media">
+        <img src={mainImage} alt={data.title} />
+      </figure>
+    )}
+    <article class="article-content container container--article" set:html={demoteBodyHeadings(data.bodyHtml)} />
+    <Gallery items={data.gallery} title={data.title} />
+    <VideoEmbed url={data.video} title={data.title} />
+  </main>
+</BaseLayout>
+

@@ -1,0 +1,81 @@
+{
+  "id": "694da962443a7905a35b5813",
+  "slug": "i-love-sushi",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694da962443a7905a35b5813",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 21:15:14 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 21:15:23 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/i-love-sushi",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/i-love-sushi.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "I Love Sushi",
+  "address": "Av. Bisquert 380 local C",
+  "description": "El sushi es una de la preparaciones extranjeras de adopción rápida en el país. Frescos y con ilimitadas versiones, los rolls son favoritos a nivel local, también en Rengo, que tiene en este restaurante un punto de referencia. También con delivery, los fanáticos llegan por clásicos como los California y, también ,por algunos nikkei (Acevichado) y las hot rolls.",
+  "phone": "+56 9 5776 0322",
+  "link": "https://www.instagram.com/ilovesushirengo/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da71e3c4a455b8721daba_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.05.08.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da71e3c4a455b8721daba_Captura de Pantalla 2025-12-25 a la(s) 18.05.08.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da71e3c4a455b8721daba_Captura de Pantalla 2025-12-25 a la(s) 18.05.08.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da72aafb202c2cc8599ac_Love.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da72aafb202c2cc8599ac_Love.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da72aafb202c2cc8599ac_Love.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95f7778d65a065678a7_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.06.45.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95f7778d65a065678a7_Captura de Pantalla 2025-12-25 a la(s) 18.06.45.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95f7778d65a065678a7_Captura de Pantalla 2025-12-25 a la(s) 18.06.45.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95be6b2e8d98c6dbe03_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.07.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95be6b2e8d98c6dbe03_Captura de Pantalla 2025-12-25 a la(s) 18.07.07.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95be6b2e8d98c6dbe03_Captura de Pantalla 2025-12-25 a la(s) 18.07.07.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95bf3bf9668501828f6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.19.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95bf3bf9668501828f6_Captura de Pantalla 2025-12-25 a la(s) 18.07.19.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95bf3bf9668501828f6_Captura de Pantalla 2025-12-25 a la(s) 18.07.19.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95a6daeffc5e78ba4eb_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.30.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95a6daeffc5e78ba4eb_Captura de Pantalla 2025-12-25 a la(s) 18.07.30.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95a6daeffc5e78ba4eb_Captura de Pantalla 2025-12-25 a la(s) 18.07.30.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95aee4ac861cb27c2d6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.50.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95aee4ac861cb27c2d6_Captura de Pantalla 2025-12-25 a la(s) 18.07.50.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95aee4ac861cb27c2d6_Captura de Pantalla 2025-12-25 a la(s) 18.07.50.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95aa03268968c114dd2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.08.03.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95aa03268968c114dd2_Captura de Pantalla 2025-12-25 a la(s) 18.08.03.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95aa03268968c114dd2_Captura de Pantalla 2025-12-25 a la(s) 18.08.03.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95a0e1fdaf60019afac_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.08.21.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da95a0e1fdaf60019afac_Captura de Pantalla 2025-12-25 a la(s) 18.08.21.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95a0e1fdaf60019afac_Captura de Pantalla 2025-12-25 a la(s) 18.08.21.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

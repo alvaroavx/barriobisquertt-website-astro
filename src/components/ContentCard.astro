@@ -1,0 +1,45 @@
+---
+import { imageSrc, isoDate } from '../lib/site';
+
+interface Props {
+  href: string;
+  title: string;
+  description?: string | null;
+  image?: { publicPath: string | null; original: string; status: string } | null;
+  date?: string | null;
+  category?: string | null;
+  variant?: 'directory' | 'editorial' | 'news' | 'event' | 'heritage';
+  containImage?: boolean;
+}
+
+const {
+  href,
+  title,
+  description = null,
+  image = null,
+  date = null,
+  category = null,
+  variant = 'editorial',
+  containImage = false,
+} = Astro.props;
+const src = imageSrc(image);
+---
+
+<a class:list={['content-card', `content-card--${variant}`]} href={href}>
+  {src && (
+    <figure class:list={['content-card__media', { 'is-contain': containImage }]}>
+      <img src={src} alt={title} loading="lazy" />
+    </figure>
+  )}
+  <div class="content-card__body">
+    {(category || date) && (
+      <p class="content-card__meta">
+        {category && <span>{category}</span>}
+        {date && <time datetime={isoDate(date) || undefined}>{date}</time>}
+      </p>
+    )}
+    <h2>{title}</h2>
+    {description && <p>{description}</p>}
+  </div>
+</a>
+

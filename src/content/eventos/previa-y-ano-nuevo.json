@@ -1,0 +1,33 @@
+{
+  "id": "6924a2704f41729adbbb8f87",
+  "slug": "previa-y-ano-nuevo",
+  "collectionId": "69174cede1985cb20a757f61",
+  "itemId": "6924a2704f41729adbbb8f87",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 18:22:40 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 00:40:02 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/eventos/previa-y-ano-nuevo",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/previa-y-ano-nuevo.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Previa y el Año Nuevo en el Barrio",
+  "startsAt": null,
+  "endsAt": null,
+  "location": "Barrio Bisquertt",
+  "descriptionHtml": "<h1>Previa y Año Nuevo en Barrio Bisquertt</h1><p>Juntarse con amigos para una cerveza, música y ricacomida antes de partir a las celebraciones familiares. Ese es el plan de muchosque el 31 de diciembre saldrán de su trabajo y compromisos cerca del mediodía.Y en Barrio Bisquertt varios locales estarán abiertos para esperarlos para unapausa antes de que se reúnan en casa con familia para el abrazo de medianoche. </p><p>¿Qué pasa el 1 de enero? Sí o sí muchos irán a unaterraza como lugar de encuentro.</p><p>Para coordenadas y contactos, haz click en la secciónDirectorio de nuestra web.</p><p>&nbsp;</p><p><strong>1 DE ENERO</strong></p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>La República</strong> tendrá todas sus cervezas artesanales para sus parroquianos el miércoles 31hasta las 19.00. Aunque el día en que sí habrá ánimo de fiesta es el <strong>1 deenero, cuando sus puertas abran desde las 14.00 ¡y hasta las 2 AM!</strong></p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>SonríeTé</strong> también se suma a los abrazos del <strong>1 de enero</strong>. Sus mesas estarán listas<strong>desde las 15.00</strong> para que ahí pruebes sus distintas variedades de té, sándwichey pasteles <strong>hasta las 21.00</strong>.</p><p><strong>&nbsp;</strong></p><p><strong>&nbsp;</strong></p><p><strong>31 DE DICIEMBRE</strong></p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Dom Black</strong> estará abierto <strong>hasta las 19.00</strong> con su terraza de hamburguesas, pizzas,cocteles y música. </p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>K-Calafate</strong> y sus tentaciones dulces estarán disponibles a sus clientes hasta las <strong>18.30</strong>.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Pescadería Mares delSur</strong> y sus productos frescos estarán disponibles hasta las <strong>17.00</strong>.Ideal para ir por ingredientes que sorprendan en la comida de fin de año.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>La Mazza</strong> ofrecerá pizzas en su fresca terraza <strong>hasta las 16.00</strong>. Almuerzorelajado en el restaurante o para pedir delivery en ese horario.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Mandala Verde </strong>esperará a sus fanáticos con tortas, sándwiches y sus famosos heladosartesanales hasta <strong>las 17.00</strong>.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Umbral:</strong> si quieres llegar con una sorpresa para la comida de Año Nuevo, puedes irpor los productos de su ecomercado hasta las 18.00. Hasta ese horario estarántambién funcionando su cafetería.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>I Love Sushi</strong> sabe que será un día agitado. Estarán a toda velocidad realizando pedidoshasta las 18.00.</p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Hey Coffee Restobar</strong> también despedirá el año con sus clientes y su carta entretenida de famososchurros, platos, sándwiches y tragos hasta las 18.30. </p><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Barroco </strong>y su cuidadísima gastronomía estará abierto hasta las <strong>17.00</strong>.</p><p>‍</p><h2>‍</h2>",
+  "rsvpLink": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694edd7f275434728f4a55e1_An%CC%83o%20Nuevo.JPG",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694edd7f275434728f4a55e1_Año Nuevo.JPG",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694edd7f275434728f4a55e1_Año Nuevo.JPG",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { orders, sortBySlugOrder } from '../../lib/site';
+
+const entries = sortBySlugOrder(await getCollection('directorio'), orders.directorio);
+---
+
+<BaseLayout title="Directorio" description="Directorio de comercios de Barrio Bisquertt.">
+  <main>
+    <header class="page-hero container">
+      <p class="eyebrow">Barrio Bisquertt</p>
+      <h1>Directorio</h1>
+    </header>
+    <section class="container">
+      <div class="card-grid">
+        {entries.map((entry) => (
+          <ContentCard
+            href={entry.data.route}
+            title={entry.data.name}
+            description={entry.data.description}
+            image={entry.data.mainImage}
+            variant="directory"
+          />
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+

@@ -1,0 +1,33 @@
+{
+  "id": "697a44642577a4b6b8d63ed2",
+  "slug": "revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt",
+  "collectionId": "69174cede1985cb20a757f61",
+  "itemId": "697a44642577a4b6b8d63ed2",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Wed Jan 28 2026 17:16:20 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Wed Jan 28 2026 17:38:59 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Revisa la programación de la primera Feria de Artes y Oficios del Barrio Bisquertt",
+  "startsAt": null,
+  "endsAt": null,
+  "location": "Avenida Bisquertt",
+  "descriptionHtml": "<h2>Desde cuentacuentos infantiles hasta tributos a The Beatles, Los Tres y Pink Floyd: una jornada cultural de 11 horas ininterrumpidas este sábado 7 de febrero en Avenida Bisquertt</h2><p>El Barrio Bisquertt de Rengo se prepara para vivir una jornada especial el próximo viernes 7 de febrero con su Primera Feria de Artes y Oficios. Un evento que combinará actividades familiares, artesanía local, emprendimientos y una potente programación musical que se extenderá desde las 14.00 hasta la medianoche.</p><p><strong>Tarde familiar: dinosaurios y cuentos</strong><br>La jornada comenzará con actividades especialmente diseñadas para los más pequeños de la familia. <strong>A las 17.00, Mary La Paleontóloga</strong> entretendrá a niños y niñas con su sesión de cuentacuentos, mientras que el taller infantil <strong>\"Crea tu dinosaurio\", a las 18.00</strong>, permitirá a los participantes dar rienda suelta a su creatividad en una experiencia educativa y entretenida.</p><p>\"Queremos que la feria sea un espacio para toda la familia, donde los niños también tengan su propio panorama cultural\", señala Carolina Saldaña, presidenta de la Agrupación Barrio Bisquertt.</p><p><strong>Al caer el sol, la música se toma el barrio</strong><br>A partir de las 19.00 Avenida Bisquertt se transformará en un escenario musical con una programación que recorrerá algunos de los grandes clásicos del rock en versiones de talentosas bandas locales.<br>La noche musical se estructurará de la siguiente manera:</p><p><strong>19.00.</strong> Espíritu del Río abrirá la jornada nocturna, dando inicio a la celebración musical.</p><p><strong>20.00 </strong>Los Bervos continuarán con un tributo a The Beatles, interpretando los hits más emblemáticos de la legendaria banda de Liverpool.</p><p><strong>21.00 </strong>La Cuesta rendirá homenaje a Los Tres, una de las bandas más icónicas del rock chileno de los años 90.</p><p><strong>22.00</strong> Dark Side cerrará la noche con los clásicos inmortales de Pink Floyd, poniendo el broche de oro a esta celebración cultural.</p><p><strong>Una feria integral</strong><br>Esta programación artística acompaña a una feria que contará con stands de artes y oficios donde creadores locales y regionales exhibirán y venderán sus trabajos. Una jorada con demostraciones en vivo de cultores de oficios y, en paralelo, &nbsp;la activación gastronómica de los reconocidos locales del Barrio Bisquertt.</p><p><strong>COORDENADAS</strong><br><strong>Cuándo</strong>: Sábado 7 de febrero.<br><strong>Horario</strong>: De 14:00 a 00.00 horas.<br><strong>Lugar</strong>: Avenida Bisquertt (calzada sur), entre Colo Colo y Daniel Morán, Rengo<br><strong>Entrada</strong>: Liberada y abierta a toda la comunidad</p><p><strong>Colaboración público-privada</strong><br>La Primera Feria de Artes y Oficios es un proyecto de colaboración entre la Agrupación de Barrio Bisquertt y el Colectivo Pinche Feria, financiado e impulsado por el Gobierno Regional de la Región de O'Higgins a través de SERCOTEC y el Programa Barrios Comerciales, con la colaboración de la Ilustre Municipalidad de Rengo.</p><p>Para más información:<br>www.barriobisquertt.cl<br>Instagram: @barriobisquertt</p><p>‍</p>",
+  "rsvpLink": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/697a4798b6a477b3a67a0ce5_Guitarras%20en%20Bisquertt.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/697a4798b6a477b3a67a0ce5_Guitarras en Bisquertt.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/697a4798b6a477b3a67a0ce5_Guitarras en Bisquertt.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

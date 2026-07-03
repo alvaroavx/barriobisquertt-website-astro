@@ -1,0 +1,47 @@
+{
+  "id": "69503a0dedfae48bfb5b7684",
+  "slug": "una-apuesta-a-futuro-economia-circular-y-servicios-sustentables",
+  "collectionId": "69172c960e54b69c53ea0429",
+  "itemId": "69503a0dedfae48bfb5b7684",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 19:57:01 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 20:01:26 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables.html"
+  },
+  "canonicalGroup": "noticia-economia-circular",
+  "validationNotes": [],
+  "title": "Una apuesta a futuro: economía circular y servicios sustentables",
+  "description": null,
+  "bodyHtml": "<p>Uno de los principales propósito de la Agrupación Barrio Bisquertt es el desarrollo de actividades relacionadas con la sustentabilidad, especialmente en el ámbito de la eficiencia energética, las energías renovables, la economía circular, la gestión de residuos, la electromovilidad y los servicios sustentables.</p><p>En la postulación del barrio para obtener el financiamiento del Gobierno Regional de la Región de O'Higgins y ejecución de SERCOTEC, se presentaron los antecedentes de las Ferias Sustentables que, desde el año 2019, han promovido la economía circular y una vida más sustentable en la comuna. De este modo, una parte considerable de los locales gastronómicos dela avenida cuentan con servicios de gestión de residuos inorgánicos, y algunos orgánicos.</p><p>Además, en algunos casos, han podido invertir para mejorar la eficiencia energética de los procesos de cada local. La idea es ofrecer a la comunidad experiencias prácticas y teóricas sobre la economía circular, como el reciclaje orgánico e inorgánico. Junto a propuestas de aprendizaje en familia, también se han realizado charlas, talleres, la promoción del comercio de hortalizas, de alimentos agroecológicos de huertas familiares y el rescate cultural de la manufactura local.</p><p>Otra parte de este programa es mediante la potenciación de espectáculos y actividades culturales que fomenten y amplifiquen estos valores en favor del planeta.</p><p>&nbsp;</p><p>#BarrioBisquertt </p><p>#EconomíaCircular</p><p>#Sustentabilidad</p><h1>‍</h1>",
+  "category": "sustentabilidad",
+  "authors": null,
+  "instagram": "https://www.instagram.com/reel/DSdfrjkksAR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503a6888e8d33a1ec91621_Eco%20C.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69503a6888e8d33a1ec91621_Eco C.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503a6888e8d33a1ec91621_Eco C.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503998cd5aeadf11263608_EcoB%20b.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69503998cd5aeadf11263608_EcoB b.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503998cd5aeadf11263608_EcoB b.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695039c7a037c5271b5e4f59_ExpoB.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695039c7a037c5271b5e4f59_ExpoB.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695039c7a037c5271b5e4f59_ExpoB.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

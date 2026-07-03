@@ -1,0 +1,65 @@
+{
+  "id": "6950418c6c86bff2e90832d0",
+  "slug": "emocionante-ciclo-atardeceres-musicales",
+  "collectionId": "69172c960e54b69c53ea0429",
+  "itemId": "6950418c6c86bff2e90832d0",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 20:29:00 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 20:30:32 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/noticias/emocionante-ciclo-atardeceres-musicales",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/emocionante-ciclo-atardeceres-musicales.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Emocionante ciclo Atardeceres Musicales",
+  "description": null,
+  "bodyHtml": "<p>Durante seis fechas de diciembre, la comunidad fue testigo de un inédito ciclo de recitales en distintos puntos de la Avenida Bisquertt. Una ruta musical, cada tarde, con jazz, folk, cueca renguina, villancicos criollos y un gran cierre junto al Coro Polifónico de Rancagua. La primera fecha, el 4 de diciembre, fue entre los establecimientos Mandala Verde y Casa Quinta, donde el Colectivo Paola Josefina, interpretó un repertorio pensado en la familia renguina y la Navidad.</p><p>Al día siguiente, en Smash Burguer, fue la presentación de Harper Dúo, la pareja de músicos que impactan con supuesta en escena donde la guitarra y el arpa son protagonistas.</p><p>El programa continuó el 10 diciembre en Mi Piace Rengo eInstituto Baluarte con Zapana Trío, el conjunto integrado por Vicente Zárate (guitarra), Rafael Padilla (bajo) y Juan PabloNavarrete (batería) para dar vida a una banda de jazz fusión que también explora ritmos latinoamericanos.</p><p>El 11 de diciembre fue el turno de Ignacio Hernández Accordion Quintet en el frontis de los restaurantes Barroco y La Mazza. Un espectáculo de gran fuerza expresiva que se establece como un viaje desde la música clásica a los acordes de Piazzolla. ⁠El 17 de diciembre, la ruta musical continuó en Dom Black y Pizzas Steves. Con guitarras, caja y pandero, fue el turno de lgrupo De la Güeya. Una presentación con fuerte identidad local al compás de la cueca centrina.</p><p>Finalmente, el 18 de diciembre fue el gran cierre. Justo entre el Paso de la Muerte y el histórico edificio ex Misiones de Rengo, el Coro Polifónico de Rancagua hizo su espectacular presentación frente a un entusiasta público. Bajo la dirección d eSebastián Inostroza, el repertorio tuvo villancicos catalanes, la “Missa festiva” de John Leavitt y el desconocido “Romance de Navidad” de Gabriela Mistral. </p><p>&nbsp;</p><p>‍</p>",
+  "category": "cultura",
+  "authors": null,
+  "instagram": null,
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503f8d4dbe8b6a8180748a_Coro%20polifo%CC%81nico%20(2).jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69503f8d4dbe8b6a8180748a_Coro polifónico (2).jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503f8d4dbe8b6a8180748a_Coro polifónico (2).jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69504097314b11e3dd7e1357_Harper%20Du%CC%81o%20en%20Atardeceres%20Musicales%20-Foto%20%40ivanphotovideo.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69504097314b11e3dd7e1357_Harper Dúo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69504097314b11e3dd7e1357_Harper Dúo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503fc87a7235efd16d3643_De%20la%20gueya.JPG",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69503fc87a7235efd16d3643_De la gueya.JPG",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503fc87a7235efd16d3643_De la gueya.JPG",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695040929a7c3a31834e2e1c_Paola%20Josefina%20Colectivo%20en%20Atardeceres%20Musicales%20-Foto%20%40ivanphotovideo.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695040929a7c3a31834e2e1c_Paola Josefina Colectivo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695040929a7c3a31834e2e1c_Paola Josefina Colectivo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695040adf7aa192e33e07abf_Acordeo%CC%81n.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695040adf7aa192e33e07abf_Acordeón.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695040adf7aa192e33e07abf_Acordeón.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695041475cd356960751e75f_Zapana.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695041475cd356960751e75f_Zapana.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695041475cd356960751e75f_Zapana.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

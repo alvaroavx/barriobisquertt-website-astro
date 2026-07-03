@@ -1,0 +1,27 @@
+{
+  "id": "69503e89a037c5271b5eca63",
+  "slug": "cultura",
+  "collectionId": "69172c960e54b69c53ea0428",
+  "itemId": "69503e89a037c5271b5eca63",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sat Dec 27 2025 20:16:09 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Sat Dec 27 2025 20:30:30 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Sat Dec 27 2025 22:09:40 GMT+0000 (Coordinated Universal Time)",
+  "route": "/categories/cultura",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cultura.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Cultura",
+  "color": null,
+  "bannerImage": {
+    "original": "",
+    "resolved": null,
+    "publicPath": null,
+    "status": "empty"
+  },
+  "validationStatus": "valid"
+}

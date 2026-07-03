@@ -1,0 +1,46 @@
+---
+import { navigationItems, formConfig } from '../data/navigation';
+import { assets, site } from '../lib/site';
+
+const formEnabled = Boolean(formConfig.endpoint);
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" aria-label="Barrio Bisquertt Home">
+        <img src={assets.logoWhite} alt="Barrio Bisquertt" width="268" />
+      </a>
+      <div class="footer-links">
+        <a href={site.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram Barrio Bisquertt">
+          <img class="footer-instagram" src={assets.instagram} alt="Instagram" width="42" height="42" />
+        </a>
+        {navigationItems.slice().reverse().map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h2>Proyecto financiado e impulsado por Gobierno Regional de O'Higgins junto con su Consejo Regional y ejecutado por Sercotec.</h2>
+      <form
+        class="footer-form"
+        method="post"
+        action={formEnabled ? formConfig.endpoint : undefined}
+        data-contact-form
+        data-enabled={formEnabled ? 'true' : 'false'}
+      >
+        <label class="sr-only" for="footer-email">Email</label>
+        <input id="footer-email" name="email" type="email" placeholder="Contáctanos" required disabled={!formEnabled} />
+        <button type="submit" disabled={!formEnabled}>Enviar</button>
+        {!formEnabled && <p class="form-status">{formConfig.disabledMessage}</p>}
+      </form>
+      <div class="institutional-logos" aria-label="Logos institucionales">
+        <img src={assets.gore} alt="Gobierno Regional de O'Higgins" />
+        <img src={assets.sercotec} alt="Sercotec" />
+        <img src={assets.barrios} alt="Barrios Comerciales" />
+      </div>
+    </div>
+  </div>
+</footer>
+

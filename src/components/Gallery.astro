@@ -1,0 +1,44 @@
+---
+import { imageSrc } from '../lib/site';
+
+interface Asset {
+  publicPath: string | null;
+  original: string;
+  status: string;
+}
+
+interface Props {
+  items: Asset[];
+  title: string;
+}
+
+const { items, title } = Astro.props;
+const resolved = items.map((item) => ({ item, src: imageSrc(item) })).filter((entry) => entry.src);
+---
+
+{resolved.length > 0 && (
+  <section class="gallery-section" data-gallery aria-label={`Galeria de ${title}`}>
+    <h2>Galería</h2>
+    <div class="gallery-grid">
+      {resolved.map(({ item, src }, index) => (
+        <button
+          class="gallery-item"
+          type="button"
+          data-lightbox-open
+          data-full-src={src}
+          data-alt={`${title} ${index + 1}`}
+        >
+          <img src={src} alt={`${title} ${index + 1}`} loading="lazy" />
+        </button>
+      ))}
+    </div>
+    <div class="lightbox" data-lightbox aria-modal="true" role="dialog" aria-label={`Galeria de ${title}`}>
+      <button class="lightbox-close" type="button" data-lightbox-close>Cerrar</button>
+      <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Imagen anterior">‹</button>
+      <img data-lightbox-image alt="" />
+      <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Imagen siguiente">›</button>
+      <p data-lightbox-caption></p>
+    </div>
+  </section>
+)}
+

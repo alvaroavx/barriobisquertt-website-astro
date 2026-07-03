@@ -1,0 +1,105 @@
+{
+  "id": "694d781052d78ac95e41fd87",
+  "slug": "mi-piace",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d781052d78ac95e41fd87",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 17:44:48 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 17:44:53 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/mi-piace",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mi-piace.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Mi Piace",
+  "address": "Av. Bisquertt 284. Local 4.",
+  "description": "Restaurante y pizzería, Mi Piace es un punto de reunión durante todo el día en la centenaria Avenida Bisquertt. Sus anfitriones, Chiara y Eduardo (ya reconocidos por sus videos virales en redes sociales), se encargan de proyectar esa hospitalidad italiana que une sabor y calidez. Su carta, que siempre sorprende con el estreno de un nuevo plato, es la responsable de que sus salones y terraza siempre estén llenos de comensales, quienes también encuentran allí panoramas culturales y de música. Familiar y sibarita, este local ya se ha consolidado como un clásico para todos los renguinos que quieren juntarse en torno a la buena mesa.",
+  "phone": "+569 8931 8897",
+  "link": "https://www.instagram.com/mipiacerengo/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77a95666d5b37687c6e9_piace%20i.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77a95666d5b37687c6e9_piace i.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77a95666d5b37687c6e9_piace i.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c1beb4885c824f7052_piace%20n.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77c1beb4885c824f7052_piace n.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c1beb4885c824f7052_piace n.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c1dc6d668f9af61a5a_piace%20o.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77c1dc6d668f9af61a5a_piace o.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c1dc6d668f9af61a5a_piace o.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c119f13d59d8ef696c_piace%20p.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77c119f13d59d8ef696c_piace p.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c119f13d59d8ef696c_piace p.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c0d2bc3d5ccc71c51a_piace%20q.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77c0d2bc3d5ccc71c51a_piace q.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c0d2bc3d5ccc71c51a_piace q.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77ca698377a317886190_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.40.27.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77ca698377a317886190_Captura de Pantalla 2025-12-25 a la(s) 14.40.27.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77ca698377a317886190_Captura de Pantalla 2025-12-25 a la(s) 14.40.27.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77d9257131b99a93c848_piace%20j.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77d9257131b99a93c848_piace j.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77d9257131b99a93c848_piace j.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace%20d.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f87be15b3cead0c838_piace%20e.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77f87be15b3cead0c838_piace e.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f87be15b3cead0c838_piace e.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f7d671fe91fd08caa0_piace%20f.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77f7d671fe91fd08caa0_piace f.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f7d671fe91fd08caa0_piace f.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f62781e233fda98a98_piace%20g.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77f62781e233fda98a98_piace g.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f62781e233fda98a98_piace g.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77ff27d768c44c9c490a_piace%20c.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d77ff27d768c44c9c490a_piace c.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77ff27d768c44c9c490a_piace c.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7808de19c6eb7e3857ed_piace%20k.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d7808de19c6eb7e3857ed_piace k.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7808de19c6eb7e3857ed_piace k.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

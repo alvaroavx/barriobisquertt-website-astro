@@ -1,0 +1,32 @@
+{
+  "id": "695ebd6cff830eac432eb6fa",
+  "slug": "anfitriones-bisquertt-la-mazza-estilo-romano",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "695ebd6cff830eac432eb6fa",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Wed Jan 07 2026 20:09:16 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Wed Jan 07 2026 20:14:36 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-la-mazza-estilo-romano",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-mazza-estilo-romano.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: La Mazza ¡Estilo romano!",
+  "excerpt": "Un lugar con historia que construye con sus preparaciones una nueva tradición.",
+  "bodyHtml": "<p>Como una pizzería de estilo romano, para disfrutar en un ambiente familiar, rústico, vintage y con áreas verdes se define La Mazza. Ubicado en un lugar tradicional de la zona, donde por décadas ha estado el Club de Campo y Caza Caupolicán, se inauguró en el 2008.</p><p>Una iniciativa de Pierre Paraud Pasqualetto y actualmente administrada por Begoña Medina Cuadra. Juntos agradecen estos años de funcionamiento y, sobre todo, la fidelidad de la clientela.</p><p>Cuando se refieren al producto ‘estrella’ de su elaboración, no dudan en destacar la Pizza Siciliana Carne: una masa delgada cubierta con salsa de tomates hecha en casa, queso mozzarella, carne, choricillo y aceitunas. De las más solicitadas por la crujiencia de la masa y la calidad de sus ingredientes.</p><p>En palabras de Begoña Medina el futuro de barrio Bisquertt es un sueño hecho realidad, “estamos hace diez años en el barrio y me satisface ver gente divirtiéndose frente a una amplia oferta gastronómica”.</p><p><strong>LA MAZZA</strong><br>Avenida Bisquertt 357<br>Teléfonos: +569 8286 4470 / 72 2 5151 26<br>Correo : lamazzacontacto@gmail.com<br>Instagram: <a href=\"https://www.instagram.com/pizzeria_lamazza/\">@pizzeria_lamazza</a></p>",
+  "category": "anfitriones-bisquertt",
+  "instagram": "https://www.instagram.com/p/DTIqtHrjcOy/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695ebd16b497c71f05f4b0f2_La%20Mazza.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695ebd16b497c71f05f4b0f2_La Mazza.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695ebd16b497c71f05f4b0f2_La Mazza.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=0SHnnCekcAU",
+  "validationStatus": "valid"
+}

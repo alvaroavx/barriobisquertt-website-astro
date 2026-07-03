@@ -1,0 +1,24 @@
+---
+import { youtubeEmbed } from '../lib/site';
+
+interface Props {
+  url: string | null;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const embed = youtubeEmbed(url);
+---
+
+{embed && (
+  <section class="video-embed" aria-label={`Video de ${title}`}>
+    <iframe
+      src={embed}
+      title={title}
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </section>
+)}
+

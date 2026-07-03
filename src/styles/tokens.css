@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light;
+
+  --font-sans: 'Acidgrotesk', Arial, sans-serif;
+  --font-serif: 'Timesnow', Georgia, serif;
+
+  --color-page: #f7f4f5;
+  --color-page-alt: #f5f2f3;
+  --color-surface: #ffffff;
+  --color-text: #171717;
+  --color-text-webflow: #333333;
+  --color-muted: #999999;
+  --color-nav-active: #b7bcd8;
+  --color-footer: #945e4c;
+  --color-footer-button: #c18b79;
+  --color-card-tint: #dab5cf;
+  --color-border: #dddddd;
+  --color-accent-orange: #dd783f;
+  --color-accent-orange-hover: #f17228;
+  --color-accent-green: #5cc489;
+  --color-slate: #243039;
+
+  --radius-sm: 3px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  --container-index: 1500px;
+  --container-home: 1475px;
+  --container-article: 950px;
+  --container-business: 810px;
+
+  --breakpoint-tiny: 479px;
+  --breakpoint-small: 767px;
+  --breakpoint-medium: 991px;
+  --breakpoint-main: 992px;
+}

@@ -1,0 +1,57 @@
+{
+  "id": "694d94b88bc823a1f90764d5",
+  "slug": "umbral",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d94b88bc823a1f90764d5",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 19:47:04 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Dec 26 2025 13:21:08 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/umbral",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/umbral.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Umbral ",
+  "address": "Daniel Moran 21",
+  "description": "Espacio único donde la naturaleza y el bienestar se encuentran. En nuestra ecotienda a granel descubrirán una amplia selección de productos naturales, frescos y sostenibles, perfectos para quienes buscan cuidar su salud y el planeta. Desde granos y semillas hasta especias y superalimentos. También Umbral recibe con una cafetería de especialidad, con opciones veganas y sin azúcar. La carta tiene energéticos desayunos y almuerzos llenos de color, hasta sándwiches y brunchs irresistibles. Además, ofrecen un servicio de catering saludable y sustentable, perfecto para eventos y reuniones que buscan un toque especial y consciente.",
+  "phone": "+569 6588 5968",
+  "link": "https://ecoumbral.cl/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d962e8e60c2b2850153d1_Tienda.webp",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d962e8e60c2b2850153d1_Tienda.webp",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d962e8e60c2b2850153d1_Tienda.webp",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d978591a13a0bfed17da7_IMG_3606.JPG",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d978591a13a0bfed17da7_IMG_3606.JPG",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d978591a13a0bfed17da7_IMG_3606.JPG",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d96b50943b27cddf6b22b_envasados.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d96b50943b27cddf6b22b_envasados.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d96b50943b27cddf6b22b_envasados.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d96b18b91f709bae2efbd_IMG_4332.JPG",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d96b18b91f709bae2efbd_IMG_4332.JPG",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d96b18b91f709bae2efbd_IMG_4332.JPG",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d964602c7d43c3652eb93_Cafe%CC%81!.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d964602c7d43c3652eb93_Café!.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d964602c7d43c3652eb93_Café!.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

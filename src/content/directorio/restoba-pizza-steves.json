@@ -1,0 +1,51 @@
+{
+  "id": "694d9c4e0943b27cddf724a0",
+  "slug": "restoba-pizza-steves",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d9c4e0943b27cddf724a0",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 20:19:26 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 20:19:30 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/restoba-pizza-steves",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/restoba-pizza-steves.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Restoba Pizza Steve's",
+  "address": "Av. Bisquertt 380",
+  "description": "Sus pizzas de 52 centímetros son virales por su tamaño en redes sociales. Este local, abierto desde mediodía hasta la noche, es uno de los preferidos para aquellos de gran apetito. Además, sus proporciones XL se repiten en los platos de su carta, desde el menú de almuerzo a las hamburguesas, chorrillanas y salchipapas.",
+  "phone": "+569 8425 1437",
+  "link": "https://www.instagram.com/restobar_pizza_steves/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b1d1b61aa249d3f95cf_Pizza%20A.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9b1d1b61aa249d3f95cf_Pizza A.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b1d1b61aa249d3f95cf_Pizza A.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b206d20630a10b63cda_Pizza%20B.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9b206d20630a10b63cda_Pizza B.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b206d20630a10b63cda_Pizza B.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b33ec15a3b12f828c40_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.12.05.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9b33ec15a3b12f828c40_Captura de Pantalla 2025-12-25 a la(s) 17.12.05.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b33ec15a3b12f828c40_Captura de Pantalla 2025-12-25 a la(s) 17.12.05.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b380b74df8b0f2ac4ea_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.12.38.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9b380b74df8b0f2ac4ea_Captura de Pantalla 2025-12-25 a la(s) 17.12.38.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b380b74df8b0f2ac4ea_Captura de Pantalla 2025-12-25 a la(s) 17.12.38.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "696a60884fe84fd01ebe479d",
+  "slug": "anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "696a60884fe84fd01ebe479d",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Fri Jan 16 2026 16:00:08 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Jan 16 2026 16:00:16 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: Hey! Coffee Restobar, clásico con toques modernos",
+  "excerpt": "Renovó su espacio, carta e imagen. A los churros que lo hicieron famoso en Rengo suma hoy tablas, platos y coctelería.",
+  "bodyHtml": "<p>Fue hace ocho cuando debutó en la esquina de Avenida Bisquertt, junto frente al edificio municipal. Con sus churros españoles espolvoreados en azúcar flor, además de opciones rellenas con manjar, nutella, frutos rojos y pistachos, la propuesta rápidamente cautivó a los paladares renguinos.</p><p>En noviembre pasado, sus nuevos dueños -Feliciano Rojas y su señora Claudia Gamboa- decidieron renovar el espacio con nueva carta e imagen. “El lugar tenía una tradición de cafetería, pero nosotros quisimos ampliarnos a un concepto de restaurante”, sostiene él. Para ello, tomaron el camino de la especialización en torno a distintas recetas y cortes de carne.</p><p>Sus almuerzos, con opciones de menú y carta, se establecen como alternativas caseras y ejecutivas para el público. Siempre con entrada y postre, los platos de fondo pueden ser porotos de la temporada o un chapsui de pollo con inspiración oriental que se acompaña de papas rústicas.</p><p>Otra de las elecciones favoritas del público es la tabla mixta con tres tipos de carne (pollo, vacuno y charcutería), acompañada de papas fritas, tomates cherry, champiñones y espárragos grillados. </p><p>Claudia Gamboa añade que otras preparaciones que reciben aplausos son las entrañas, los ostiones a la parmesana y el salmón con guarnición de arroz verde o puré picante.</p><p>A la hora de brindar, la carta ofrece variedad de cervezas, jugos naturales y coctelería de autor. “Somos clásicos, pero con un toque moderno”, advierte Claudia. El ambiente familiar, que se mantiene durante todo el día, cambia a medida que cae la tarde. Es cuando la terraza se convierte en un punto de entretención de un público más joven, un espacio ideal para reunirse con amigos y prolongar celebración hasta la medianoche.</p><p><strong>HEY! COFFEE RESTOBAR</strong><br>Avenida Bisquertt 284<br>Teléfono: +569 4 2222 553<br>Correo: feliciano.rojas.q@gmail.com<br>Instagram: @heycoffee_restobar</p><p>‍</p>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/696a5f9900411f86fb53ced0_Hey.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/696a5f9900411f86fb53ced0_Hey.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/696a5f9900411f86fb53ced0_Hey.png",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=iRPKA-l7hLM",
+  "validationStatus": "valid"
+}

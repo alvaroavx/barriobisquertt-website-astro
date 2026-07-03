@@ -1,0 +1,36 @@
+---
+import { navigationItems } from '../data/navigation';
+import { assets } from '../lib/site';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+function isActive(href: string) {
+  if (href === '/') return currentPath === '/';
+  return currentPath === href || currentPath.startsWith(`${href}/`);
+}
+---
+
+<header class="site-header" data-site-header>
+  <a class="site-logo" href="/" aria-label="Barrio Bisquertt Home">
+    <img src={assets.logoBlack} alt="Barrio Bisquertt" width="121" height="47" />
+  </a>
+
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+    <span class="sr-only">Abrir menu</span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="site-navigation" class="site-nav" aria-label="Navegacion principal">
+    {navigationItems.map((item) => (
+      <a class:list={['site-nav__link', { 'is-active': isActive(item.href) }]} href={item.href}>
+        {item.label}
+      </a>
+    ))}
+  </nav>
+</header>
+

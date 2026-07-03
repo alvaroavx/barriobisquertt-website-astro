@@ -1,0 +1,44 @@
+{
+  "id": "695153838c89c7d8e158e601",
+  "slug": "palmeras-y-encinos-con-historia",
+  "collectionId": "6925e43555b58e030615dd1b",
+  "itemId": "695153838c89c7d8e158e601",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Sun Dec 28 2025 15:57:55 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Mon Dec 29 2025 12:45:29 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Mon Dec 29 2025 14:42:11 GMT+0000 (Coordinated Universal Time)",
+  "route": "/patrimonio/palmeras-y-encinos-con-historia",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Patrimonios - 6925e43555b58e030615dd1b.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio/palmeras-y-encinos-con-historia.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Palmeras y encinos con historia",
+  "bodyHtml": "<p>Alineadas al centro de la avenida, las palmeras constituyen una puerta de entrada a la ciudad. Las palmeras, de la especia onix fueron plantadas en 1926 por el alcalde, donGuillermo Mujica. Los árboles de encino, en tanto, por la brigada de scouts delLiceo de Hombres de Rengo en la misma época.</p><p>La sombra de sus árboles es testigo de múltiples acontecimientos públicos. Por sus calzadas han desfilado desde batallones de guerra, murgas y carruajes de diferentes épocas.Ha sido un paseo que, durante décadas, ha sido el anfitrión de carnavales de primavera, elecciones de reinas, campeonatos deportivos y fiestas agrícolas y de la vendimia.</p><p>‍</p><h6>Fotos: Renguinos por Rengo / Memoria Fotográfica Rengo </h6>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695151dd9c9a944d5abc1de8_Rengo%20F%201917.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/695151dd9c9a944d5abc1de8_Rengo F 1917.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695151dd9c9a944d5abc1de8_Rengo F 1917.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6951521149171afc86bf3328_Rengo%20E.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/6951521149171afc86bf3328_Rengo E.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6951521149171afc86bf3328_Rengo E.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69515215742e68f5d3240825_Rengo%20C.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69515215742e68f5d3240825_Rengo C.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69515215742e68f5d3240825_Rengo C.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

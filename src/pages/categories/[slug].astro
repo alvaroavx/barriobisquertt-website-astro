@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContentCard from '../../components/ContentCard.astro';
+import { imageSrc, orders, sortBySlugOrder } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('categorias');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const [noticias, historias, eventos] = await Promise.all([
+  getCollection('noticias'),
+  getCollection('historias'),
+  getCollection('eventos'),
+]);
+const newsItems = sortBySlugOrder(
+  noticias.filter((item) => item.data.category === data.slug),
+  orders.noticias,
+);
+const storyItems = sortBySlugOrder(
+  historias.filter((item) => item.data.category === data.slug),
+  orders.historias,
+);
+const eventItems = sortBySlugOrder(
+  eventos.filter((item) => item.data.location?.toLowerCase().includes(data.name.toLowerCase())),
+  orders.eventos,
+);
+const banner = imageSrc(data.bannerImage);
+---
+
+<BaseLayout title={data.name} description={`Categoria ${data.name} de Barrio Bisquertt.`} image={banner}>
+  <main>
+    <header class="page-hero container">
+      <p class="eyebrow">Categoria</p>
+      <h1>{data.name}</h1>
+    </header>
+    {banner && (
+      <figure class="article-media">
+        <img src={banner} alt={data.name} />
+      </figure>
+    )}
+    <section class="container">
+      <div class="card-grid">
+        {newsItems.map((item) => (
+          <ContentCard
+            href={item.data.route}
+            title={item.data.title}
+            description={item.data.description}
+            image={item.data.mainImage}
+            date={item.data.publishedOn}
+            category={item.data.category}
+            variant="news"
+          />
+        ))}
+        {storyItems.map((item) => (
+          <ContentCard
+            href={item.data.route}
+            title={item.data.title}
+            description={item.data.excerpt}
+            image={item.data.mainImage}
+            date={item.data.publishedOn}
+            category={item.data.category}
+            variant="editorial"
+          />
+        ))}
+        {eventItems.map((item) => (
+          <ContentCard
+            href={item.data.route}
+            title={item.data.title}
+            description={item.data.location}
+            image={item.data.mainImage}
+            date={item.data.publishedOn}
+            variant="event"
+          />
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

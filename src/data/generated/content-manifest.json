@@ -1,0 +1,1748 @@
+{
+  "generatedAt": "2026-07-03T04:09:50.164Z",
+  "sourceRoot": "data",
+  "sourcePriority": {
+    "publicExistenceRouteOrderVisibleContent": "mirror HTML",
+    "cmsStructureAndStructuredFields": "CSV",
+    "visibleAssets": "HTML references resolved against local files",
+    "artDirection": "FASE 6 only",
+    "conflicts": "DISCREPANCIAS_Y_DECISIONES.md"
+  },
+  "routes": [
+    {
+      "route": "/blog",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/blog.html",
+      "expectedAssets": 9,
+      "resolvedAssets": 9,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/categories/barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/barrio-bisquertt.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/categories/cultura",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cultura.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/categories/cursos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cursos.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/categories/sustentabilidad-2",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/sustentabilidad-2.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": "categoria-sustentabilidad"
+    },
+    {
+      "route": "/categories/sustentabilidad",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/sustentabilidad.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": "categoria-sustentabilidad"
+    },
+    {
+      "route": "/directorio",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio.html",
+      "expectedAssets": 49,
+      "resolvedAssets": 49,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/barroco",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/barroco.html",
+      "expectedAssets": 15,
+      "resolvedAssets": 15,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/casaquinta",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/casaquinta.html",
+      "expectedAssets": 16,
+      "resolvedAssets": 16,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/clima-baluarte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/clima-baluarte.html",
+      "expectedAssets": 13,
+      "resolvedAssets": 13,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/cultura-zeta-consultora",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/cultura-zeta-consultora.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/dom-black",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/dom-black.html",
+      "expectedAssets": 21,
+      "resolvedAssets": 21,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/hey-coffee-restobar",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/hey-coffee-restobar.html",
+      "expectedAssets": 22,
+      "resolvedAssets": 22,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/i-baluarte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/i-baluarte.html",
+      "expectedAssets": 10,
+      "resolvedAssets": 10,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/i-love-sushi",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/i-love-sushi.html",
+      "expectedAssets": 18,
+      "resolvedAssets": 18,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/k-calafate",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/k-calafate.html",
+      "expectedAssets": 10,
+      "resolvedAssets": 10,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/la-mazza",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-mazza.html",
+      "expectedAssets": 18,
+      "resolvedAssets": 18,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/la-republica",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-republica.html",
+      "expectedAssets": 16,
+      "resolvedAssets": 16,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/mandala-verde-cafe",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mandala-verde-cafe.html",
+      "expectedAssets": 21,
+      "resolvedAssets": 21,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/mi-piace",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mi-piace.html",
+      "expectedAssets": 22,
+      "resolvedAssets": 22,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/paso-de-la-muerte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/paso-de-la-muerte.html",
+      "expectedAssets": 10,
+      "resolvedAssets": 10,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/pescaderia-mares-del-sur",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/pescaderia-mares-del-sur.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/restoba-pizza-steves",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/restoba-pizza-steves.html",
+      "expectedAssets": 13,
+      "resolvedAssets": 13,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/smash-burger",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/smash-burger.html",
+      "expectedAssets": 15,
+      "resolvedAssets": 15,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/sonrie-te",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/sonrie-te.html",
+      "expectedAssets": 23,
+      "resolvedAssets": 23,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/tu-esquina",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/tu-esquina.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/directorio/umbral",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/umbral.html",
+      "expectedAssets": 14,
+      "resolvedAssets": 14,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/eventos/luces-en-avenida-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/luces-en-avenida-bisquertt.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/eventos/nuevo-ciclo-de-cursos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/nuevo-ciclo-de-cursos.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/eventos/previa-y-ano-nuevo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/previa-y-ano-nuevo.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/eventos/verano-sobre-rieles",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/verano-sobre-rieles.html",
+      "expectedAssets": 8,
+      "resolvedAssets": 8,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/index.html",
+      "expectedAssets": 15,
+      "resolvedAssets": 15,
+      "canonicalGroup": "home"
+    },
+    {
+      "route": "/?57c7d2a2_page=1",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/index.html?57c7d2a2_page=1.html",
+      "expectedAssets": 15,
+      "resolvedAssets": 15,
+      "canonicalGroup": "home"
+    },
+    {
+      "route": "/?57c7d2a2_page=2",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/index.html?57c7d2a2_page=2.html",
+      "expectedAssets": 12,
+      "resolvedAssets": 12,
+      "canonicalGroup": "home"
+    },
+    {
+      "route": "/noticias",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias.html",
+      "expectedAssets": 9,
+      "resolvedAssets": 9,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/noticias/barrio-bisquertt-tendra-su-primera-feria-de-artes-y-oficios",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/barrio-bisquertt-tendra-su-primera-feria-de-artes-y-oficios.html",
+      "expectedAssets": 12,
+      "resolvedAssets": 12,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/noticias/capacitacion-para-un-mejor-servicio",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/capacitacion-para-un-mejor-servicio.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/noticias/emocionante-ciclo-atardeceres-musicales",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/emocionante-ciclo-atardeceres-musicales.html",
+      "expectedAssets": 16,
+      "resolvedAssets": 16,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/noticias/mas-seguridad-e-iluminacion",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/mas-seguridad-e-iluminacion.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/noticias/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": "nace-barrio-bisquertt"
+    },
+    {
+      "route": "/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables-2",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables-2.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": "noticia-economia-circular"
+    },
+    {
+      "route": "/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables.html",
+      "expectedAssets": 13,
+      "resolvedAssets": 13,
+      "canonicalGroup": "noticia-economia-circular"
+    },
+    {
+      "route": "/patrimonio",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio.html",
+      "expectedAssets": 9,
+      "resolvedAssets": 9,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/patrimonio/coches-y-victoria-el-transporte-en-barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio/coches-y-victoria-el-transporte-en-barrio-bisquertt.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/patrimonio/palmeras-y-encinos-con-historia",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio/palmeras-y-encinos-con-historia.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquert-i-love-sushi-una-apuesta-familiar-que-se-expande",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquert-i-love-sushi-una-apuesta-familiar-que-se-expande.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-casaquinta-en-el-nombre-de-hernan-quintan",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-casaquinta-en-el-nombre-de-hernan-quintan.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-dom-black-sabor-con-influencia-brasilena",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-dom-black-sabor-con-influencia-brasilena.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-instituto-baluarte-cicap-y-clima-baluarte-profesionalizacion-y-tecnologia-de-vanguardia-para-rengo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-instituto-baluarte-cicap-y-clima-baluarte-profesionalizacion-y-tecnologia-de-vanguardia-para-rengo.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-k-calafate-una-ola-coreana",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-k-calafate-una-ola-coreana.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-la-mazza-estilo-romano",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-mazza-estilo-romano.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-la-republica-a-todo-paladar",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-republica-a-todo-paladar.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-mandala-verde-cafe-una-historia-personal-y-saludable",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-mandala-verde-cafe-una-historia-personal-y-saludable.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-pescaderia-mares-del-sur-lo-mas-importante-es-mantener-la-frescura",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-pescaderia-mares-del-sur-lo-mas-importante-es-mantener-la-frescura.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-por-que-en-el-paso-de-la-muerte-el-cliente-no-tiene-la-razon",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-por-que-en-el-paso-de-la-muerte-el-cliente-no-tiene-la-razon.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/anfitriones-bisquertt-umbral-eco-cafe-una-leccion-de-alimentacion-saludable",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-umbral-eco-cafe-una-leccion-de-alimentacion-saludable.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": null
+    },
+    {
+      "route": "/post/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo-80e1e",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo-80e1e.html",
+      "expectedAssets": 11,
+      "resolvedAssets": 11,
+      "canonicalGroup": "nace-barrio-bisquertt"
+    }
+  ],
+  "contentItems": [
+    {
+      "collection": "directorio",
+      "slug": "barroco",
+      "title": "Barroco",
+      "route": "/directorio/barroco",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/barroco.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da13acb6d6ed159801115_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.36.43.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14b9d7b022b4106b90f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.37.55.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14a04b98f8a5a6d12e6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.06.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14d0299810b10de5017_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.23.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da26293aa8b7d9204e3c2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.43.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14a7b6ae52778094869_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.39.04.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da13acb6d6ed159801115_Captura de Pantalla 2025-12-25 a la(s) 17.36.43.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14b9d7b022b4106b90f_Captura de Pantalla 2025-12-25 a la(s) 17.37.55.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14a04b98f8a5a6d12e6_Captura de Pantalla 2025-12-25 a la(s) 17.38.06.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14d0299810b10de5017_Captura de Pantalla 2025-12-25 a la(s) 17.38.23.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da26293aa8b7d9204e3c2_Captura de Pantalla 2025-12-25 a la(s) 17.38.43.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14a7b6ae52778094869_Captura de Pantalla 2025-12-25 a la(s) 17.39.04.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "casaquinta",
+      "title": "CasaQuinta",
+      "route": "/directorio/casaquinta",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/casaquinta.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9e5282594ee0e9c95c10_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.27.14.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9e5b25163b15c2790eb7_casaquinta%20a.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbb5f668d6aea0c1839_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.24.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbbbeb4885c82525a13_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.34.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbb083874d3e2be8910_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.46.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fc5cf638566884aeba9_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.33.01.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fc59212addaeed78332_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.33.15.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9e5282594ee0e9c95c10_Captura de Pantalla 2025-12-25 a la(s) 17.27.14.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9e5b25163b15c2790eb7_casaquinta a.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbb5f668d6aea0c1839_Captura de Pantalla 2025-12-25 a la(s) 17.32.24.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbbbeb4885c82525a13_Captura de Pantalla 2025-12-25 a la(s) 17.32.34.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbb083874d3e2be8910_Captura de Pantalla 2025-12-25 a la(s) 17.32.46.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fc5cf638566884aeba9_Captura de Pantalla 2025-12-25 a la(s) 17.33.01.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fc59212addaeed78332_Captura de Pantalla 2025-12-25 a la(s) 17.33.15.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "clima-baluarte",
+      "title": "Clima Baluarte",
+      "route": "/directorio/clima-baluarte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/clima-baluarte.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d50b8c9cdc08489f64bfc_Clima%20Baluarte.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5068cec739569d47825d_Clima%20B%20a.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d50673dd7e2f3b0008381_Clima%20B%20b.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5068bdd7184b655f4c6b_Clima%20B%20c.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d50b8c9cdc08489f64bfc_Clima Baluarte.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5068cec739569d47825d_Clima B a.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d50673dd7e2f3b0008381_Clima B b.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5068bdd7184b655f4c6b_Clima B c.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "cultura-zeta-consultora",
+      "title": "Cultura Zeta Consultora",
+      "route": "/directorio/cultura-zeta-consultora",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/cultura-zeta-consultora.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69500cb4bc0d858608af459f_Captura%20de%20Pantalla%202025-12-27%20a%20la(s)%2013.42.10.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69500cc2b6c982850fc9a98d_Captura%20de%20Pantalla%202025-12-27%20a%20la(s)%2013.43.01.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69500cb4bc0d858608af459f_Captura de Pantalla 2025-12-27 a la(s) 13.42.10.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69500cc2b6c982850fc9a98d_Captura de Pantalla 2025-12-27 a la(s) 13.43.01.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "dom-black",
+      "title": "Dom Black",
+      "route": "/directorio/dom-black",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/dom-black.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d703e2722a5d0ee73c24c_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.05.34.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d704becb0b083346130c7_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.10.22.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7056393dae73026fb2cd_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.08.15.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d705668be7d26f7377792_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.08.44.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d705655a7dab766cb9506_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.09.29.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7067e84750cf1a141834_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.06.19.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7067d671fe91fd083008_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.06.49.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d706632789bcc8d331ae3_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.07.41.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d707828fe3afdeb6c1b25_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.23.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7077f77e1ea70ce1e6c9_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.39.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d707728379a4e061fdadc_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.03.53.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7077257131b99a933021_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.04.20.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d703e2722a5d0ee73c24c_Captura de Pantalla 2025-12-25 a la(s) 14.05.34.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d704becb0b083346130c7_Captura de Pantalla 2025-12-25 a la(s) 14.10.22.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7056393dae73026fb2cd_Captura de Pantalla 2025-12-25 a la(s) 14.08.15.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d705668be7d26f7377792_Captura de Pantalla 2025-12-25 a la(s) 14.08.44.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d705655a7dab766cb9506_Captura de Pantalla 2025-12-25 a la(s) 14.09.29.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7067e84750cf1a141834_Captura de Pantalla 2025-12-25 a la(s) 14.06.19.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7067d671fe91fd083008_Captura de Pantalla 2025-12-25 a la(s) 14.06.49.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d706632789bcc8d331ae3_Captura de Pantalla 2025-12-25 a la(s) 14.07.41.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d707828fe3afdeb6c1b25_Captura de Pantalla 2025-12-25 a la(s) 14.03.23.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7077f77e1ea70ce1e6c9_Captura de Pantalla 2025-12-25 a la(s) 14.03.39.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d707728379a4e061fdadc_Captura de Pantalla 2025-12-25 a la(s) 14.03.53.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7077257131b99a933021_Captura de Pantalla 2025-12-25 a la(s) 14.04.20.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "hey-coffee-restobar",
+      "title": "Hey Coffee Restobar",
+      "route": "/directorio/hey-coffee-restobar",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/hey-coffee-restobar.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae49aff0cc9d0db606c2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.26.25.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae596ab6e98db32ee181_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.28.07.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae7146f39f77fa96e09a_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.28.21.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daeb717c8aebabb952e7d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.29.03.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daece93ea4891e7607c1f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.30.22.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae394e37760c9b0b8d59_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.25.30.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae40d671fe91fd0d5efb_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.26.09.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae4f3b89675604d119db_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.26.37.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae55de19c6eb7e3c970e_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.27.03.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694dae965666d5b3768c391d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.28.35.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daeab698cc16da7073e82_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.28.51.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daec4ae306c77e2e2e227_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.29.49.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daedbaf90959fd4f17ce0_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.30.48.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae49aff0cc9d0db606c2_Captura de Pantalla 2025-12-25 a la(s) 18.26.25.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae596ab6e98db32ee181_Captura de Pantalla 2025-12-25 a la(s) 18.28.07.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae7146f39f77fa96e09a_Captura de Pantalla 2025-12-25 a la(s) 18.28.21.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daeb717c8aebabb952e7d_Captura de Pantalla 2025-12-25 a la(s) 18.29.03.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daece93ea4891e7607c1f_Captura de Pantalla 2025-12-25 a la(s) 18.30.22.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae394e37760c9b0b8d59_Captura de Pantalla 2025-12-25 a la(s) 18.25.30.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae40d671fe91fd0d5efb_Captura de Pantalla 2025-12-25 a la(s) 18.26.09.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae4f3b89675604d119db_Captura de Pantalla 2025-12-25 a la(s) 18.26.37.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae55de19c6eb7e3c970e_Captura de Pantalla 2025-12-25 a la(s) 18.27.03.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694dae965666d5b3768c391d_Captura de Pantalla 2025-12-25 a la(s) 18.28.35.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daeab698cc16da7073e82_Captura de Pantalla 2025-12-25 a la(s) 18.28.51.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daec4ae306c77e2e2e227_Captura de Pantalla 2025-12-25 a la(s) 18.29.49.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daedbaf90959fd4f17ce0_Captura de Pantalla 2025-12-25 a la(s) 18.30.48.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "i-love-sushi",
+      "title": "I Love Sushi",
+      "route": "/directorio/i-love-sushi",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/i-love-sushi.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da71e3c4a455b8721daba_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.05.08.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da72aafb202c2cc8599ac_Love.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95f7778d65a065678a7_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.06.45.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95be6b2e8d98c6dbe03_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.07.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95bf3bf9668501828f6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.19.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95a6daeffc5e78ba4eb_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.30.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95aee4ac861cb27c2d6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.07.50.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95aa03268968c114dd2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.08.03.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da95a0e1fdaf60019afac_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2018.08.21.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da71e3c4a455b8721daba_Captura de Pantalla 2025-12-25 a la(s) 18.05.08.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da72aafb202c2cc8599ac_Love.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95f7778d65a065678a7_Captura de Pantalla 2025-12-25 a la(s) 18.06.45.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95be6b2e8d98c6dbe03_Captura de Pantalla 2025-12-25 a la(s) 18.07.07.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95bf3bf9668501828f6_Captura de Pantalla 2025-12-25 a la(s) 18.07.19.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95a6daeffc5e78ba4eb_Captura de Pantalla 2025-12-25 a la(s) 18.07.30.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95aee4ac861cb27c2d6_Captura de Pantalla 2025-12-25 a la(s) 18.07.50.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95aa03268968c114dd2_Captura de Pantalla 2025-12-25 a la(s) 18.08.03.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da95a0e1fdaf60019afac_Captura de Pantalla 2025-12-25 a la(s) 18.08.21.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "i-baluarte",
+      "title": "Instituto Baluarte Cicap",
+      "route": "/directorio/i-baluarte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/i-baluarte.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d4be137316fc67f626565_I%20Baluarte.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d4be137316fc67f626565_I Baluarte.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "k-calafate",
+      "title": "K-Calafate",
+      "route": "/directorio/k-calafate",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/k-calafate.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d592d6d20630a10b0d8bf_Kcalafate.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d592d6d20630a10b0d8bf_Kcalafate.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "la-mazza",
+      "title": "La Mazza",
+      "route": "/directorio/la-mazza",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-mazza.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a593a59c0b03542a91d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.50.16.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a5f63d1e4847a923bd0_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.48.51.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a649d08b33eec6f595e_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.49.16.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a6ca453d629e64bf035_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.49.58.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a722949c7b3d6bc6e65_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.51.58.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a76fec367e272d590e8_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.50.55.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a7bee4099a70a3df75f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.52.18.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a81888933f40e911492_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.53.45.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7a8616cf704ccb8a4018_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.54.09.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a593a59c0b03542a91d_Captura de Pantalla 2025-12-25 a la(s) 14.50.16.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a5f63d1e4847a923bd0_Captura de Pantalla 2025-12-25 a la(s) 14.48.51.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a649d08b33eec6f595e_Captura de Pantalla 2025-12-25 a la(s) 14.49.16.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a6ca453d629e64bf035_Captura de Pantalla 2025-12-25 a la(s) 14.49.58.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a722949c7b3d6bc6e65_Captura de Pantalla 2025-12-25 a la(s) 14.51.58.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a76fec367e272d590e8_Captura de Pantalla 2025-12-25 a la(s) 14.50.55.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a7bee4099a70a3df75f_Captura de Pantalla 2025-12-25 a la(s) 14.52.18.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a81888933f40e911492_Captura de Pantalla 2025-12-25 a la(s) 14.53.45.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7a8616cf704ccb8a4018_Captura de Pantalla 2025-12-25 a la(s) 14.54.09.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "la-republica",
+      "title": "La República ",
+      "route": "/directorio/la-republica",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-republica.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8e38b5a443b9334ddf5f_barriles%20cerveza.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fd0beb4885c825136dd_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.24.25.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fcfd1fd81a57b2aa4a2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.24.54.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fd102f1c7a45389648f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.25.12.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fdbbe07c6b6b6e340a6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.08.00.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fdf37316fc67f681ae2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.07.51.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fe6a6d665252e1e0887_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.12.47.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8e38b5a443b9334ddf5f_barriles cerveza.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fd0beb4885c825136dd_Captura de Pantalla 2025-12-25 a la(s) 16.24.25.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fcfd1fd81a57b2aa4a2_Captura de Pantalla 2025-12-25 a la(s) 16.24.54.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fd102f1c7a45389648f_Captura de Pantalla 2025-12-25 a la(s) 16.25.12.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fdbbe07c6b6b6e340a6_Captura de Pantalla 2025-12-25 a la(s) 16.08.00.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fdf37316fc67f681ae2_Captura de Pantalla 2025-12-25 a la(s) 16.07.51.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fe6a6d665252e1e0887_Captura de Pantalla 2025-12-25 a la(s) 16.12.47.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "mandala-verde-cafe",
+      "title": "Mandala Verde Café",
+      "route": "/directorio/mandala-verde-cafe",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mandala-verde-cafe.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8207ebb8c25cb5069bd5_Mandala%20D.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d821287d085066ad95334_Mandala%20A.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d821e083874d3e2bbd0a4_Mandala%20E.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8222a03268968c0e738e_Mandala%20f.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d823027d768c44c9d17a9_Mandala%20M.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8234dc348b97cd2f6d86_Mandala%20N.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8238698377a317895b88_Mandala%20O.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d823deb4cf69c48309f7e_Mandala%20P.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8249d03384b4fa6d9f0e_Mandala%20L.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d825226563921e1d5aa9c_Mandala%20I.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8257368e49c005d113c1_Mandala%20H.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d825be2e43f7ad87bca5b_Mandala%20g.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8207ebb8c25cb5069bd5_Mandala D.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d821287d085066ad95334_Mandala A.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d821e083874d3e2bbd0a4_Mandala E.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8222a03268968c0e738e_Mandala f.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d823027d768c44c9d17a9_Mandala M.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8234dc348b97cd2f6d86_Mandala N.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8238698377a317895b88_Mandala O.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d823deb4cf69c48309f7e_Mandala P.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8249d03384b4fa6d9f0e_Mandala L.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d825226563921e1d5aa9c_Mandala I.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8257368e49c005d113c1_Mandala H.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d825be2e43f7ad87bca5b_Mandala g.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "mi-piace",
+      "title": "Mi Piace",
+      "route": "/directorio/mi-piace",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mi-piace.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77a95666d5b37687c6e9_piace%20i.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c1beb4885c824f7052_piace%20n.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c1dc6d668f9af61a5a_piace%20o.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c119f13d59d8ef696c_piace%20p.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77c0d2bc3d5ccc71c51a_piace%20q.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77ca698377a317886190_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2014.40.27.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77d9257131b99a93c848_piace%20j.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace%20d.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f87be15b3cead0c838_piace%20e.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f7d671fe91fd08caa0_piace%20f.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f62781e233fda98a98_piace%20g.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77ff27d768c44c9c490a_piace%20c.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d7808de19c6eb7e3857ed_piace%20k.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77a95666d5b37687c6e9_piace i.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c1beb4885c824f7052_piace n.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c1dc6d668f9af61a5a_piace o.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c119f13d59d8ef696c_piace p.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77c0d2bc3d5ccc71c51a_piace q.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77ca698377a317886190_Captura de Pantalla 2025-12-25 a la(s) 14.40.27.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77d9257131b99a93c848_piace j.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f87be15b3cead0c838_piace e.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f7d671fe91fd08caa0_piace f.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f62781e233fda98a98_piace g.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77ff27d768c44c9c490a_piace c.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d7808de19c6eb7e3857ed_piace k.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "paso-de-la-muerte",
+      "title": "Minimarket Paso de la Muerte",
+      "route": "/directorio/paso-de-la-muerte",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/paso-de-la-muerte.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d53a1e240105534810fbf_Paso%20de%20la%20Muerte.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d53a1e240105534810fbf_Paso de la Muerte.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "pescaderia-mares-del-sur",
+      "title": "Pescadería Mares del Sur",
+      "route": "/directorio/pescaderia-mares-del-sur",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/pescaderia-mares-del-sur.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d555b7be15b3ceacddca0_Mares%20del%20Sur.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5542ccdb6c1d65164b91_Mares.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d555b7be15b3ceacddca0_Mares del Sur.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5542ccdb6c1d65164b91_Mares.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "restoba-pizza-steves",
+      "title": "Restoba Pizza Steve's",
+      "route": "/directorio/restoba-pizza-steves",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/restoba-pizza-steves.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b1d1b61aa249d3f95cf_Pizza%20A.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b206d20630a10b63cda_Pizza%20B.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b33ec15a3b12f828c40_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.12.05.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9b380b74df8b0f2ac4ea_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.12.38.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b1d1b61aa249d3f95cf_Pizza A.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b206d20630a10b63cda_Pizza B.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b33ec15a3b12f828c40_Captura de Pantalla 2025-12-25 a la(s) 17.12.05.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9b380b74df8b0f2ac4ea_Captura de Pantalla 2025-12-25 a la(s) 17.12.38.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "smash-burger",
+      "title": "Smash Burger ",
+      "route": "/directorio/smash-burger",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/smash-burger.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89bdff9f10f7f824427f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.53.14.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89e3d0fa56dfc5758b17_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.53.52.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89c88c2c84a83f2fd0d3_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.54.29.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89cdbeb4885c8250be28_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.54.10.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89dd2f574e079f142b1d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.54.59.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d89ee3996b86edd2eab30_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2015.53.36.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89bdff9f10f7f824427f_Captura de Pantalla 2025-12-25 a la(s) 15.53.14.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89e3d0fa56dfc5758b17_Captura de Pantalla 2025-12-25 a la(s) 15.53.52.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89c88c2c84a83f2fd0d3_Captura de Pantalla 2025-12-25 a la(s) 15.54.29.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89cdbeb4885c8250be28_Captura de Pantalla 2025-12-25 a la(s) 15.54.10.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89dd2f574e079f142b1d_Captura de Pantalla 2025-12-25 a la(s) 15.54.59.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d89ee3996b86edd2eab30_Captura de Pantalla 2025-12-25 a la(s) 15.53.36.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "sonrie-te",
+      "title": "Sonríe Té",
+      "route": "/directorio/sonrie-te",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/sonrie-te.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da360ebff3f75be63174d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.48.38.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da51db560e283ed11dede_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.50.51.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da36e812baa5c05fbe984_te%20a.webp",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da52190cceb00e6872ca6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.50.14.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da520d1fd81a57b2c082b_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.50.27.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da52026563921e1d84f4c_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.50.42.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da51d29c1de21f6ad7fbc_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.51.05.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da51c53dc981582214884_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.51.17.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da51bb704b152be0d35de_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.51.31.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da51bc45a2357b32b299d_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.51.52.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da519e2458eaee111d009_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.52.13.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da5190299810b10de9762_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.52.32.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da5183a59c0b03545df45_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.52.48.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da5184ec3f7d7d01afb7b_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.52.59.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da360ebff3f75be63174d_Captura de Pantalla 2025-12-25 a la(s) 17.48.38.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da51db560e283ed11dede_Captura de Pantalla 2025-12-25 a la(s) 17.50.51.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da36e812baa5c05fbe984_te a.webp",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da52190cceb00e6872ca6_Captura de Pantalla 2025-12-25 a la(s) 17.50.14.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da520d1fd81a57b2c082b_Captura de Pantalla 2025-12-25 a la(s) 17.50.27.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da52026563921e1d84f4c_Captura de Pantalla 2025-12-25 a la(s) 17.50.42.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da51d29c1de21f6ad7fbc_Captura de Pantalla 2025-12-25 a la(s) 17.51.05.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da51c53dc981582214884_Captura de Pantalla 2025-12-25 a la(s) 17.51.17.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da51bb704b152be0d35de_Captura de Pantalla 2025-12-25 a la(s) 17.51.31.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da51bc45a2357b32b299d_Captura de Pantalla 2025-12-25 a la(s) 17.51.52.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da519e2458eaee111d009_Captura de Pantalla 2025-12-25 a la(s) 17.52.13.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da5190299810b10de9762_Captura de Pantalla 2025-12-25 a la(s) 17.52.32.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da5183a59c0b03545df45_Captura de Pantalla 2025-12-25 a la(s) 17.52.48.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da5184ec3f7d7d01afb7b_Captura de Pantalla 2025-12-25 a la(s) 17.52.59.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "tu-esquina",
+      "title": "Tu Esquina",
+      "route": "/directorio/tu-esquina",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/tu-esquina.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daaecebc6de25b4e418cd_esquina.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daaf26d20630a10b7853f_Esquina%20a.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daaecebc6de25b4e418cd_esquina.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daaf26d20630a10b7853f_Esquina a.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "directorio",
+      "slug": "umbral",
+      "title": "Umbral ",
+      "route": "/directorio/umbral",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/umbral.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d962e8e60c2b2850153d1_Tienda.webp",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d978591a13a0bfed17da7_IMG_3606.JPG",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d96b50943b27cddf6b22b_envasados.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d96b18b91f709bae2efbd_IMG_4332.JPG",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d964602c7d43c3652eb93_Cafe%CC%81!.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d962e8e60c2b2850153d1_Tienda.webp",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d978591a13a0bfed17da7_IMG_3606.JPG",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d96b50943b27cddf6b22b_envasados.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d96b18b91f709bae2efbd_IMG_4332.JPG",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d964602c7d43c3652eb93_Café!.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquert-i-love-sushi-una-apuesta-familiar-que-se-expande",
+      "title": "Anfitriones Bisquert: I Love Sushi, una apuesta familiar que se expande",
+      "route": "/post/anfitriones-bisquert-i-love-sushi-una-apuesta-familiar-que-se-expande",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquert-i-love-sushi-una-apuesta-familiar-que-se-expande.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6977632d89fe93d23616027f_I%20Love%20Sushi.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6977632d89fe93d23616027f_I Love Sushi.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=6FW14ct66JQ",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea",
+      "title": "Anfitriones Bisquertt: Barroco, carnes y mariscos con escenografía mediterránea",
+      "route": "/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69655c2c680adcf24a01fa3f_Barroco.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69655c2c680adcf24a01fa3f_Barroco.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=lSFJmePyY9E",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-casaquinta-en-el-nombre-de-hernan-quintan",
+      "title": "Anfitriones Bisquertt: CasaQuinta, en el nombre de Hernán Quintan",
+      "route": "/post/anfitriones-bisquertt-casaquinta-en-el-nombre-de-hernan-quintan",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-casaquinta-en-el-nombre-de-hernan-quintan.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6997749abba33b0883cb45b4_CASAQUINTA.jpeg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6997749abba33b0883cb45b4_CASAQUINTA.jpeg"
+      ],
+      "video": "https://www.youtube.com/watch?v=2oRFMJ0zCuE",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-dom-black-sabor-con-influencia-brasilena",
+      "title": "Anfitriones Bisquertt: Dom Black, sabor con influencia brasileña",
+      "route": "/post/anfitriones-bisquertt-dom-black-sabor-con-influencia-brasilena",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-dom-black-sabor-con-influencia-brasilena.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/698e32478e6091a79610371a_Dom%20Black.jpeg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/698e32478e6091a79610371a_Dom Black.jpeg"
+      ],
+      "video": "https://www.youtube.com/watch?v=RbMbtQTxNd0",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos",
+      "title": "Anfitriones Bisquertt: Hey! Coffee Restobar, clásico con toques modernos",
+      "route": "/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-hey-coffee-restobar-clasico-con-toques-modernos.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/696a5f9900411f86fb53ced0_Hey.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/696a5f9900411f86fb53ced0_Hey.png"
+      ],
+      "video": "https://www.youtube.com/watch?v=iRPKA-l7hLM",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-instituto-baluarte-cicap-y-clima-baluarte-profesionalizacion-y-tecnologia-de-vanguardia-para-rengo",
+      "title": "Anfitriones Bisquertt: Instituto Baluarte Cicap y Clima Baluarte ¡Profesionalización y tecnología de vanguardia para Rengo!",
+      "route": "/post/anfitriones-bisquertt-instituto-baluarte-cicap-y-clima-baluarte-profesionalizacion-y-tecnologia-de-vanguardia-para-rengo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-instituto-baluarte-cicap-y-clima-baluarte-profesionalizacion-y-tecnologia-de-vanguardia-para-rengo.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69737b8882fd72c2ca4504c9_IMG_6542.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69737b8882fd72c2ca4504c9_IMG_6542.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=64fIH0EEDDs",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-k-calafate-una-ola-coreana",
+      "title": "Anfitriones Bisquertt: K-Calafate, una ola coreana",
+      "route": "/post/anfitriones-bisquertt-k-calafate-una-ola-coreana",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-k-calafate-una-ola-coreana.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6966c1cf52e4f5ed625d5c4c_K-Calafate.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6966c1cf52e4f5ed625d5c4c_K-Calafate.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=0GkQISiJ94Q",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-la-mazza-estilo-romano",
+      "title": "Anfitriones Bisquertt: La Mazza ¡Estilo romano!",
+      "route": "/post/anfitriones-bisquertt-la-mazza-estilo-romano",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-mazza-estilo-romano.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695ebd16b497c71f05f4b0f2_La%20Mazza.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695ebd16b497c71f05f4b0f2_La Mazza.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=0SHnnCekcAU",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-la-republica-a-todo-paladar",
+      "title": "Anfitriones Bisquertt: La República ¡A todo paladar!",
+      "route": "/post/anfitriones-bisquertt-la-republica-a-todo-paladar",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-republica-a-todo-paladar.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/699f99e52eb25e0c10239c06_REPU%CC%81BLICA.jpeg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/699f99e52eb25e0c10239c06_REPÚBLICA.jpeg"
+      ],
+      "video": "https://www.youtube.com/watch?v=vsb3Mcot8F8",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-mandala-verde-cafe-una-historia-personal-y-saludable",
+      "title": "Anfitriones Bisquertt: Mandala Verde Café, una historia personal y saludable",
+      "route": "/post/anfitriones-bisquertt-mandala-verde-cafe-una-historia-personal-y-saludable",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-mandala-verde-cafe-una-historia-personal-y-saludable.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6961718cce6156d01db120a1_MANDALA%20VERDE.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6961718cce6156d01db120a1_MANDALA VERDE.png"
+      ],
+      "video": "https://www.youtube.com/watch?v=nAiiRhdisrM",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-pescaderia-mares-del-sur-lo-mas-importante-es-mantener-la-frescura",
+      "title": "Anfitriones Bisquertt: Pescadería Mares del Sur ¡Lo más importante es mantener la frescura!",
+      "route": "/post/anfitriones-bisquertt-pescaderia-mares-del-sur-lo-mas-importante-es-mantener-la-frescura",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-pescaderia-mares-del-sur-lo-mas-importante-es-mantener-la-frescura.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69754bc136dc3f8101b21f07_Mares%20del%20Sur.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69754bc136dc3f8101b21f07_Mares del Sur.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=o_hfFMuf_ZI",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad",
+      "title": "Anfitriones Bisquertt: Smash Burguer, hamburguesería de especialidad",
+      "route": "/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/699347752852b607ffbd5f2b_Smash%20Burger.jpeg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/699347752852b607ffbd5f2b_Smash Burger.jpeg"
+      ],
+      "video": "https://www.youtube.com/watch?v=D1BWK7fP6z0",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza",
+      "title": "Anfitriones Bisquertt: Sonríe Té, un mundo en torno a una taza",
+      "route": "/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6983928db1fd38a6fb6ca723_Sonri%CC%81ete.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6983928db1fd38a6fb6ca723_Sonríete.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=UcXiacrHHx8",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-umbral-eco-cafe-una-leccion-de-alimentacion-saludable",
+      "title": "Anfitriones Bisquertt: Umbral Eco Café, una lección de alimentación saludable",
+      "route": "/post/anfitriones-bisquertt-umbral-eco-cafe-una-leccion-de-alimentacion-saludable",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-umbral-eco-cafe-una-leccion-de-alimentacion-saludable.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/696e32afca5ce1adaa2e0ed0_Saldan%CC%83a.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/696e32afca5ce1adaa2e0ed0_Saldaña.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=HC0AGuvoXxQ",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "anfitriones-bisquertt-por-que-en-el-paso-de-la-muerte-el-cliente-no-tiene-la-razon",
+      "title": "Anfitriones Bisquertt: ¿Por qué en El Paso de la Muerte el cliente no tiene la razón?",
+      "route": "/post/anfitriones-bisquertt-por-que-en-el-paso-de-la-muerte-el-cliente-no-tiene-la-razon",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-por-que-en-el-paso-de-la-muerte-el-cliente-no-tiene-la-razon.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695fdd09dd329c717a9a4bb8_El%20Paso%20de%20la%20Muerte.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695fdd09dd329c717a9a4bb8_El Paso de la Muerte.jpg"
+      ],
+      "video": "https://www.youtube.com/watch?v=Q-4ojJG4zXo",
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "historias",
+      "slug": "nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo-80e1e",
+      "title": "Nace Barrio Bisquertt: Una experiencia excepcional en Rengo",
+      "route": "/post/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo-80e1e",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo-80e1e.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6950566b01ce2244c1d04d98_69503cd7cc042324a9610950_Barrio%2520ae%25CC%2581reo.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6950566b01ce2244c1d04d98_69503cd7cc042324a9610950_Barrio aéreo.png"
+      ],
+      "video": "https://www.youtube.com/watch?v=7sTgCUDREEo",
+      "canonicalGroup": "nace-barrio-bisquertt",
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "barrio-bisquertt-tendra-su-primera-feria-de-artes-y-oficios",
+      "title": "Barrio Bisquertt tendrá su Primera Feria de Artes y Oficios",
+      "route": "/noticias/barrio-bisquertt-tendra-su-primera-feria-de-artes-y-oficios",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/barrio-bisquertt-tendra-su-primera-feria-de-artes-y-oficios.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6970fe7fd64c027bc98a7b5f_IMG_6531%202.JPG",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6970f9467babace86cafaf1d_Afiche.jpeg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6970fe7fd64c027bc98a7b5f_IMG_6531 2.JPG",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6970f9467babace86cafaf1d_Afiche.jpeg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "capacitacion-para-un-mejor-servicio",
+      "title": "Capacitación para un mejor servicio",
+      "route": "/noticias/capacitacion-para-un-mejor-servicio",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/capacitacion-para-un-mejor-servicio.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace%20d.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d77f9d671fe91fd08caee_piace d.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "emocionante-ciclo-atardeceres-musicales",
+      "title": "Emocionante ciclo Atardeceres Musicales",
+      "route": "/noticias/emocionante-ciclo-atardeceres-musicales",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/emocionante-ciclo-atardeceres-musicales.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503f8d4dbe8b6a8180748a_Coro%20polifo%CC%81nico%20(2).jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69504097314b11e3dd7e1357_Harper%20Du%CC%81o%20en%20Atardeceres%20Musicales%20-Foto%20%40ivanphotovideo.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503fc87a7235efd16d3643_De%20la%20gueya.JPG",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695040929a7c3a31834e2e1c_Paola%20Josefina%20Colectivo%20en%20Atardeceres%20Musicales%20-Foto%20%40ivanphotovideo.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695040adf7aa192e33e07abf_Acordeo%CC%81n.png",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695041475cd356960751e75f_Zapana.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503f8d4dbe8b6a8180748a_Coro polifónico (2).jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69504097314b11e3dd7e1357_Harper Dúo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503fc87a7235efd16d3643_De la gueya.JPG",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695040929a7c3a31834e2e1c_Paola Josefina Colectivo en Atardeceres Musicales -Foto @ivanphotovideo.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695040adf7aa192e33e07abf_Acordeón.png",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695041475cd356960751e75f_Zapana.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo",
+      "title": "Nace Barrio Bisquertt: Una experiencia excepcional en Rengo",
+      "route": "/noticias/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/nace-barrio-bisquertt-una-experiencia-excepcional-en-rengo.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503cd7cc042324a9610950_Barrio%20ae%CC%81reo.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503cd7cc042324a9610950_Barrio aéreo.png"
+      ],
+      "video": "https://www.youtube.com/watch?v=UBflvfq-8UE",
+      "canonicalGroup": "nace-barrio-bisquertt",
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "una-apuesta-a-futuro-economia-circular-y-servicios-sustentables",
+      "title": "Una apuesta a futuro: economía circular y servicios sustentables",
+      "route": "/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503a6888e8d33a1ec91621_Eco%20C.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69503998cd5aeadf11263608_EcoB%20b.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695039c7a037c5271b5e4f59_ExpoB.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503a6888e8d33a1ec91621_Eco C.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503998cd5aeadf11263608_EcoB b.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695039c7a037c5271b5e4f59_ExpoB.png"
+      ],
+      "video": null,
+      "canonicalGroup": "noticia-economia-circular",
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "una-apuesta-a-futuro-economia-circular-y-servicios-sustentables-2",
+      "title": "Una apuesta a futuro: economía circular y servicios sustentables",
+      "route": "/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables-2",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/una-apuesta-a-futuro-economia-circular-y-servicios-sustentables-2.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6972a152201067cb3a5ce320_economi%CC%81a%20circular.JPG"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6972a152201067cb3a5ce320_economía circular.JPG"
+      ],
+      "video": null,
+      "canonicalGroup": "noticia-economia-circular",
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "noticias",
+      "slug": "mas-seguridad-e-iluminacion",
+      "title": "¡Más seguridad e iluminación!",
+      "route": "/noticias/mas-seguridad-e-iluminacion",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/noticias/mas-seguridad-e-iluminacion.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695052caa016a6340062415b_Luminarias.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695052caa016a6340062415b_Luminarias.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "eventos",
+      "slug": "luces-en-avenida-bisquertt",
+      "title": "Luces de Avenida Bisquertt",
+      "route": "/eventos/luces-en-avenida-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/luces-en-avenida-bisquertt.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694ee9000bde1c5fce494fe5_Luces.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694ee9000bde1c5fce494fe5_Luces.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "warning",
+      "validationNotes": [
+        "CSV draft=true but HTML is public in mirror"
+      ]
+    },
+    {
+      "collection": "eventos",
+      "slug": "nuevo-ciclo-de-cursos",
+      "title": "Nuevo ciclo de cursos",
+      "route": "/eventos/nuevo-ciclo-de-cursos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/nuevo-ciclo-de-cursos.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694ef39832bd5c5ba74717fb_manicure.webp"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694ef39832bd5c5ba74717fb_manicure.webp"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "eventos",
+      "slug": "previa-y-ano-nuevo",
+      "title": "Previa y el Año Nuevo en el Barrio",
+      "route": "/eventos/previa-y-ano-nuevo",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/previa-y-ano-nuevo.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694edd7f275434728f4a55e1_An%CC%83o%20Nuevo.JPG"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694edd7f275434728f4a55e1_Año Nuevo.JPG"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "eventos",
+      "slug": "revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt",
+      "title": "Revisa la programación de la primera Feria de Artes y Oficios del Barrio Bisquertt",
+      "route": "/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/revisa-la-programacion-de-la-primera-feria-de-artes-y-oficios-del-barrio-bisquertt.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/697a4798b6a477b3a67a0ce5_Guitarras%20en%20Bisquertt.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/697a4798b6a477b3a67a0ce5_Guitarras en Bisquertt.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "eventos",
+      "slug": "verano-sobre-rieles",
+      "title": "Verano sobre rieles",
+      "route": "/eventos/verano-sobre-rieles",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/verano-sobre-rieles.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694efbdb03421834fdc4f6f8_tren-electrico-ohiggins.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694efbdb03421834fdc4f6f8_tren-electrico-ohiggins.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "patrimonio",
+      "slug": "coches-y-victoria-el-transporte-en-barrio-bisquertt",
+      "title": "Coches y victorias, el transporte en Barrio Bisquertt",
+      "route": "/patrimonio/coches-y-victoria-el-transporte-en-barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio/coches-y-victoria-el-transporte-en-barrio-bisquertt.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Patrimonios - 6925e43555b58e030615dd1b.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695159c162d97f2d37d323cc_Rengo%20B.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695158fe1710855cc05f33fe_Victoria.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695159d6716fe1695c798d94_Rengo%20G.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69515ad1748d65f952448bff_Cochero.png"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695159c162d97f2d37d323cc_Rengo B.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695158fe1710855cc05f33fe_Victoria.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695159d6716fe1695c798d94_Rengo G.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69515ad1748d65f952448bff_Cochero.png"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "patrimonio",
+      "slug": "palmeras-y-encinos-con-historia",
+      "title": "Palmeras y encinos con historia",
+      "route": "/patrimonio/palmeras-y-encinos-con-historia",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/patrimonio/palmeras-y-encinos-con-historia.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Patrimonios - 6925e43555b58e030615dd1b.csv",
+      "expectedImages": [
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/695151dd9c9a944d5abc1de8_Rengo%20F%201917.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6951521149171afc86bf3328_Rengo%20E.jpg",
+        "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69515215742e68f5d3240825_Rengo%20C.jpg"
+      ],
+      "resolvedImages": [
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/695151dd9c9a944d5abc1de8_Rengo F 1917.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6951521149171afc86bf3328_Rengo E.jpg",
+        "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69515215742e68f5d3240825_Rengo C.jpg"
+      ],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "categorias",
+      "slug": "barrio-bisquertt",
+      "title": "Barrio Bisquertt",
+      "route": "/categories/barrio-bisquertt",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/barrio-bisquertt.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+      "expectedImages": [],
+      "resolvedImages": [],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "categorias",
+      "slug": "cultura",
+      "title": "Cultura",
+      "route": "/categories/cultura",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cultura.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+      "expectedImages": [],
+      "resolvedImages": [],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "categorias",
+      "slug": "cursos",
+      "title": "Cursos",
+      "route": "/categories/cursos",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/cursos.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+      "expectedImages": [],
+      "resolvedImages": [],
+      "video": null,
+      "canonicalGroup": null,
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "categorias",
+      "slug": "sustentabilidad",
+      "title": "Sustentabilidad",
+      "route": "/categories/sustentabilidad",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/sustentabilidad.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+      "expectedImages": [],
+      "resolvedImages": [],
+      "video": null,
+      "canonicalGroup": "categoria-sustentabilidad",
+      "validationStatus": "valid",
+      "validationNotes": []
+    },
+    {
+      "collection": "categorias",
+      "slug": "sustentabilidad-2",
+      "title": "Sustentabilidad",
+      "route": "/categories/sustentabilidad-2",
+      "sourceHtml": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/sustentabilidad-2.html",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+      "expectedImages": [],
+      "resolvedImages": [],
+      "video": null,
+      "canonicalGroup": "categoria-sustentabilidad",
+      "validationStatus": "valid",
+      "validationNotes": []
+    }
+  ],
+  "skippedItems": [
+    {
+      "collection": "noticias",
+      "slug": "through-the-mist",
+      "title": "Through the Mist",
+      "reason": "Decision aprobada: CSV draft y sin HTML publico en mirror",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Noticias - 69172c960e54b69c53ea0429.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "anfitriones-bisquertt",
+      "title": "Anfitriones Bisquertt",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "fiesta",
+      "title": "Fiesta",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "nature",
+      "title": "Nature",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "photography",
+      "title": "Photography",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "relaxation",
+      "title": "Relaxation",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "travel",
+      "title": "Travel",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "categorias",
+      "slug": "vacation",
+      "title": "Vacation",
+      "reason": "Decision aprobada: categoria solo CSV/demo sin HTML publico",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv"
+    },
+    {
+      "collection": "authors",
+      "slug": "mat-vogels",
+      "title": "Mat Vogels",
+      "reason": "Decision aprobada: autores demo no se publican",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Authors - 69172c960e54b69c53ea0427.csv"
+    },
+    {
+      "collection": "authors",
+      "slug": "will-wong",
+      "title": "William Wong",
+      "reason": "Decision aprobada: autores demo no se publican",
+      "sourceCsv": "data/contents/Barrio Bisquertt - Authors - 69172c960e54b69c53ea0427.csv"
+    }
+  ],
+  "totals": {
+    "routes": 62,
+    "contentItems": 55,
+    "skippedItems": 10,
+    "assets": 473,
+    "resolvedAssets": 473,
+    "unresolvedAssets": 0,
+    "externalAssets": 0
+  }
+}

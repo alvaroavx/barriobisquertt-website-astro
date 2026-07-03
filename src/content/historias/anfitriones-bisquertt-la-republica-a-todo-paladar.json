@@ -1,0 +1,32 @@
+{
+  "id": "699f9acc48de72623699c76c",
+  "slug": "anfitriones-bisquertt-la-republica-a-todo-paladar",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "699f9acc48de72623699c76c",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Feb 26 2026 00:58:52 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Feb 26 2026 00:59:02 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-la-republica-a-todo-paladar",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-la-republica-a-todo-paladar.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: La República ¡A todo paladar!",
+  "excerpt": "Buena comida, además de una amplia carta de cervezas internacionales y artesanales dan el sello a este animado punto de encuentro en Rengo.",
+  "bodyHtml": "<p>Nació en el 2021 como un delivery en medio de la pandemia. Al tiempo, La República abrió sus puertas al público como cervecería de especialidad y restaurante. Una fórmula, creada por Lucy Barrera y Pablo Jorquera -ambos con gran experiencia comercial- que inmediatamente llamó la atención por atraer a un segmento que no tenía un espacio de reunión en la comuna.</p><p>\"El público promedio es de 30 a 40 años. Los fines de semana son más familiares. Un ambiente donde puedes compartir con los amigos. El karaoke, los viernes y sábado, es un éxito”, detalla Pablo Jorquera. </p><p>Un punto de entretención y buena comida acompañada de una selección de cervezas internacionales y otras elaboradas en la zona en pequeñas producciones, muchas de ellas premiadas en el mundo.</p><p>Entre los platos estrella para compartir está la tabla Poderes del Estado, con lomo saltado, pollo al cebollín, frutos secos, aceitunas, queso, papas fritas y tostones. También son muy solicitadas las papas fritas acompañadas de queso, camarones, además de una opción veggie con champiñones y sour cream. En la carta suman hamburguesas saludables y sandwiches veganos. </p><p>Para el futuro, Pablo Jorquera &nbsp;imagina el barrio como una parada obligatoria para quienen transitan de norte a sur por la carretera. “Un lugar para diferentes públicos ¡A todo paladar!”, concluye.\t</p><p>LA REPÚBLICA<br>Avenida Bisquertt 365<br>Teléfono: +56921824450<br>Correo: larepublicacervecería2025@gmail.com<br>Instagram: @larepublicacervecería</p><p>‍</p>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/699f99e52eb25e0c10239c06_REPU%CC%81BLICA.jpeg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/699f99e52eb25e0c10239c06_REPÚBLICA.jpeg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/699f99e52eb25e0c10239c06_REPÚBLICA.jpeg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=vsb3Mcot8F8",
+  "validationStatus": "valid"
+}

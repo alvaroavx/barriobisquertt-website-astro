@@ -1,0 +1,71 @@
+<script is:inline>
+  const header = document.querySelector('[data-site-header]');
+  const toggle = header?.querySelector('.menu-toggle');
+  const nav = header?.querySelector('.site-nav');
+
+  function closeMenu() {
+    toggle?.setAttribute('aria-expanded', 'false');
+    nav?.classList.remove('is-open');
+  }
+
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    nav?.classList.toggle('is-open', !expanded);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      document.querySelector('[data-lightbox].is-open')?.classList.remove('is-open');
+    }
+  });
+
+  nav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.querySelectorAll('[data-contact-form]').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (form.getAttribute('data-enabled') !== 'true') {
+        event.preventDefault();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-gallery]').forEach((gallery) => {
+    const lightbox = gallery.querySelector('[data-lightbox]');
+    const lightboxImage = gallery.querySelector('[data-lightbox-image]');
+    const caption = gallery.querySelector('[data-lightbox-caption]');
+    const items = [...gallery.querySelectorAll('[data-lightbox-open]')];
+    let currentIndex = 0;
+
+    function show(index) {
+      const item = items[index];
+      if (!item || !lightboxImage) return;
+      currentIndex = index;
+      lightboxImage.src = item.getAttribute('data-full-src');
+      lightboxImage.alt = item.getAttribute('data-alt') || '';
+      if (caption) caption.textContent = item.getAttribute('data-alt') || '';
+      lightbox?.classList.add('is-open');
+      lightbox?.querySelector('[data-lightbox-close]')?.focus();
+    }
+
+    items.forEach((button, index) => {
+      button.addEventListener('click', () => show(index));
+    });
+
+    lightbox?.querySelector('[data-lightbox-close]')?.addEventListener('click', () => {
+      lightbox.classList.remove('is-open');
+    });
+
+    lightbox?.querySelector('[data-lightbox-prev]')?.addEventListener('click', () => {
+      show((currentIndex - 1 + items.length) % items.length);
+    });
+
+    lightbox?.querySelector('[data-lightbox-next]')?.addEventListener('click', () => {
+      show((currentIndex + 1) % items.length);
+    });
+  });
+</script>
+

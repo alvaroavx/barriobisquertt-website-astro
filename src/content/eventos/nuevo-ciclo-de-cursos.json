@@ -1,0 +1,33 @@
+{
+  "id": "692497301178eb4b3db47db5",
+  "slug": "nuevo-ciclo-de-cursos",
+  "collectionId": "69174cede1985cb20a757f61",
+  "itemId": "692497301178eb4b3db47db5",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 17:34:40 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Dec 26 2025 20:44:17 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 23:10:42 GMT+0000 (Coordinated Universal Time)",
+  "route": "/eventos/nuevo-ciclo-de-cursos",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/nuevo-ciclo-de-cursos.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Nuevo ciclo de cursos",
+  "startsAt": null,
+  "endsAt": null,
+  "location": "Barrio bisquertt",
+  "descriptionHtml": "<h1>Nuevo ciclo de cursos</h1><p>‍</p><p>Enero es una fecha importante para los estudiantes. Ademásde celebrarse el Día Internacional de la Educación (el 24 del mes), también sonsemanas de definiciones para aquellos que rindieron la PAES e inician suproceso de matrículas en distintas instituciones.</p><p>En el Barrio Bisquertt también se activan las aulas. En <strong>InstitutoBaluarte Cicap </strong>se realizarán diversos talleres en temas de estética, cadauno en jornadas de un día completo.</p><p>&nbsp;</p><p><strong>Full manicure</strong>: 11 enero y 25 de enero.</p><p><strong>Pedicure spa</strong>: 10 enero y 31 enero.</p><p><strong>Depilación</strong>: 16 enero y 30 de enero. </p><p><strong>Manicure 3 en 1</strong>: 12 enero y 26 de enero. </p><p><strong>Manicure en softgel:</strong> 15 de enero y 29 de enero.</p><p>&nbsp;</p><p>Para más detalles precios, comunícate con InstitutoBaluarte. Sus coordenadas están en nuestra sección Directorio de la página web.</p><h2>‍</h2>",
+  "rsvpLink": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694ef39832bd5c5ba74717fb_manicure.webp",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694ef39832bd5c5ba74717fb_manicure.webp",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694ef39832bd5c5ba74717fb_manicure.webp",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

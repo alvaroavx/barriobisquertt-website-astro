@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "start": "astro dev --host 0.0.0.0",
+    "migrate:content": "node scripts/migrate-content.mjs",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0"
   },

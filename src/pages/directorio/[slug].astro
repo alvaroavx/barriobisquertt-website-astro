@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Gallery from '../../components/Gallery.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { imageSrc, isExternalUrl } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('directorio');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const mainImage = imageSrc(data.mainImage);
+---
+
+<BaseLayout title={data.name} description={data.description} image={mainImage}>
+  <main>
+    <header class="article-header container container--article">
+      <p class="eyebrow">Directorio</p>
+      <h1>{data.name}</h1>
+      {data.description && <p>{data.description}</p>}
+      <div class="detail-actions">
+        {data.address && <span>{data.address}</span>}
+        {data.phone && <a href={`tel:${data.phone.replace(/\s+/g, '')}`}>{data.phone}</a>}
+        {data.link && (
+          <a href={data.link} target={isExternalUrl(data.link) ? '_blank' : undefined} rel={isExternalUrl(data.link) ? 'noopener noreferrer' : undefined}>
+            Ver enlace
+          </a>
+        )}
+      </div>
+    </header>
+    {mainImage && (
+      <figure class="article-media">
+        <img src={mainImage} alt={data.name} />
+      </figure>
+    )}
+    <Gallery items={data.gallery} title={data.name} />
+    <VideoEmbed url={data.video} title={data.name} />
+  </main>
+</BaseLayout>
+

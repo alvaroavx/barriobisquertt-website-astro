@@ -1,0 +1,33 @@
+{
+  "id": "692472fd135cb7d1da7ebfba",
+  "slug": "verano-sobre-rieles",
+  "collectionId": "69174cede1985cb20a757f61",
+  "itemId": "692472fd135cb7d1da7ebfba",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 15:00:13 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Dec 26 2025 21:24:30 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 23:10:42 GMT+0000 (Coordinated Universal Time)",
+  "route": "/eventos/verano-sobre-rieles",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/verano-sobre-rieles.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Verano sobre rieles",
+  "startsAt": null,
+  "endsAt": null,
+  "location": "Barrio Bisquertt",
+  "descriptionHtml": "<h1>Verano sobre rieles</h1><p>‍</p><p>Detalles sobre los atractivos turísticos que existen en los alrededores de Rengo, además de activaciones especiales, se empezarán a ver y vivir en nuestra querida Estación de Trenes ubicada en el inicio de Avenida Bisquertt. </p><p>Así lo anunciaron Imagen de Chile y EFE Central en un plan de colaboración que permitirá ampliar la presencia de marca país en uno delos medios de transporte más relevantes de la zona central, con contenido en estaciones y en los propios trenes.</p><p>A través de esta alianza, ambas instituciones trabajarán en iniciativas que incluyen la presencia de Marca Chile en estaciones y material informativo dentro de los trenes; campañas que promuevan destinos turísticos nacionales y acciones conjuntas orientadas a fortalecer la conciencia ambiental y el uso de transporte público limpio.</p><p>Así que este verano, conéctate con uno de los medios de transportes más significativos de nuestra ciudad. El renguino es su mejor embajador.</p><h2>‍</h2>",
+  "rsvpLink": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694efbdb03421834fdc4f6f8_tren-electrico-ohiggins.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694efbdb03421834fdc4f6f8_tren-electrico-ohiggins.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694efbdb03421834fdc4f6f8_tren-electrico-ohiggins.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "69655b60a2ccc72f49a6b355",
+  "slug": "anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "69655b60a2ccc72f49a6b355",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Jan 12 2026 20:36:48 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Mon Jan 12 2026 20:45:06 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-barroco-carnes-y-mariscos-con-escenografia-mediterranea.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: Barroco, carnes y mariscos con escenografía mediterránea",
+  "excerpt": "Un restobar cool para tardes y noches con amigos.",
+  "bodyHtml": "<p>En una de las fachadas continuas más representativas de la Avenida Bisquertt está Barroco Restobar. Con su privilegiada terraza bajo la sombra de los encinos comenzó su historia en el 2023 junto al chef Vicente Honorato. En el 2025, se sumó Gonzalo Reginato como socio.</p><p>En ese momento, además, dieron un giro a un estilo más de entretención, “un restobar ideal para pasar la tarde con amigos, mientras escuchas a un dj o música en vivo”, sostiene Gonzalo.</p><p>Los socios la estética del establecimiento y apostaron por una influencia mediterránea para los cielos, pasillos y barra. Ahora, cuando la coctelería vive tiempos de gloria, sostienen que el favorito de la temporada es el Espresso Martini, aunque siempre mantienen firme su carta de tragos clásicos.</p><p>La carta de Barroco rinde tributo a los productos del mar, con cuidadas preparaciones de locos, pulpo y machas. También se destaca por sus carnes a la parrilla, pizzas elaboradas con masas en fermentación, al igual que sus gnocchi de zapallo camote. Todo frente a una renovada carta de vinos.</p><p><strong>BARROCO RESTOBAR </strong><br>Av. Bisquertt 319<br>Teléfono: +569 9579 2321<br>Correo: greginato@barroco.cl<br>Instagram @barroco_restobar</p><p>‍</p>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69655c2c680adcf24a01fa3f_Barroco.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/69655c2c680adcf24a01fa3f_Barroco.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69655c2c680adcf24a01fa3f_Barroco.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=lSFJmePyY9E",
+  "validationStatus": "valid"
+}

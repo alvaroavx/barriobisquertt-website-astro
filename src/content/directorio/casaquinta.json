@@ -1,0 +1,69 @@
+{
+  "id": "694d9fcd03421834fda28001",
+  "slug": "casaquinta",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d9fcd03421834fda28001",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 20:34:21 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Feb 19 2026 20:41:04 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/casaquinta",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/casaquinta.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "CasaQuinta",
+  "address": "Pasaje 1 150-C. Población Fábrica de Fósforos",
+  "description": "Juan Carlos Morales es un popular investigador de Rengo que armó en su casa, a pasos de Avenida Bisquertt, un verdadero enclave patrimonial para promover los hitos y personajes de la ciudad. Además de artesanía propia, el anfitrión tiene una colección de artículos de época para que los visitantes conozcan y levantó un escenario para actividades que van de música y teatro a catas de vino.",
+  "phone": "+569 6371 6578",
+  "link": "https://www.instagram.com/casaquinta8.8/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9e5282594ee0e9c95c10_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.27.14.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9e5282594ee0e9c95c10_Captura de Pantalla 2025-12-25 a la(s) 17.27.14.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9e5282594ee0e9c95c10_Captura de Pantalla 2025-12-25 a la(s) 17.27.14.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9e5b25163b15c2790eb7_casaquinta%20a.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9e5b25163b15c2790eb7_casaquinta a.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9e5b25163b15c2790eb7_casaquinta a.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbb5f668d6aea0c1839_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.24.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9fbb5f668d6aea0c1839_Captura de Pantalla 2025-12-25 a la(s) 17.32.24.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbb5f668d6aea0c1839_Captura de Pantalla 2025-12-25 a la(s) 17.32.24.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbbbeb4885c82525a13_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.34.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9fbbbeb4885c82525a13_Captura de Pantalla 2025-12-25 a la(s) 17.32.34.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbbbeb4885c82525a13_Captura de Pantalla 2025-12-25 a la(s) 17.32.34.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fbb083874d3e2be8910_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.32.46.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9fbb083874d3e2be8910_Captura de Pantalla 2025-12-25 a la(s) 17.32.46.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fbb083874d3e2be8910_Captura de Pantalla 2025-12-25 a la(s) 17.32.46.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fc5cf638566884aeba9_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.33.01.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9fc5cf638566884aeba9_Captura de Pantalla 2025-12-25 a la(s) 17.33.01.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fc5cf638566884aeba9_Captura de Pantalla 2025-12-25 a la(s) 17.33.01.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d9fc59212addaeed78332_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.33.15.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d9fc59212addaeed78332_Captura de Pantalla 2025-12-25 a la(s) 17.33.15.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d9fc59212addaeed78332_Captura de Pantalla 2025-12-25 a la(s) 17.33.15.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

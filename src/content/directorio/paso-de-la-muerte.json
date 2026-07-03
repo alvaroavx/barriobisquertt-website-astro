@@ -1,0 +1,32 @@
+{
+  "id": "6924aed82eda09a4343f6301",
+  "slug": "paso-de-la-muerte",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "6924aed82eda09a4343f6301",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 19:15:36 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 15:20:48 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/paso-de-la-muerte",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/paso-de-la-muerte.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Minimarket Paso de la Muerte",
+  "address": "Avenida Bisquertt 523.",
+  "description": "Esquina estratégica: en Bisquertt con ex Misiones de Rengo y a pocos pasos de la estación de tren. Este clásico local de Rengo ofrece una serie de productos, desde snacks a bebidas, a helados, bebidas y alcohol.",
+  "phone": "+569 5117 2319",
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d53a1e240105534810fbf_Paso%20de%20la%20Muerte.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d53a1e240105534810fbf_Paso de la Muerte.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d53a1e240105534810fbf_Paso de la Muerte.png",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "valid"
+}

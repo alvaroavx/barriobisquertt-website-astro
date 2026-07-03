@@ -1,0 +1,99 @@
+{
+  "id": "694d82f39212addaeed574d5",
+  "slug": "mandala-verde-cafe",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d82f39212addaeed574d5",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 18:31:15 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Fri Dec 26 2025 13:21:18 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/mandala-verde-cafe",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/mandala-verde-cafe.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Mandala Verde Café",
+  "address": "Colo Colo 138",
+  "description": "Más que una cafetería con desayunos, almuerzos, sándwiches y completos, este local se abre a la comunidad con talleres y como espacio de co-work. Actividades familiares entre delicias de la casa y también eventos especiales -coctel, coffee break- para los que preparan atractivas bandejas para recibir a los invitados. Para los días de calor, ¡sus helados artesanales!",
+  "phone": "+569 582 26610",
+  "link": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8207ebb8c25cb5069bd5_Mandala%20D.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8207ebb8c25cb5069bd5_Mandala D.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8207ebb8c25cb5069bd5_Mandala D.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d821287d085066ad95334_Mandala%20A.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d821287d085066ad95334_Mandala A.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d821287d085066ad95334_Mandala A.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d821e083874d3e2bbd0a4_Mandala%20E.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d821e083874d3e2bbd0a4_Mandala E.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d821e083874d3e2bbd0a4_Mandala E.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8222a03268968c0e738e_Mandala%20f.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8222a03268968c0e738e_Mandala f.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8222a03268968c0e738e_Mandala f.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d823027d768c44c9d17a9_Mandala%20M.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d823027d768c44c9d17a9_Mandala M.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d823027d768c44c9d17a9_Mandala M.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8234dc348b97cd2f6d86_Mandala%20N.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8234dc348b97cd2f6d86_Mandala N.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8234dc348b97cd2f6d86_Mandala N.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8238698377a317895b88_Mandala%20O.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8238698377a317895b88_Mandala O.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8238698377a317895b88_Mandala O.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d823deb4cf69c48309f7e_Mandala%20P.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d823deb4cf69c48309f7e_Mandala P.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d823deb4cf69c48309f7e_Mandala P.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8249d03384b4fa6d9f0e_Mandala%20L.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8249d03384b4fa6d9f0e_Mandala L.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8249d03384b4fa6d9f0e_Mandala L.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d825226563921e1d5aa9c_Mandala%20I.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d825226563921e1d5aa9c_Mandala I.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d825226563921e1d5aa9c_Mandala I.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8257368e49c005d113c1_Mandala%20H.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8257368e49c005d113c1_Mandala H.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8257368e49c005d113c1_Mandala H.jpg",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d825be2e43f7ad87bca5b_Mandala%20g.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d825be2e43f7ad87bca5b_Mandala g.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d825be2e43f7ad87bca5b_Mandala g.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

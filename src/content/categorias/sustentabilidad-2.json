@@ -1,0 +1,27 @@
+{
+  "id": "6972a0cda31fbef545076dba",
+  "slug": "sustentabilidad-2",
+  "collectionId": "69172c960e54b69c53ea0428",
+  "itemId": "6972a0cda31fbef545076dba",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Jan 22 2026 22:12:29 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Jan 22 2026 22:15:13 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/categories/sustentabilidad-2",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Categories - 69172c960e54b69c53ea0428.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/categories/sustentabilidad-2.html"
+  },
+  "canonicalGroup": "categoria-sustentabilidad",
+  "validationNotes": [],
+  "name": "Sustentabilidad",
+  "color": null,
+  "bannerImage": {
+    "original": "",
+    "resolved": null,
+    "publicPath": null,
+    "status": "empty"
+  },
+  "validationStatus": "valid"
+}

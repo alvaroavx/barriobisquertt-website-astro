@@ -1,0 +1,32 @@
+{
+  "id": "699348377594268c4fa4a7d7",
+  "slug": "anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "699348377594268c4fa4a7d7",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Feb 16 2026 16:39:19 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Mon Feb 16 2026 16:39:27 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-smash-burguer-hamburgueseria-de-especialidad.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: Smash Burguer, hamburguesería de especialidad",
+  "excerpt": "Con la técnica del 'smash' conquistan los paladares de Rengo.",
+  "bodyHtml": "<p>Tomás Contreras y Víctor Martínez se unieron, en septiembre de 2021, con la idea original de traer a Rengo las primeras hamburguesas tipo 'smash', es decir, elaboradas con una técnica de preparación donde una bola de carne molida se aplasta con fuerza sobre una plancha muy caliente. Este proceso maximiza la llamada \"reacción de Maillard\", creando una costra exterior dorada, crujiente y llena de sabor, mientras el interior se mantiene jugoso debido a la rapidez de la cocción.</p><p>“A la gente joven le gusta mucho y nosotros las ofrecemos acompañadas de productos premium y salsas novedosas”, sostiene Tomás. En suma, son nueve variedades, donde la favorita del público es la Big Smash: una doble hamburguesa en pan brioche, con lechuga, queso y salsa especial de la casa.</p><p>Para la dupla es fundamental destacarse por un servicio cordial que cumpla las expectativas del cliente. \"Queremos, sobre todo, mantener la calidad. Para más adelante, la idea es ampliar la carta y buscar nuevos productos. Ahora estamos innovando con el pollo crispy, pero nunca queremos perder el foco de lo que somos en esencia: una hamburguesería de especialidad”, detalla Tomás.</p><p>En su reflexión, el barrio Bisquertt tiene gran potencial por su lindo y entretenido entorno. “Al renguino le está gustando conocer y atreverse a probar distintas propuestas y restaurantes. Además, viene mucha gente de otras comunas. Por lo mismo, están todos invitados”, concluye. </p><p>SMASH BURGUER<br>Avenida Bisquertt 426<br>Teléfono: +569 41 813572<br>Correo: victormm398@gmail.com<br>Instagram: @smashburger.rengo</p><p>‍</p>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/699347752852b607ffbd5f2b_Smash%20Burger.jpeg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/699347752852b607ffbd5f2b_Smash Burger.jpeg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/699347752852b607ffbd5f2b_Smash Burger.jpeg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=D1BWK7fP6z0",
+  "validationStatus": "valid"
+}

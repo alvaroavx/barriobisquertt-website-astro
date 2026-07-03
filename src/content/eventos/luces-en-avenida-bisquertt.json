@@ -1,0 +1,35 @@
+{
+  "id": "6924973f362203f13777b11d",
+  "slug": "luces-en-avenida-bisquertt",
+  "collectionId": "69174cede1985cb20a757f61",
+  "itemId": "6924973f362203f13777b11d",
+  "archived": false,
+  "draft": true,
+  "createdOn": "Mon Nov 24 2025 17:34:55 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Mon Dec 29 2025 18:05:05 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 23:10:42 GMT+0000 (Coordinated Universal Time)",
+  "route": "/eventos/luces-en-avenida-bisquertt",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Eventos - 69174cede1985cb20a757f61.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/eventos/luces-en-avenida-bisquertt.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [
+    "CSV draft=true but HTML is public in mirror"
+  ],
+  "title": "Luces de Avenida Bisquertt",
+  "startsAt": null,
+  "endsAt": null,
+  "location": "Barrio Bisquertt",
+  "descriptionHtml": "<h1>Luces en verano</h1><p>Fue la postal soñada para el primer ciclo de nuestros AtardeceresMusicales. También la ruta de la Caravana Navideña de Rosario que, como siempre, atrajo a miles de renguinos a Barrio Bisquertt. Hoy las luces que adornan nuestras palmeras centenarias se extenderán por todo el verano.</p><p>Nuestros establecimientos comerciales esperan que los renguinos se animen avisitar por la noche esta calle centenaria, sinónimo de la acción de la ciudad.Los esperaremos en sus paseos familiares de la Plaza de Armas a la Estación deTrenes de Rengo con una diversidad de ofertas en esta temporada estival. </p><p> esperan que los renguinos se animen avisitar por la noche esta calle centenaria, sinónimo de la acción de la ciudad.Los esperaremos en sus paseos familiares de la Plaza de Armas a la Estación deTrenes de Rengo con una diversidad de ofertas en esta temporada estival. </p><p>¿Para animarlos? Tendremos música en vivo, promociones,dj y entretención de lunes a domingo este inicio de 2026.</p><h2>‍</h2>",
+  "rsvpLink": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694ee9000bde1c5fce494fe5_Luces.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694ee9000bde1c5fce494fe5_Luces.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694ee9000bde1c5fce494fe5_Luces.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": null,
+  "validationStatus": "warning"
+}

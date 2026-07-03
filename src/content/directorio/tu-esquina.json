@@ -1,0 +1,39 @@
+{
+  "id": "694dab65326ac91e0dd8508b",
+  "slug": "tu-esquina",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694dab65326ac91e0dd8508b",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 21:23:49 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 21:23:53 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/tu-esquina",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/tu-esquina.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Tu Esquina",
+  "address": "Av. Bisquertt 265.",
+  "description": "Pub/Restobar. Así se define este punto de Avenida Bisquertt que busca un ambiente de relajo entre amigos y familias con una oferta de cervezas, papas fritas, sándwiches, tragos y un clásico menú del día. Esa atmósfera simple y distendida atrae cada día a sus fieles parroquianos.",
+  "phone": "+569 5776 0322",
+  "link": "https://www.instagram.com/tuesquinarengo/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daaecebc6de25b4e418cd_esquina.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694daaecebc6de25b4e418cd_esquina.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daaecebc6de25b4e418cd_esquina.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694daaf26d20630a10b7853f_Esquina%20a.jpg",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694daaf26d20630a10b7853f_Esquina a.jpg",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694daaf26d20630a10b7853f_Esquina a.jpg",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

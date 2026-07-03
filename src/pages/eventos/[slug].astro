@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Gallery from '../../components/Gallery.astro';
+import VideoEmbed from '../../components/VideoEmbed.astro';
+import { demoteBodyHeadings, imageSrc, isoDate, isExternalUrl, plainText } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('eventos');
+  return entries.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const mainImage = imageSrc(data.mainImage);
+const description = plainText(data.descriptionHtml).slice(0, 160);
+---
+
+<BaseLayout title={data.title} description={description} image={mainImage}>
+  <main>
+    <header class="article-header container container--article">
+      <p class="article-meta">
+        {data.startsAt && <time datetime={isoDate(data.startsAt) || undefined}>{data.startsAt}</time>}
+        {data.endsAt && <time datetime={isoDate(data.endsAt) || undefined}>{data.endsAt}</time>}
+        {data.location && <span>{data.location}</span>}
+      </p>
+      <h1>{data.title}</h1>
+      {data.rsvpLink && (
+        <div class="detail-actions">
+          <a href={data.rsvpLink} target={isExternalUrl(data.rsvpLink) ? '_blank' : undefined} rel={isExternalUrl(data.rsvpLink) ? 'noopener noreferrer' : undefined}>
+            RSVP
+          </a>
+        </div>
+      )}
+    </header>
+    {mainImage && (
+      <figure class="article-media">
+        <img src={mainImage} alt={data.title} />
+      </figure>
+    )}
+    <article class="article-content container container--article" set:html={demoteBodyHeadings(data.descriptionHtml)} />
+    <VideoEmbed url={data.video} title={data.title} />
+    <Gallery items={data.gallery} title={data.title} />
+  </main>
+</BaseLayout>
+

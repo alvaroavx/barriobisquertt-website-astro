@@ -1,0 +1,41 @@
+{
+  "source": "data/contents/Barrio Bisquertt - Authors - 69172c960e54b69c53ea0427.csv",
+  "rows": [
+    {
+      "Name": "Mat Vogels",
+      "Slug": "mat-vogels",
+      "Collection ID": "69172c960e54b69c53ea0427",
+      "Locale ID": "69172c960e54b69c53ea0444",
+      "Item ID": "69172c960e54b69c53ea04cb",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Fri Sep 25 2015 04:37:35 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Sep 08 2016 18:46:13 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Mon Nov 24 2025 15:07:08 GMT+0000 (Coordinated Universal Time)",
+      "Bio": "<p>My name is Mat Vogels and I’m a freelance designer from Denver, Colorado. After graduating college with a degree in Finance, I started working at Webflow as a designer and my career was changed forever!</p>",
+      "Picture": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69172c960e54b69c53ea04dd_128-14.jpg",
+      "Instagram Link": "http://instagram.com",
+      "Twitter Profile Link": "https://twitter.com/webflowapp",
+      "Facebook Profile Link": "https://www.facebook.com/webflow",
+      "Banner Image": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69172c960e54b69c53ea04ec_looking-to-lake.jpg"
+    },
+    {
+      "Name": "William Wong",
+      "Slug": "will-wong",
+      "Collection ID": "69172c960e54b69c53ea0427",
+      "Locale ID": "69172c960e54b69c53ea0444",
+      "Item ID": "69172c960e54b69c53ea04cc",
+      "Archived": "false",
+      "Draft": "false",
+      "Created On": "Fri Sep 25 2015 04:38:17 GMT+0000 (Coordinated Universal Time)",
+      "Updated On": "Thu Sep 08 2016 18:46:05 GMT+0000 (Coordinated Universal Time)",
+      "Published On": "Mon Nov 24 2025 15:07:08 GMT+0000 (Coordinated Universal Time)",
+      "Bio": "<p>My name is Will and I first discovered Webflow in November 2013. Since then, Webflow has had a HUGE impact on my web design projects – saving me countless design hours, development costs, and has helped improve my understanding of HTML/CSS tremendously!</p>",
+      "Picture": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69172c960e54b69c53ea0511_128-34.jpg",
+      "Instagram Link": "http://www.instagram.com",
+      "Twitter Profile Link": "https://twitter.com/webflowapp",
+      "Facebook Profile Link": "https://www.facebook.com/webflow",
+      "Banner Image": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/69172c960e54b69c53ea04eb_hanging.jpg"
+    }
+  ]
+}

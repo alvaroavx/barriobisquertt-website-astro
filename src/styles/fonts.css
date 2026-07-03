@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f0538cf17fac2809152_TimesNow-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f05977ae65080c37345_TimesNow-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f05138c8c3903ab8f18_TimesNow-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f050d0f090ecce1bb51_TimesNow-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f05f7b78ffd7b5c3f4d_TimesNow-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f05911a87dc85b12d6f_TimesNow-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f055737e7b7a2add771_TimesNow-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Timesnow';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69173f05a8c52c3327992d17_TimesNow-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1e97f232ac900857ce_AcidGrotesk-UltraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1e74dc41d1ed38caf4_AcidGrotesk-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1ee0a7b9f8fade4442_AcidGrotesk-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1e63ecdcecdad6626f_AcidGrotesk-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1e29b2afd1964a917d_AcidGrotesk-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Acidgrotesk';
+  src: url('/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/69172d1ee2bb57756ce87d77_AcidGrotesk-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,63 @@
+{
+  "id": "694da268257131b99a96b377",
+  "slug": "barroco",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694da268257131b99a96b377",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 20:45:28 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 20:45:34 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/barroco",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/barroco.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Barroco",
+  "address": "Av. Bisquertt 319.",
+  "description": "Una ambientación elegante, terraza con vida y una propuesta gastronómica muy cuidada convirtieron a Barroco en el gran estreno de Avenida Bisquertt en 2025. Y así, rápidamente, logró cautivar a los renguinos que encontraron sabores nuevos en su carta. La coctelería es también uno de sus fuertes y en redes sociales ya gana fama su Barroco Sour.",
+  "phone": "+569 9579 2321",
+  "link": "https://www.instagram.com/barroco_restobar/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da13acb6d6ed159801115_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.36.43.png",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da13acb6d6ed159801115_Captura de Pantalla 2025-12-25 a la(s) 17.36.43.png",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da13acb6d6ed159801115_Captura de Pantalla 2025-12-25 a la(s) 17.36.43.png",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14b9d7b022b4106b90f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.37.55.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da14b9d7b022b4106b90f_Captura de Pantalla 2025-12-25 a la(s) 17.37.55.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14b9d7b022b4106b90f_Captura de Pantalla 2025-12-25 a la(s) 17.37.55.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14a04b98f8a5a6d12e6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.06.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da14a04b98f8a5a6d12e6_Captura de Pantalla 2025-12-25 a la(s) 17.38.06.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14a04b98f8a5a6d12e6_Captura de Pantalla 2025-12-25 a la(s) 17.38.06.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14d0299810b10de5017_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.23.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da14d0299810b10de5017_Captura de Pantalla 2025-12-25 a la(s) 17.38.23.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14d0299810b10de5017_Captura de Pantalla 2025-12-25 a la(s) 17.38.23.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da26293aa8b7d9204e3c2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.38.43.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da26293aa8b7d9204e3c2_Captura de Pantalla 2025-12-25 a la(s) 17.38.43.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da26293aa8b7d9204e3c2_Captura de Pantalla 2025-12-25 a la(s) 17.38.43.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694da14a7b6ae52778094869_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2017.39.04.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694da14a7b6ae52778094869_Captura de Pantalla 2025-12-25 a la(s) 17.39.04.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694da14a7b6ae52778094869_Captura de Pantalla 2025-12-25 a la(s) 17.39.04.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

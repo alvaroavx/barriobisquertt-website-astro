@@ -1,0 +1,69 @@
+{
+  "id": "694d8ff4078265097ecbaea9",
+  "slug": "la-republica",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "694d8ff4078265097ecbaea9",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Thu Dec 25 2025 19:26:44 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Wed Jan 14 2026 19:45:51 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/la-republica",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/la-republica.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "La República ",
+  "address": "Av. Bisquertt 365.",
+  "description": "“Bienvenidos a la nueva República Independiente de la Cerveza”. Así se presenta a la ciudad este local dedicado a esta refrescante bebida en el corazón de Bisquertt. Una carta con diversas categorías de birras artesanales, además de tragos populares como la piscola, aperol y gin, entre otros. ¿Para acompañar? Hamburguesas y papas. Una combinación que nunca falla.",
+  "phone": "+569 9656 8546",
+  "link": "https://www.instagram.com/larepublicacerveceria/?hl=en",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8e38b5a443b9334ddf5f_barriles%20cerveza.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8e38b5a443b9334ddf5f_barriles cerveza.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8e38b5a443b9334ddf5f_barriles cerveza.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fd0beb4885c825136dd_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.24.25.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fd0beb4885c825136dd_Captura de Pantalla 2025-12-25 a la(s) 16.24.25.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fd0beb4885c825136dd_Captura de Pantalla 2025-12-25 a la(s) 16.24.25.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fcfd1fd81a57b2aa4a2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.24.54.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fcfd1fd81a57b2aa4a2_Captura de Pantalla 2025-12-25 a la(s) 16.24.54.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fcfd1fd81a57b2aa4a2_Captura de Pantalla 2025-12-25 a la(s) 16.24.54.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fd102f1c7a45389648f_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.25.12.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fd102f1c7a45389648f_Captura de Pantalla 2025-12-25 a la(s) 16.25.12.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fd102f1c7a45389648f_Captura de Pantalla 2025-12-25 a la(s) 16.25.12.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fdbbe07c6b6b6e340a6_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.08.00.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fdbbe07c6b6b6e340a6_Captura de Pantalla 2025-12-25 a la(s) 16.08.00.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fdbbe07c6b6b6e340a6_Captura de Pantalla 2025-12-25 a la(s) 16.08.00.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fdf37316fc67f681ae2_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.07.51.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fdf37316fc67f681ae2_Captura de Pantalla 2025-12-25 a la(s) 16.07.51.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fdf37316fc67f681ae2_Captura de Pantalla 2025-12-25 a la(s) 16.07.51.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d8fe6a6d665252e1e0887_Captura%20de%20Pantalla%202025-12-25%20a%20la(s)%2016.12.47.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d8fe6a6d665252e1e0887_Captura de Pantalla 2025-12-25 a la(s) 16.12.47.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d8fe6a6d665252e1e0887_Captura de Pantalla 2025-12-25 a la(s) 16.12.47.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

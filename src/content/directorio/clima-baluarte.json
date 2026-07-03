@@ -1,0 +1,51 @@
+{
+  "id": "6924aed82eda09a4343f6303",
+  "slug": "clima-baluarte",
+  "collectionId": "6924aecd136ab7a582d99a90",
+  "itemId": "6924aed82eda09a4343f6303",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Mon Nov 24 2025 19:15:36 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Thu Dec 25 2025 15:21:04 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Fri Dec 26 2025 14:55:45 GMT+0000 (Coordinated Universal Time)",
+  "route": "/directorio/clima-baluarte",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Directorios - 6924aecd136ab7a582d99a90.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/directorio/clima-baluarte.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "name": "Clima Baluarte",
+  "address": "Avenida Bisquertt 310.",
+  "description": "Todos los servicios relacionados con sistemas de aire acondicionado: venta, instalación, mantenimiento, reparación. Soluciones adaptadas a tus necesidades específicas. Los servicios incluyen el suministro de nuevas instalaciones de A/C, sustitución de equipos, actualizaciones y planes de mantenimiento. Conocimiento y experiencia para identificar rápidamente requisitos y proporcionarte un gran nivel profesional.",
+  "phone": "+569 6524 5556.",
+  "link": "https://clima-baluarte.ueniweb.com/",
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d50b8c9cdc08489f64bfc_Clima%20Baluarte.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d50b8c9cdc08489f64bfc_Clima Baluarte.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d50b8c9cdc08489f64bfc_Clima Baluarte.jpg",
+    "status": "resolved"
+  },
+  "gallery": [
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5068cec739569d47825d_Clima%20B%20a.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d5068cec739569d47825d_Clima B a.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5068cec739569d47825d_Clima B a.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d50673dd7e2f3b0008381_Clima%20B%20b.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d50673dd7e2f3b0008381_Clima B b.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d50673dd7e2f3b0008381_Clima B b.png",
+      "status": "resolved"
+    },
+    {
+      "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/694d5068bdd7184b655f4c6b_Clima%20B%20c.png",
+      "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/694d5068bdd7184b655f4c6b_Clima B c.png",
+      "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/694d5068bdd7184b655f4c6b_Clima B c.png",
+      "status": "resolved"
+    }
+  ],
+  "video": null,
+  "validationStatus": "valid"
+}

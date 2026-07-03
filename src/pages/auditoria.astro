@@ -1,0 +1,172 @@
+---
+import { getCollection } from 'astro:content';
+import assetMap from '../data/generated/asset-map.json';
+import contentManifest from '../data/generated/content-manifest.json';
+import '../styles/global.css';
+
+const collections = {
+  directorio: await getCollection('directorio'),
+  historias: await getCollection('historias'),
+  noticias: await getCollection('noticias'),
+  eventos: await getCollection('eventos'),
+  patrimonio: await getCollection('patrimonio'),
+  categorias: await getCollection('categorias'),
+};
+
+const assetStats = assetMap.reduce(
+  (acc, asset) => {
+    acc.total += 1;
+    acc[asset.status] = (acc[asset.status] || 0) + 1;
+    return acc;
+  },
+  { total: 0 } as Record<string, number>,
+);
+
+const contentItems = contentManifest.contentItems;
+const routeItems = contentManifest.routes;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Auditoria tecnica - Barrio Bisquertt</title>
+  </head>
+  <body class="audit-page">
+    <main>
+      <header class="audit-header">
+        <p class="eyebrow">Migracion Astro</p>
+        <h1>Auditoria tecnica temporal</h1>
+        <p>Vista de verificacion para colecciones, rutas, activos y manifiestos generados.</p>
+      </header>
+
+      <section class="audit-section">
+        <h2>Colecciones</h2>
+        <div class="audit-grid">
+          {Object.entries(collections).map(([name, entries]) => (
+            <article class="audit-card">
+              <h3>{name}</h3>
+              <strong>{entries.length}</strong>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="audit-section">
+        <h2>Activos</h2>
+        <pre>{JSON.stringify(assetStats, null, 2)}</pre>
+      </section>
+
+      <section class="audit-section">
+        <h2>Contenido publicado esperado</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Coleccion</th>
+              <th>Slug</th>
+              <th>Ruta</th>
+              <th>Estado</th>
+              <th>Notas</th>
+            </tr>
+          </thead>
+          <tbody>
+            {contentItems.map((item) => (
+              <tr>
+                <td>{item.collection}</td>
+                <td>{item.slug}</td>
+                <td>{item.route || '-'}</td>
+                <td>{item.validationStatus}</td>
+                <td>{item.validationNotes.join('; ') || '-'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <section class="audit-section">
+        <h2>Rutas del mirror</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ruta</th>
+              <th>HTML fuente</th>
+              <th>Grupo canonico</th>
+            </tr>
+          </thead>
+          <tbody>
+            {routeItems.map((item) => (
+              <tr>
+                <td>{item.route}</td>
+                <td>{item.sourceHtml}</td>
+                <td>{item.canonicalGroup || '-'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .audit-page {
+    padding: 32px;
+  }
+
+  .audit-header,
+  .audit-section {
+    width: min(100%, 1200px);
+    margin: 0 auto 32px;
+  }
+
+  .audit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  .audit-card,
+  pre,
+  table {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .audit-card {
+    padding: 16px;
+  }
+
+  .audit-card h3 {
+    margin: 0 0 12px;
+  }
+
+  .audit-card strong {
+    font-size: 2rem;
+  }
+
+  pre {
+    overflow: auto;
+    padding: 16px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background: var(--color-page-alt);
+  }
+</style>

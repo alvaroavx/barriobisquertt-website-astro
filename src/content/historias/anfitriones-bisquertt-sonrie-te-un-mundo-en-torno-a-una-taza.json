@@ -1,0 +1,32 @@
+{
+  "id": "6983935cc76eaf8323784549",
+  "slug": "anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza",
+  "collectionId": "6925dd0d77c0e42bcdb6b5c9",
+  "itemId": "6983935cc76eaf8323784549",
+  "archived": false,
+  "draft": false,
+  "createdOn": "Wed Feb 04 2026 18:43:40 GMT+0000 (Coordinated Universal Time)",
+  "updatedOn": "Wed Feb 04 2026 18:43:46 GMT+0000 (Coordinated Universal Time)",
+  "publishedOn": "Thu Jul 02 2026 22:01:21 GMT+0000 (Coordinated Universal Time)",
+  "route": "/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza",
+  "source": {
+    "csv": "data/contents/Barrio Bisquertt - Blog Posts - 6925dd0d77c0e42bcdb6b5c9.csv",
+    "html": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/post/anfitriones-bisquertt-sonrie-te-un-mundo-en-torno-a-una-taza.html"
+  },
+  "canonicalGroup": null,
+  "validationNotes": [],
+  "title": "Anfitriones Bisquertt: Sonríe Té, un mundo en torno a una taza",
+  "excerpt": "Una carta con cuarenta variedades de té, además de infusiones y jugos, invitan a una pausa en nuestra agitada ciudad.",
+  "bodyHtml": "<p>Fue el 19 de diciembre de 2017 cuando Lucy Barrera creó Sonríe Té, una tetería bajo la sombra de los árboles de las calles Daniel Morán y Bisquertt. “En ese tiempo, en Rengo, la gente solo tomaba té con canela. Mi idea era ir más allá, con una propuesta más amplia de té con sabores y de distintas procedencias”, sostiene.</p><p>Rápidamente, sumó pasteles, tortas y sandwiches. Al tiempo, agregó café y, finalmente, consolidó una carta con cuarenta variedades de té, entre ellos, blanco, rojo, negro, con bergamota, de flores, como jazmín y margarita, junto a infusiones y jugos. El té rooibos es otra de sus especialidades, “ideal para las personas con diagnósticos de hipertensión, debido a que no contiene teína”.</p><p>El lugar, visitado por jóvenes, profesionales y familias, tiene sus favoritos de acuerdo a la estación. “En verano hay bastante demanda de jarras de té helado y de teteras para compartir. La torta más solicitada es la Sonríe Té, de bizcocho de nuez, hojarasca, manjar casero y dulce de guinda”, añade Lucy.</p><p>“En el futuro, me encantaría que Barrio Bisquertt fuera un lugar mucho más visitado que ahora, que llegue a transformarse en un panorama único, en cualquier día y hora”, concluye.</p><p>‍</p>",
+  "category": null,
+  "instagram": null,
+  "mainImage": {
+    "original": "https://cdn.prod.website-files.com/69172c960e54b69c53ea0443/6983928db1fd38a6fb6ca723_Sonri%CC%81ete.jpg",
+    "resolved": "data/descarga-barrio-bisquertt/barrio-bisquertt-mirror/69172c960e54b69c53ea0443/6983928db1fd38a6fb6ca723_Sonríete.jpg",
+    "publicPath": "/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/6983928db1fd38a6fb6ca723_Sonríete.jpg",
+    "status": "resolved"
+  },
+  "gallery": [],
+  "video": "https://www.youtube.com/watch?v=UcXiacrHHx8",
+  "validationStatus": "valid"
+}
