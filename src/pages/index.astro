@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+
+const title = 'Barrio Bisquertt';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Sitio web oficial de Barrio Bisquertt." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main class="site-shell" aria-labelledby="page-title">
+      <section class="intro">
+        <p class="eyebrow">Sitio web</p>
+        <h1 id="page-title">{title}</h1>
+        <p class="lead">Base limpia en Astro para desarrollar paginas estaticas.</p>
+      </section>
+    </main>
+  </body>
+</html>
