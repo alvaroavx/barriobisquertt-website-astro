@@ -417,9 +417,6 @@
   padding-bottom: 0;
 }
 
-.featured-grid .content-card--news .content-card__media {
-  display: none;
-}
 
 .event-carousel {
   display: grid;
