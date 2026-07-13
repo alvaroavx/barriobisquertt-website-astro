@@ -23,6 +23,13 @@ const {
   containImage = false,
 } = Astro.props;
 const src = imageSrc(image);
+
+function formatDate(value: string | null | undefined) {
+  if (!value) return null;
+  const d = new Date(value);
+  if (Number.isNaN(d.valueOf())) return null;
+  return d.toLocaleDateString('es-CL', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 ---
 
 <a class:list={['content-card', `content-card--${variant}`]} href={href}>
@@ -35,7 +42,7 @@ const src = imageSrc(image);
     {(category || date) && (
       <p class="content-card__meta">
         {category && <span>{category}</span>}
-        {date && <time datetime={isoDate(date) || undefined}>{date}</time>}
+        {date && <time datetime={isoDate(date) || undefined}>{formatDate(date)}</time>}
       </p>
     )}
     <h2>{title}</h2>

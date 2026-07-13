@@ -164,12 +164,20 @@
 
 .content-card__meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px 12px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
   margin: 0;
   color: var(--color-muted);
   font-size: 0.82rem;
-  text-transform: uppercase;
+}
+
+.content-card__meta span {
+  font-family: var(--font-sans);
+}
+
+.content-card__meta time {
+  text-align: right;
 }
 
 .content-card h2 {
