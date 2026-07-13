@@ -177,6 +177,7 @@
 }
 
 .content-card__meta time {
+  display: block;
   text-align: right;
 }
 
