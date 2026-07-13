@@ -29,42 +29,43 @@ const heritage = patrimonio[1] || patrimonio[0];
       </a>
     </section>
 
-    {featured && (
-      <section class="home-section" aria-labelledby="featured-title">
-        <div class="home-section__header">
-          <h2 id="featured-title">Destacado</h2>
-        </div>
-        <ContentCard
-          href={featured.data.route}
-          title={featured.data.title}
-          description={featured.data.description}
-          image={featured.data.mainImage}
-          date={featured.data.publishedOn}
-          category={featured.data.category}
-          variant="news"
-        />
-      </section>
-    )}
-
-    <section class="home-section" aria-labelledby="news-title">
-      <div class="home-section__header">
-        <h2 id="news-title">Ultimas noticias</h2>
-        <a href="/noticias">Ver Noticias</a>
-      </div>
-      <div class="card-grid">
-        {latestNews.map((item) => (
+    <div class="featured-grid">
+      {featured && (
+        <section class="home-section" aria-labelledby="featured-title">
+          <div class="home-section__header">
+            <h2 id="featured-title">Destacado</h2>
+          </div>
           <ContentCard
-            href={item.data.route}
-            title={item.data.title}
-            description={item.data.description}
-            image={item.data.mainImage}
-            date={item.data.publishedOn}
-            category={item.data.category}
+            href={featured.data.route}
+            title={featured.data.title}
+            description={featured.data.description}
+            image={featured.data.mainImage}
+            date={featured.data.publishedOn}
+            category={featured.data.category}
             variant="news"
           />
-        ))}
-      </div>
-    </section>
+        </section>
+      )}
+
+      <section class="home-section" aria-labelledby="news-title">
+        <div class="home-section__header">
+          <h2 id="news-title">Ultimas noticias</h2>
+          <a href="/noticias">Ver Noticias</a>
+        </div>
+        <div class="card-grid">
+          {latestNews.map((item) => (
+            <ContentCard
+              href={item.data.route}
+              title={item.data.title}
+              description={item.data.description}
+              date={item.data.publishedOn}
+              category={item.data.category}
+              variant="news"
+            />
+          ))}
+        </div>
+      </section>
+    </div>
 
     <section class="home-section" aria-labelledby="events-title">
       <div class="home-section__header">

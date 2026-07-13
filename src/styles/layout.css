@@ -401,6 +401,24 @@
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 28px;
+  width: min(100% - 48px, var(--container-home));
+  margin: 0 auto 80px;
+}
+
+.featured-grid .home-section {
+  width: auto;
+  margin: 0;
+}
+
+.featured-grid .card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-bottom: 0;
+}
+
+.featured-grid .content-card--news .content-card__media {
+  display: none;
 }
 
 .event-carousel {
@@ -615,6 +633,7 @@
   .container,
   .container--article,
   .home-section,
+  .featured-grid,
   .gallery-section,
   .video-embed,
   .map-frame,
