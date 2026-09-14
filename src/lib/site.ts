@@ -20,9 +20,9 @@ export const assets = {
   barrios:
     '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/694ac8dfa0f8aa46ff878507_barrios.png',
   heroMp4:
-    '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394%2F694f23253919421d0f393239_video2_mp4.mp4',
+    '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/694f23253919421d0f393239_video2_mp4.mp4',
   heroWebm:
-    '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394%2F694f23253919421d0f393239_video2_webm.webm',
+    '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/694f23253919421d0f393239_video2_webm.webm',
 };
 
 export const orders = {
