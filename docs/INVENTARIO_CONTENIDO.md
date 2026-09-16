@@ -1,5 +1,7 @@
 # Inventario de contenido y activos - Barrio Bisquertt
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 ## Fuentes revisadas
 
 | Fuente | Rol | Autoridad |

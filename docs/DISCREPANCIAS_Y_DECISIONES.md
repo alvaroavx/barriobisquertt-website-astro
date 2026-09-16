@@ -1,5 +1,7 @@
 # Discrepancias y decisiones pendientes
 
+Última revisión documental: 2026-09-16. Estado: registro editorial de fuentes y decisiones; contrastar comportamiento implementado con el código actual.
+
 ## Regla de autoridad
 
 1. Mirror HTML y activos descargados: determina lo publicado.

@@ -1,5 +1,7 @@
 # Arquitectura propuesta para Astro
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 ## Principios
 
 - Generacion estatica por defecto.

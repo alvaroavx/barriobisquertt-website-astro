@@ -1,5 +1,7 @@
 # Informe FASE 1 + FASE 2 inicial
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 ## Alcance ejecutado
 
 - Proyecto Astro conservado y actualizado para Astro 7.

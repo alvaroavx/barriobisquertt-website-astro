@@ -1,5 +1,7 @@
 # Indice de documentacion
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 Esta carpeta es la documentacion oficial del sitio Barrio Bisquertt.
 
 Regla operativa: `data/` es la fuente local desde donde se consume informacion y no se versiona; `docs/` es donde se escribe y mantiene la documentacion. Cada cambio que afecte codigo, contenido, rutas, assets, arquitectura, comandos, validaciones o decisiones debe actualizar los documentos correspondientes.

@@ -1,0 +1,16 @@
+# Seguridad: revisión estática
+
+Última revisión documental: 2026-09-16. Estado: auditoría estática, no prueba de penetración.
+
+No hay autenticación/autorización de aplicación, sesión, DB ni API propia. Rutas públicas incluyen /auditoria. No se detectaron credenciales funcionales en código revisado; URLs públicas de mapas/redes no son secretos. No se inspeccionó el servidor final ni las políticas del receptor de contacto. Severidades evalúan riesgo potencial en la configuración descrita, no incidentes comprobados.
+
+| Severidad | Riesgo y evidencia | Impacto / probabilidad | Recomendación |
+|---|---|---|---|
+| ALTO | HTML de CSV se inserta mediante set:html en post, noticias, eventos y patrimonio; demoteBodyHeadings() solo cambia etiquetas h1, no sanitiza | Si fuente editorial se compromete, puede inyectar script/markup a visitantes; probabilidad dependiente del control editorial | Sanitizar en migración o build con política explícita y prueba de contenido malicioso |
+| MEDIO | /auditoria publica rutas, rutas de archivos fuente, estados y manifiestos (src/pages/auditoria.astro) | Exposición de metadatos internos; probabilidad alta si se despliega todo dist | Decidir si debe publicarse; retirar del artefacto público o minimizar datos previa aprobación |
+| MEDIO | Endpoint del POST proviene de PUBLIC_CONTACT_FORM_ENDPOINT; Footer.astro envía email directo desde browser | Privacidad/antispam/consentimiento y respuesta dependen de tercero; probabilidad no determinada | Definir contrato, HTTPS, retención, consentimiento, validación y antispam antes de habilitar |
+| MEDIO | URLs externas en contenido pueden alimentar href o imageSrc; isExternalUrl() detecta http(s) para target/rel, pero no valida esquemas permitidos del href | Enlace malicioso si fuente editorial alterada; probabilidad dependiente de edición | Validar URL/scheme en transformación y revisar salida |
+| BAJO | No se observa CSP ni cabeceras de seguridad en repo; dependen del host | Defensa browser no demostrable | Documentar y verificar configuración de hosting |
+| INFORMATIVO | npm lockfile presente, Astro 7 declarado; no se hizo auditoría de vulnerabilidades | Estado de CVEs actual no determinado | Ejecutar auditoría de dependencias en proceso controlado |
+
+No hay SQL injection, command injection ni path traversal de solicitudes HTTP porque no hay handler propio. El script CLI trabaja con rutas locales y escribe bajo public/src; no ejecutar con fuentes no confiables sin revisar. No se encontraron uploads, serialización de peticiones, passwords o logs de PII. El email puede viajar al tercero; el destino no está configurado en repositorio.

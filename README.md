@@ -1,47 +1,26 @@
 # Barrio Bisquertt
 
-Sitio web estatico desarrollado con Astro.
+Sitio público estático de Barrio Bisquertt, construido con Astro 7. Publica directorio de comercios, historias, noticias, eventos, patrimonio y categorías para visitantes, vecinos y organizaciones. Las páginas se generan desde JSON validado en src/content.config.ts; no hay backend propio, base de datos, cuentas ni API de aplicación.
 
-## Guía humana
+## Arquitectura breve
 
-### Qué es, para qué sirve y quiénes lo usan
+data/ contiene el mirror Webflow, CSV y evidencia visual originales. scripts/migrate-content.mjs transforma esas fuentes a src/content/, src/data/generated/ y public/assets/. src/pages/ compone páginas con componentes Astro y src/lib/site.ts fija identidad, medios y orden editorial. La migración escribe archivos y no forma parte del runtime público. El formulario del pie permanece deshabilitado si no se configura PUBLIC_CONTACT_FORM_ENDPOINT; si se configura, el navegador envía email directamente al receptor externo.
 
-Este repositorio contiene el sitio público estático de **Barrio Bisquertt**. Sirve para difundir el territorio y su actividad mediante directorio, historias, noticias, eventos, patrimonio y categorías. Está dirigido a visitantes, vecinos, organizaciones y personas editoras que preparan el contenido; el repositorio no incluye cuentas de usuario ni un panel de administración público.
+## Inicio rápido
 
-### Qué contiene y cómo trabaja
+Requiere Node/npm compatibles con Astro 7; el repositorio no fija versión de Node. Según package.json y lockfile:
 
-Incluye una aplicación Astro, colecciones de contenido, componentes/rutas estáticas, activos y herramientas de migración. Durante el build, Astro valida las colecciones `directorio`, `historias`, `noticias`, `eventos`, `patrimonio` y `categorias`, y genera índices y páginas de detalle. `scripts/migrate-content.mjs` apoya la importación/generación de contenido, pero no participa en la ejecución del sitio. No se encontró backend propio, base de datos, autenticación ni API.
+- npm ci
+- npm run dev
+- npm run build
+- npm run preview
 
-### Funcionalidades y tareas que resuelve
+npm run migrate:content regenera contenido y activos desde data/; ejecútelo solo tras revisar el contrato y compare el diff. No se requiere base de datos. No hay script de tests propio ni despliegue versionado.
 
-- Publicar contenido editorial organizado por colección y categoría.
-- Generar páginas de listado y detalle de forma estática.
-- Mostrar recursos externos como mapas, videos e Instagram cuando el contenido los incorpora.
-- Preparar contenido migrado y registrar discrepancias editoriales para su revisión.
-- Habilitar el formulario de pie solo si existe un endpoint externo configurado; sin esa variable, el canal está deshabilitado.
+## Documentación
 
-### Trazabilidad humana
+[docs/README.md](docs/README.md) es el índice IA First: producto, arquitectura, datos, rutas, integraciones, seguridad, operación, deuda, riesgos y guía para agentes. [docs/DISCREPANCIAS_Y_DECISIONES.md](docs/DISCREPANCIAS_Y_DECISIONES.md) conserva conflictos y decisiones editoriales; [docs/MAPA_RUTAS.md](docs/MAPA_RUTAS.md) describe el mirror histórico, no las rutas garantizadas por Astro.
 
-- **Solicitante:** el sitio identifica a Barrio Bisquertt como destinatario, pero no conserva una solicitud ni una persona solicitante verificable.
-- **Desarrollo:** el primer commit disponible fue creado por **AVX Informática**. No hay una atribución versionada que permita asignar todo el desarrollo a una persona concreta.
-- **Cuándo:** el primer registro Git disponible es del **2 de julio de 2026**; es el inicio observable del repositorio, no necesariamente el inicio del sitio ni de su contenido.
+## Estado conocido
 
-### Qué puede mejorar y oportunidades
-
-La mejora más valiosa es fortalecer la operación editorial: versionar o custodiar de forma reproducible la fuente `data/`, sanitizar el HTML migrado, completar activos faltantes y dejar trazabilidad de cada decisión de contenido o ruta. Para publicación real faltan decisiones de hosting, TLS, CSP, analítica, observabilidad y un endpoint de contacto con privacidad/antispam. Empiece por [la documentación IA First](docs/README.md) y el registro de [discrepancias y decisiones](docs/DISCREPANCIAS_Y_DECISIONES.md).
-
-## Documentacion
-
-- `data/` contiene las fuentes consumidas para reconstruir el sitio.
-- `docs/` contiene la documentacion oficial y debe mantenerse actualizada con el codigo.
-- Todo Markdown del proyecto debe vivir en `docs/`, excepto `README.md` y `AGENTS.md`.
-
-La puerta de entrada IA First es [docs/README.md](docs/README.md). Resume arquitectura efectiva, colecciones, rutas, riesgos editoriales, operación y la guía para cambios seguros; los documentos históricos de migración continúan en el mismo directorio.
-
-## Comandos
-
-```sh
-npm install
-npm run dev
-npm run build
-```
+La réplica base funciona como sitio estático. Hosting, TLS, endpoint real de contacto y monitoreo productivo no están determinados desde este repositorio. La ruta /auditoria se genera públicamente y muestra metadatos de migración. Los cuerpos HTML migrados se insertan en páginas de detalle; revisar su procedencia antes de publicar cambios. El código y el build son la fuente final de verdad para cualquier modificación.

@@ -1,28 +1,16 @@
 # Documentación IA First — Barrio Bisquertt
 
-Última revisión documental: 2026-09-14. Estado: reconstruido desde el repositorio; el código y los datos de contenido vigentes son la fuente final de verdad.
+Última revisión documental: 2026-09-16. Estado: reconstruido desde repositorio. El código ejecutable prevalece sobre este mapa.
 
-| Objetivo | Documentos y rutas |
+| Lector | Ruta sugerida |
 |---|---|
-| Comprender producto y contenido | [INVENTARIO_CONTENIDO](INVENTARIO_CONTENIDO.md) → [MAPA_RUTAS](MAPA_RUTAS.md) |
-| Modificar arquitectura Astro | [ARQUITECTURA_PROPUESTA](ARQUITECTURA_PROPUESTA.md) → `src/content.config.ts` → `src/lib/site.ts` |
-| Cambiar contenido o assets | [INFORME_FASE_1_FASE_2_INICIAL](INFORME_FASE_1_FASE_2_INICIAL.md) → [DISCREPANCIAS_Y_DECISIONES](DISCREPANCIAS_Y_DECISIONES.md) |
-| Entender historia de migración | [PLAN_MIGRACION_ASTRO](PLAN_MIGRACION_ASTRO.md) |
-| Trabajar como agente | [AGENTS.md](../AGENTS.md), esta guía y el documento específico afectado |
+| Producto | [Resumen](00-overview.md) → [funcionalidad](01-functional-overview.md) → [flujos](06-business-flows.md) |
+| Arquitectura | [Arquitectura](02-architecture.md) → [componentes](03-components.md) → [datos](04-data-model.md) → [integraciones](08-integrations.md) |
+| Desarrollo | [Desarrollo](11-development.md) → [convenciones](16-conventions.md) → [pruebas](12-testing.md) → [guía IA](20-ai-agent-guide.md) |
+| Auditoría | [Seguridad](09-security.md) → [deuda](17-technical-debt.md) → [riesgos](18-risks.md) → [roadmap](19-improvement-roadmap.md) |
 
-## Arquitectura efectiva
+También: [roles](05-user-roles-and-permissions.md), [interfaces HTTP](07-api.md), [configuración](10-configuration.md), [despliegue](13-deployment-and-infrastructure.md), [observabilidad](14-observability.md), [errores](15-error-handling.md), [glosario](21-glossary.md), [preguntas](22-open-questions.md). [Diagramas](diagrams/system-context.md) e [inventarios](inventory/modules.md) ofrecen mapas rápidos.
 
-Sitio Astro estático de contenido. Las colecciones `directorio`, `historias`, `noticias`, `eventos`, `patrimonio` y `categorias` se validan en `src/content.config.ts`; páginas de índice y detalle usan `getCollection()` y `getStaticPaths()`. `src/lib/site.ts` concentra identidad, rutas de assets, orden editorial y helpers. `scripts/migrate-content.mjs` es la herramienta de importación/generación, no parte del runtime público.
+Historial: [plan](PLAN_MIGRACION_ASTRO.md), [fuentes](INVENTARIO_CONTENIDO.md), [mirror](MAPA_RUTAS.md), [discrepancias](DISCREPANCIAS_Y_DECISIONES.md), [informe](INFORME_FASE_1_FASE_2_INICIAL.md), [índice anterior](INDICE_DOCUMENTACION.md). [ARQUITECTURA_PROPUESTA](ARQUITECTURA_PROPUESTA.md) es una propuesta histórica, no el estado implementado.
 
-No se encontró backend propio, base de datos, autenticación, API ni pruebas automatizadas. El formulario de pie solo se habilita cuando existe `PUBLIC_CONTACT_FORM_ENDPOINT`; sin esa variable el canal se declara deshabilitado. Google Maps, YouTube e Instagram son integraciones de cliente o embeds externos.
-
-## Límites y riesgos
-
-- `data/` se describe como fuente local no versionada: no se puede certificar reproducibilidad completa de una migración sin ella.
-- `bodyHtml` y otros campos HTML vienen de contenido migrado; validar/sanitizar la fuente antes de publicar contenido nuevo.
-- Las discrepancias editoriales, activos faltantes, descartes y cambios de ruta deben registrarse en `DISCREPANCIAS_Y_DECISIONES.md`; no resolverlos silenciosamente.
-- Hosting, TLS, CSP, formularios reales, observabilidad y despliegue no están versionados.
-
-## Validación declarada
-
-Desde la raíz: `npm run build`. El resultado confirma compilación estática; no prueba enlaces externos, calidad editorial, analítica ni funcionamiento de un endpoint de contacto real.
+«Confirmado» indica evidencia directa; «inferido», deducción; «no determinado», falta de prueba; «contradictorio», fuentes divergentes. Se revisaron código, configuración, JSON, scripts, datos e historial Git. No se verificó producción ni servicios externos.
