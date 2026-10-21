@@ -771,6 +771,10 @@
   opacity: 0.65;
 }
 
+.footer-form__honey {
+  display: none;
+}
+
 .form-status {
   grid-column: 1 / -1;
   margin: 2px 0 0;

@@ -1,7 +1,7 @@
 # Configuración
 | Nombre | Archivo | Default | Sensible |
 |---|---|---|---|
-| PUBLIC_CONTACT_FORM_ENDPOINT | navigation.ts | vacío, canal deshabilitado | No colocar credenciales |
+| PUBLIC_CONTACT_FORM_ENDPOINT | .env.production / navigation.ts | FormSubmit → barriobisquerttrengo@gmail.com en producción; vacío en dev | No colocar credenciales |
 | site URL | astro.config.mjs / site.url | https://barriobisquertt.cl | No |
 | Node | .nvmrc / package.json engines | 22.12.0 / >=22.12.0 | No |
 | host 0.0.0.0 | package.json | fijo dev/preview | No |
