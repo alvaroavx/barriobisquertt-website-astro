@@ -73,7 +73,7 @@
 - Corregir `Smash Burguer`.
 - Definir canonica de noticias duplicadas.
 - Definir canonica `sustentabilidad` vs `sustentabilidad-2`.
-- Definir destino del formulario.
+- ~~Definir destino del formulario.~~ Resuelto 2026-10-21 (A13).
 - Definir si embeds YouTube externos son aceptables.
 - Definir si se corrigen fechas en espanol durante replica base o en FASE 6.
 - Definir si se publican paginas `/categories`.
@@ -97,6 +97,7 @@ Aplicados en código; los marcados **pendiente de aprobación** contradicen o ad
 | A09 | Descripción por defecto del sitio y descripciones de /blog y /patrimonio reescritas | Texto SEO nuevo (antes "Sitio web oficial de Barrio Bisquertt.") | Aplicado (técnico SEO, D13) |
 | A10 | Accesibilidad: un h1 por página, skip-link, `aria-current`, lightbox como `<dialog>`, etiqueta visible en el correo del pie, contraste de `--color-muted` (#999 → #655f63) y botón del pie, anuncios de pestaña nueva, `prefers-reduced-motion` | Ajuste técnico permitido por D14 y política de correcciones | Aplicado |
 | A11 | Teléfonos del directorio divididos por `/` o `|` en enlaces `tel:` normalizados (`phoneLinks`) | Texto visible igual; solo cambia el href | Aplicado |
+| A13 | Canal de contacto habilitado con FormSubmit hacia barriobisquerttrengo@gmail.com (.env.production) con mensajes de estado en español | Resuelve D15 y "Definir destino del formulario"; pendiente activación en FormSubmit y alias | Aplicado por solicitud 2026-10-21 |
 | A12 | Categoría en detalles enlaza a `/categories/<slug>` solo cuando el valor coincide con un slug publicado | Sin cambio de datos | Aplicado |
 
 ## Registro de descarte potencial

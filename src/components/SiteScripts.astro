@@ -30,9 +30,36 @@
   });
 
   document.querySelectorAll('[data-contact-form]').forEach((form) => {
-    form.addEventListener('submit', (event) => {
+    const status = form.querySelector('[data-form-status]');
+    const submit = form.querySelector('button[type="submit"]');
+    const ajaxEndpoint = form.getAttribute('data-ajax-endpoint');
+
+    form.addEventListener('submit', async (event) => {
       if (form.getAttribute('data-enabled') !== 'true') {
         event.preventDefault();
+        return;
+      }
+      // Sin endpoint JSON se deja el POST HTML normal al receptor.
+      if (!ajaxEndpoint) return;
+
+      event.preventDefault();
+      if (status) status.textContent = form.getAttribute('data-sending-message') || '';
+      submit?.setAttribute('disabled', '');
+
+      try {
+        const response = await fetch(ajaxEndpoint, {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || String(result.success) !== 'true') throw new Error(result.message || response.statusText);
+        form.reset();
+        if (status) status.textContent = form.getAttribute('data-success-message') || '';
+      } catch {
+        if (status) status.textContent = form.getAttribute('data-error-message') || '';
+      } finally {
+        submit?.removeAttribute('disabled');
       }
     });
   });

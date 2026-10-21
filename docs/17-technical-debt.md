@@ -11,7 +11,7 @@
 | TD-005 | Consistencia | Migración escribe múltiples archivos sin staging atómico ni rollback | Medio | M | P2 |
 | TD-006 | Editorial | Orden de todas las colecciones codificado manualmente en site.ts | Medio | S | P2 |
 | TD-007 | Datos | category y location se relacionan por cadenas; no se validan referencias (categories/[slug].astro) | Medio | M | P2 |
-| TD-008 | Contacto | Formulario habilitado depende de receptor externo sin respuesta/errores UI propios (Footer, SiteScripts) | Medio | M | P2 |
+| TD-008 | Contacto | Habilitado con FormSubmit y mensajes de envío/éxito/error; depende de un tercero gratuito sin SLA ni aviso de privacidad propio (Footer, SiteScripts, .env.production) | Bajo | S | P3 |
 | TD-009 | Reutilización | Cuatro páginas de artículo repiten markup de medios/cuerpo; riesgo de divergencia | Bajo | M | P3 |
 | TD-010 | SEO/rutas | site, sitemap.xml, robots.txt, OG/Twitter y JSON-LD implementados; redirects .html y canonical de duplicados (D05–D07) siguen pendientes | Bajo | S | P2 |
 | TD-011 | Observabilidad | Sin telemetría o diagnóstico de fallos browser/contacto (src/, package.json) | Medio | M | P2 |
