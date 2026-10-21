@@ -1,9 +1,9 @@
 export const navigationItems = [
-  { label: 'Home', href: '/' },
-  { label: 'Directorio', href: '/directorio' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Noticias', href: '/noticias' },
-  { label: 'Patrimonio', href: '/patrimonio' },
+  { label: 'Inicio', href: '/', activePrefixes: ['/'] },
+  { label: 'Directorio', href: '/directorio', activePrefixes: ['/directorio'] },
+  { label: 'Historias', href: '/blog', activePrefixes: ['/blog', '/post'] },
+  { label: 'Noticias', href: '/noticias', activePrefixes: ['/noticias'] },
+  { label: 'Patrimonio', href: '/patrimonio', activePrefixes: ['/patrimonio'] },
 ] as const;
 
 export const formConfig = {

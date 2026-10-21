@@ -8,11 +8,11 @@ const formEnabled = Boolean(formConfig.endpoint);
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="/" aria-label="Barrio Bisquertt Home">
-        <img src={assets.logoWhite} alt="Barrio Bisquertt" width="268" />
+      <a href="/" aria-label="Ir al inicio de Barrio Bisquertt">
+        <img src={assets.logoWhite} alt="Barrio Bisquertt" width="268" height="104" />
       </a>
       <div class="footer-links">
-        <a href={site.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram Barrio Bisquertt">
+        <a href={site.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram de Barrio Bisquertt (abre en una pestaña nueva)">
           <img class="footer-instagram" src={assets.instagram} alt="Instagram" width="42" height="42" />
         </a>
         {navigationItems.slice().reverse().map((item) => (
@@ -30,17 +30,17 @@ const formEnabled = Boolean(formConfig.endpoint);
         data-contact-form
         data-enabled={formEnabled ? 'true' : 'false'}
       >
-        <label class="sr-only" for="footer-email">Email</label>
-        <input id="footer-email" name="email" type="email" placeholder="Contáctanos" required disabled={!formEnabled} />
+        <label for="footer-email">Correo electrónico</label>
+        <input id="footer-email" name="email" type="email" autocomplete="email" placeholder="nombre@ejemplo.cl" required disabled={!formEnabled} />
         <button type="submit" disabled={!formEnabled}>Enviar</button>
         {!formEnabled && <p class="form-status">{formConfig.disabledMessage}</p>}
       </form>
       <div class="institutional-logos" aria-label="Logos institucionales">
-        <img src={assets.gore} alt="Gobierno Regional de O'Higgins" />
-        <img src={assets.sercotec} alt="Sercotec" />
-        <img src={assets.barrios} alt="Barrios Comerciales" />
+        <img src={assets.gore} alt="Gobierno Regional de O'Higgins" loading="lazy" />
+        <img src={assets.sercotec} alt="Sercotec" loading="lazy" />
+        <img src={assets.barrios} alt="Barrios Comerciales" loading="lazy" />
       </div>
+      <p class="site-credit">Implementado por <a href="https://avx.cl/" target="_blank" rel="noopener noreferrer">AVX Informática<span class="sr-only"> (abre en una pestaña nueva)</span></a></p>
     </div>
   </div>
 </footer>
-

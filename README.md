@@ -8,14 +8,15 @@ data/ contiene el mirror Webflow, CSV y evidencia visual originales. scripts/mig
 
 ## Inicio rápido
 
-Requiere Node/npm compatibles con Astro 7; el repositorio no fija versión de Node. Según package.json y lockfile:
+Requiere Node >= 22.12.0 (fijado en .nvmrc y `engines` de package.json). Según package.json y lockfile:
 
 - npm ci
 - npm run dev
 - npm run build
+- npm run check (build + chequeo estático de dist/)
 - npm run preview
 
-npm run migrate:content regenera contenido y activos desde data/; ejecútelo solo tras revisar el contrato y compare el diff. No se requiere base de datos. No hay script de tests propio ni despliegue versionado.
+npm run migrate:content regenera contenido y activos desde data/; ejecútelo solo tras revisar el contrato y compare el diff. No se requiere base de datos. npm run check (alias npm test) valida dist/ con scripts/check-site.mjs; no hay suite unitaria/E2E ni despliegue versionado.
 
 ## Documentación
 
@@ -23,4 +24,4 @@ npm run migrate:content regenera contenido y activos desde data/; ejecútelo sol
 
 ## Estado conocido
 
-La réplica base funciona como sitio estático. Hosting, TLS, endpoint real de contacto y monitoreo productivo no están determinados desde este repositorio. La ruta /auditoria se genera públicamente y muestra metadatos de migración. Los cuerpos HTML migrados se insertan en páginas de detalle; revisar su procedencia antes de publicar cambios. El código y el build son la fuente final de verdad para cualquier modificación.
+La réplica base funciona como sitio estático. Hosting, TLS, endpoint real de contacto y monitoreo productivo no están determinados desde este repositorio. La ruta /auditoria fue retirada del sitio público; el sitio genera sitemap.xml, robots.txt y 404.html con URL canónica https://barriobisquertt.cl. Los cuerpos HTML migrados se insertan en páginas de detalle; revisar su procedencia antes de publicar cambios. El código y el build son la fuente final de verdad para cualquier modificación.

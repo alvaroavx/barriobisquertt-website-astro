@@ -7,9 +7,9 @@ import { orders, sortBySlugOrder } from '../../lib/site';
 const entries = sortBySlugOrder(await getCollection('patrimonio'), orders.patrimonio);
 ---
 
-<BaseLayout title="Patrimonio" description="Patrimonio de Barrio Bisquertt.">
+<BaseLayout title="Patrimonio" description="Memoria, arquitectura y patrimonio de Barrio Bisquertt en Rengo.">
   <main>
-    <header class="page-hero container">
+    <header class="page-hero page-hero--editorial container">
       <p class="eyebrow">Barrio Bisquertt</p>
       <h1>Patrimonio</h1>
     </header>
@@ -28,4 +28,3 @@ const entries = sortBySlugOrder(await getCollection('patrimonio'), orders.patrim
     </section>
   </main>
 </BaseLayout>
-

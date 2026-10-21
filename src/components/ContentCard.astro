@@ -1,5 +1,5 @@
 ---
-import { imageSrc, isoDate } from '../lib/site';
+import { formatDate, imageSrc, isoDate } from '../lib/site';
 
 interface Props {
   href: string;
@@ -10,6 +10,7 @@ interface Props {
   category?: string | null;
   variant?: 'directory' | 'editorial' | 'news' | 'event' | 'heritage';
   containImage?: boolean;
+  headingLevel?: 'h2' | 'h3';
 }
 
 const {
@@ -21,21 +22,16 @@ const {
   category = null,
   variant = 'editorial',
   containImage = false,
+  headingLevel = 'h2',
 } = Astro.props;
 const src = imageSrc(image);
-
-function formatDate(value: string | null | undefined) {
-  if (!value) return null;
-  const d = new Date(value);
-  if (Number.isNaN(d.valueOf())) return null;
-  return d.toLocaleDateString('es-CL', { year: 'numeric', month: 'long', day: 'numeric' });
-}
+const Heading = headingLevel;
 ---
 
 <a class:list={['content-card', `content-card--${variant}`]} href={href}>
   {src && (
     <figure class:list={['content-card__media', { 'is-contain': containImage }]}>
-      <img src={src} alt={title} loading="lazy" />
+      <img src={src} alt="" loading="lazy" decoding="async" />
     </figure>
   )}
   <div class="content-card__body">
@@ -45,8 +41,7 @@ function formatDate(value: string | null | undefined) {
         {date && <time datetime={isoDate(date) || undefined}>{formatDate(date)}</time>}
       </p>
     )}
-    <h2>{title}</h2>
+    <Heading>{title}</Heading>
     {description && <p>{description}</p>}
   </div>
 </a>
-

@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Gallery from '../../components/Gallery.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
-import { demoteBodyHeadings, imageSrc, isoDate, isExternalUrl, plainText } from '../../lib/site';
+import { demoteBodyHeadings, formatDate, imageSrc, isoDate, isExternalUrl, plainText } from '../../lib/site';
 
 export async function getStaticPaths() {
   const entries = await getCollection('eventos');
@@ -20,8 +20,8 @@ const description = plainText(data.descriptionHtml).slice(0, 160);
   <main>
     <header class="article-header container container--article">
       <p class="article-meta">
-        {data.startsAt && <time datetime={isoDate(data.startsAt) || undefined}>{data.startsAt}</time>}
-        {data.endsAt && <time datetime={isoDate(data.endsAt) || undefined}>{data.endsAt}</time>}
+        {data.startsAt && <time datetime={isoDate(data.startsAt) || undefined}>{formatDate(data.startsAt)}</time>}
+        {data.endsAt && <time datetime={isoDate(data.endsAt) || undefined}>hasta el {formatDate(data.endsAt)}</time>}
         {data.location && <span>{data.location}</span>}
       </p>
       <h1>{data.title}</h1>
@@ -35,7 +35,7 @@ const description = plainText(data.descriptionHtml).slice(0, 160);
     </header>
     {mainImage && (
       <figure class="article-media">
-        <img src={mainImage} alt={data.title} />
+        <img src={mainImage} alt={data.title} decoding="async" fetchpriority="high" />
       </figure>
     )}
     <article class="article-content container container--article" set:html={demoteBodyHeadings(data.descriptionHtml)} />
@@ -43,4 +43,3 @@ const description = plainText(data.descriptionHtml).slice(0, 160);
     <Gallery items={data.gallery} title={data.title} />
   </main>
 </BaseLayout>
-

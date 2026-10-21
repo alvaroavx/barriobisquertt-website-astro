@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Gallery from '../../components/Gallery.astro';
 import VideoEmbed from '../../components/VideoEmbed.astro';
-import { imageSrc, isExternalUrl } from '../../lib/site';
+import { imageSrc, isExternalUrl, phoneLinks } from '../../lib/site';
 
 export async function getStaticPaths() {
   const entries = await getCollection('directorio');
@@ -13,6 +13,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const data = entry.data;
 const mainImage = imageSrc(data.mainImage);
+const phones = phoneLinks(data.phone);
 ---
 
 <BaseLayout title={data.name} description={data.description} image={mainImage}>
@@ -23,21 +24,20 @@ const mainImage = imageSrc(data.mainImage);
       {data.description && <p>{data.description}</p>}
       <div class="detail-actions">
         {data.address && <span>{data.address}</span>}
-        {data.phone && <a href={`tel:${data.phone.replace(/\s+/g, '')}`}>{data.phone}</a>}
+        {phones.map((phone) => <a href={phone.href}>{phone.label}</a>)}
         {data.link && (
           <a href={data.link} target={isExternalUrl(data.link) ? '_blank' : undefined} rel={isExternalUrl(data.link) ? 'noopener noreferrer' : undefined}>
-            Ver enlace
+            Ver enlace<span class="sr-only">{isExternalUrl(data.link) ? ' (abre en una pestaña nueva)' : ''}</span>
           </a>
         )}
       </div>
     </header>
     {mainImage && (
       <figure class="article-media">
-        <img src={mainImage} alt={data.name} />
+        <img src={mainImage} alt={data.name} decoding="async" fetchpriority="high" />
       </figure>
     )}
     <Gallery items={data.gallery} title={data.name} />
     <VideoEmbed url={data.video} title={data.name} />
   </main>
 </BaseLayout>
-
