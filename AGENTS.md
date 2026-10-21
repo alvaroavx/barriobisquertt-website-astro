@@ -15,10 +15,11 @@ data/ es fuente (mirror, CSV, PDFs y capturas). scripts/migrate-content.mjs tran
 - Sin PUBLIC_CONTACT_FORM_ENDPOINT el formulario debe declarar el canal deshabilitado.
 - Preservar procedencia y registrar correcciones editoriales, descartes, rutas, redirecciones y activos no resueltos en docs/DISCREPANCIAS_Y_DECISIONES.md. No resolver duplicados silenciosamente.
 - HTML editorial se inserta con set:html; tratar cambios de contenido como frontera de seguridad. No exponer secretos ni colocar credenciales en variables PUBLIC_.
-- /auditoria se genera como ruta pública. Evaluar impacto de cambios de manifiesto y metadatos.
+- /auditoria fue retirada del artefacto público (scripts/check-site.mjs falla si reaparece). Los manifiestos de src/data/generated/ son trazabilidad interna; no publicarlos sin decisión explícita.
+- BaseLayout emite canonical, Open Graph, Twitter Card y JSON-LD con astro.config `site`; sitemap.xml se genera desde las colecciones y robots.txt vive en public/.
 
 ## Testing, datos e integraciones
-Validación mínima de cambios funcionales: npm run build y revisión de las rutas/medios afectados. No hay suite propia. No hay DB ni migraciones SQL; npm run migrate:content escribe múltiples archivos y exige revisar diff. Google Maps, YouTube, Instagram y receptor opcional de contacto son dependencias externas de browser; verificar su contrato antes de modificarlos.
+Validación mínima de cambios funcionales: npm run check (build + scripts/check-site.mjs: un h1, metadatos SEO, enlaces internos, recursos locales, sitemap/robots/404) y revisión de las rutas/medios afectados. No hay suite unitaria ni E2E. No hay DB ni migraciones SQL; npm run migrate:content escribe múltiples archivos y exige revisar diff. Google Maps, YouTube, Instagram y receptor opcional de contacto son dependencias externas de browser; verificar su contrato antes de modificarlos.
 
 ## Documentación y restricciones
 Todo Markdown generado o mantenido por agentes vive en docs/, salvo README.md y AGENTS.md. Actualizar documentos afectados cuando cambie arquitectura, rutas, contenido, datos, activos, scripts, comandos, validaciones o decisiones. No asumir comportamiento por nombres o por docs históricas; verificar código y tests disponibles. No cambiar interfaces públicas sin analizar consumidores ni introducir patrones nuevos sin decisión explícita. Instrucciones locales AGENTS.md solo si existen y aplican al módulo.

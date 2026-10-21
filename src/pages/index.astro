@@ -13,27 +13,34 @@ const featured = noticias.find((item) => item.data.slug === 'nace-barrio-bisquer
 const latestNews = noticias
   .filter((item) => item.data.slug !== featured?.data.slug)
   .slice(0, 3);
-const homeEvents = eventos.slice(0, 4);
+const homeEvents = eventos;
 const heritage = patrimonio[1] || patrimonio[0];
 ---
 
 <BaseLayout title={site.name} description={site.description}>
   <main>
-    <section aria-labelledby="home-title">
-      <h1 id="home-title" class="sr-only">Barrio Bisquertt</h1>
-      <a href="https://www.youtube.com/watch?v=7sTgCUDREEo" target="_blank" rel="noopener noreferrer" aria-label="Ver video de Barrio Bisquertt en YouTube">
-        <video class="home-video" autoplay muted loop playsinline>
-          <source src={assets.heroMp4} type="video/mp4" />
-          <source src={assets.heroWebm} type="video/webm" />
-        </video>
-      </a>
+    <section class="home-hero" aria-labelledby="home-title">
+      <video class="home-video" autoplay muted loop playsinline preload="metadata" data-ambient-video aria-label="Vida comunitaria en Barrio Bisquertt">
+        <source src={assets.heroMp4} type="video/mp4" />
+        <source src={assets.heroWebm} type="video/webm" />
+      </video>
+      <div class="home-hero__content">
+        <p class="eyebrow">Rengo · Región de O’Higgins</p>
+        <h1 id="home-title">Una avenida con historias, sabores y patrimonio.</h1>
+        <p>Recorre los emprendimientos, la memoria y la vida cultural de Barrio Bisquertt.</p>
+        <div class="home-hero__actions">
+          <a class="button-link" href="/directorio">Explorar el directorio</a>
+          <button class="video-control" type="button" data-video-toggle>Pausar video</button>
+          <a class="text-link" href="https://www.youtube.com/watch?v=7sTgCUDREEo" target="_blank" rel="noopener noreferrer">Ver video completo<span class="sr-only"> (abre en una pestaña nueva)</span></a>
+        </div>
+      </div>
     </section>
 
     <div class="featured-grid">
       {featured && (
         <section class="home-section" aria-labelledby="featured-title">
           <div class="home-section__header">
-            <h3 id="featured-title">Destacado</h3>
+            <h2 id="featured-title">Destacado</h2>
           </div>
           <ContentCard
             href={featured.data.route}
@@ -43,6 +50,7 @@ const heritage = patrimonio[1] || patrimonio[0];
             date={featured.data.publishedOn}
             category={featured.data.category}
             variant="news"
+            headingLevel="h3"
           />
         </section>
       )}
@@ -61,6 +69,7 @@ const heritage = patrimonio[1] || patrimonio[0];
               date={item.data.publishedOn}
               category={item.data.category}
               variant="news"
+              headingLevel="h3"
             />
           ))}
         </div>
@@ -80,6 +89,7 @@ const heritage = patrimonio[1] || patrimonio[0];
             image={item.data.mainImage}
             date={item.data.publishedOn}
             variant="event"
+            headingLevel="h3"
           />
         ))}
       </div>

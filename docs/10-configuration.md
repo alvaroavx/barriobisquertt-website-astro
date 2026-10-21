@@ -1,11 +1,13 @@
 # Configuración
 
-Última revisión documental: 2026-09-16. Estado: reconstruido desde repositorio.
+Última revisión documental: 2026-10-21. Estado: reconstruido desde repositorio.
 
 | Variable/opción | Requerida | Uso/default | Sensible |
 |---|---|---|---|
 | PUBLIC_CONTACT_FORM_ENDPOINT | No | import.meta.env en src/data/navigation.ts; vacío deshabilita formulario | Puede revelar receptor, no debe contener credenciales |
-| Astro site | No definida | BaseLayout usa Astro.site o Astro.url.origin para canonical | No |
+| Astro site | astro.config.mjs: https://barriobisquertt.cl | canonical, og:url, og:image y sitemap; fallback site.url en src/lib/site.ts | No |
+| Versión de Node | .nvmrc (22.12.0) y engines >=22.12.0 | requerida por Astro 7 | No |
+| Imagen social por defecto | assets.socialImage en src/lib/site.ts | og:image cuando la página no aporta imagen | No |
 | dev/preview host | Fijo en package.json | 0.0.0.0 | No |
 | Orden editorial | Código en src/lib/site.ts | arrays por colección; entradas extras al final | No |
 | URLs de mapa/redes | Código en src/lib/site.ts | constantes públicas | No |

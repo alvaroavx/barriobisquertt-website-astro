@@ -12,6 +12,6 @@ flowchart TD
  L --> S["SiteScripts"]
  F --> N["navigation.ts"]
 ```
-/auditoria usa documento HTML propio y manifiestos, sin BaseLayout.
+Todas las páginas, incluida 404, usan BaseLayout. /auditoria fue retirada en 2026-10.
 
-Última revisión documental: 2026-09-16. Estado: reconstruido desde repositorio.
+Última revisión documental: 2026-10-21. Estado: reconstruido desde repositorio.

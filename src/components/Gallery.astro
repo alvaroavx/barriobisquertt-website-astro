@@ -27,18 +27,18 @@ const resolved = items.map((item) => ({ item, src: imageSrc(item) })).filter((en
           data-lightbox-open
           data-full-src={src}
           data-alt={`${title} ${index + 1}`}
+          aria-label={`Ver imagen ${index + 1} de ${resolved.length}: ${title}`}
         >
-          <img src={src} alt={`${title} ${index + 1}`} loading="lazy" />
+          <img src={src} alt="" loading="lazy" decoding="async" />
         </button>
       ))}
     </div>
-    <div class="lightbox" data-lightbox aria-modal="true" role="dialog" aria-label={`Galeria de ${title}`}>
+    <dialog class="lightbox" data-lightbox aria-label={`Galería de ${title}`}>
       <button class="lightbox-close" type="button" data-lightbox-close>Cerrar</button>
       <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Imagen anterior">‹</button>
       <img data-lightbox-image alt="" />
       <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Imagen siguiente">›</button>
-      <p data-lightbox-caption></p>
-    </div>
+      <p data-lightbox-caption aria-live="polite"></p>
+    </dialog>
   </section>
 )}
-
