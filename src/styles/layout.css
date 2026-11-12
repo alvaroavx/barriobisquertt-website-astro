@@ -761,9 +761,23 @@
 .footer-form input {
   min-height: 48px;
   padding: 0 18px;
-  border: 0;
+  color: var(--color-text);
+  background: rgb(255 255 255 / 90%);
+  border: 1px solid rgb(23 23 23 / 14%);
   border-radius: var(--radius-pill);
   font: inherit;
+}
+
+.footer-form input::placeholder {
+  color: var(--color-muted);
+}
+
+/* Foco igual al buscador del directorio: linea negra por fuera y fondo blanco. */
+.footer-form input:focus-visible {
+  background: var(--color-surface);
+  border-color: var(--color-text);
+  outline: 3px solid var(--color-text);
+  outline-offset: 2px;
 }
 
 .footer-form button {
