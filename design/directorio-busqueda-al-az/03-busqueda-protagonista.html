@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directorio — Búsqueda protagonista</title>
+<style>
+  :root {
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --color-page: #f7f4f5;
+    --color-page-alt: #f5f2f3;
+    --color-surface: #ffffff;
+    --color-text: #171717;
+    --color-text-webflow: #333333;
+    --color-muted: #999999;
+    --color-nav-active: #b7bcd8;
+    --color-card-tint: #dab5cf;
+    --color-border: #dddddd;
+    --color-accent-orange: #dd783f;
+    --radius-sm: 3px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+
+  h1, h2, h3 { margin: 0; font-weight: 300; }
+  a { color: inherit; text-underline-offset: .18em; }
+
+  :focus-visible { outline: 3px solid var(--color-text); outline-offset: 4px; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  .container { width: min(100% - 48px, 1500px); margin-inline: auto; }
+
+  .site-header {
+    position: sticky;
+    top: 16px;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100% - 48px, 1180px);
+    margin: 16px auto 0;
+    padding: 10px 14px;
+    background: rgb(247 244 245 / 92%);
+    border: 1px solid rgb(23 23 23 / 8%);
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(12px);
+  }
+
+  .wordmark {
+    padding: 0 8px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .site-nav { display: flex; align-items: center; gap: 8px; }
+
+  .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border-radius: var(--radius-pill);
+    font-size: .98rem;
+    text-decoration: none;
+  }
+
+  .site-nav a:hover,
+  .site-nav a.is-active { background: var(--color-nav-active); }
+
+  .hero { padding: 88px 0 40px; }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-muted);
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 6.2rem);
+    line-height: .95;
+    max-width: 980px;
+  }
+
+  .hero p.lead {
+    max-width: 620px;
+    margin: 20px 0 0;
+    color: var(--color-text-webflow);
+    font-size: 1.1rem;
+  }
+
+  /* Buscador protagonista: el control más grande de la página */
+  .big-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: min(100%, 860px);
+    margin-top: 32px;
+    padding: 0 10px 0 26px;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 10%);
+    border-radius: var(--radius-pill);
+    box-shadow: 0 18px 36px rgb(23 23 23 / 6%);
+  }
+
+  .big-search:focus-within { border-color: var(--color-text); }
+
+  .big-search > svg {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    color: var(--color-text);
+  }
+
+  .big-search input {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 76px;
+    padding: 0;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 1.35rem;
+  }
+
+  .big-search input::placeholder { color: var(--color-muted); }
+  .big-search input:focus { outline: none; }
+  .big-search input:focus-visible { outline: none; }
+
+  .big-search__submit {
+    flex: 0 0 auto;
+    min-height: 56px;
+    padding: 0 24px;
+    color: var(--color-page);
+    background: var(--color-text);
+    border: 0;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .98rem;
+    cursor: pointer;
+  }
+
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .suggestions span {
+    color: var(--color-muted);
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  .suggestions button {
+    min-height: 36px;
+    padding: 0 14px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .88rem;
+    cursor: pointer;
+  }
+
+  .suggestions button:hover { border-color: var(--color-text); background: var(--color-surface); }
+
+  /* Barra alfabética pegajosa */
+  .toolbar {
+    position: sticky;
+    top: 88px;
+    z-index: 20;
+    padding: 10px 0;
+    background: rgb(247 244 245 / 96%);
+    border-bottom: 1px solid rgb(23 23 23 / 10%);
+    backdrop-filter: blur(10px);
+  }
+
+  .toolbar__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .alpha {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    list-style: none;
+    scrollbar-width: none;
+  }
+
+  .alpha::-webkit-scrollbar { display: none; }
+
+  .alpha button {
+    display: grid;
+    place-items: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 8px;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .92rem;
+    cursor: pointer;
+  }
+
+  .alpha button:hover { background: var(--color-page-alt); }
+
+  .alpha button[aria-pressed="true"] {
+    color: var(--color-page);
+    background: var(--color-text);
+  }
+
+  .alpha button:disabled { color: rgb(23 23 23 / 22%); cursor: default; background: transparent; }
+
+  .alpha__all { padding: 0 14px !important; font-size: .86rem !important; }
+
+  .alpha__sep {
+    flex: 0 0 auto;
+    width: 1px;
+    height: 18px;
+    margin: 0 8px;
+    background: rgb(23 23 23 / 12%);
+  }
+
+  .toolbar__meta {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  .toolbar__count {
+    margin: 0;
+    font-size: .86rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .toolbar__order { margin: 0; color: var(--color-muted); font-size: .8rem; }
+
+  .toolbar__clear {
+    min-height: 32px;
+    padding: 0 12px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+
+  /* Listado por letra */
+  .results { padding-bottom: 96px; }
+
+  .letter-group { border-top: 1px solid rgb(23 23 23 / 8%); }
+
+  .letter-group__head {
+    display: grid;
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 24px;
+    align-items: baseline;
+    padding: 26px 0 10px;
+  }
+
+  .letter-group__letter {
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .letter-group__count { margin: 0; color: var(--color-muted); font-size: .8rem; }
+
+  .row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 88px minmax(240px, 1.1fr) minmax(0, 1.6fr) 220px 24px;
+    gap: 24px;
+    align-items: center;
+    padding: 18px 12px 18px 0;
+    margin: 0 -12px;
+    color: inherit;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: background 160ms ease, transform 160ms ease;
+  }
+
+  .row:hover { background: var(--color-surface); }
+
+  /* Hairline entre filas: pseudo-elemento para no curvar el borde con el radio */
+  .row + .row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgb(23 23 23 / 7%);
+  }
+
+  .row__mark {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    color: var(--color-text);
+    background: var(--color-card-tint);
+    border-radius: var(--radius-sm);
+    font-size: .8rem;
+    font-weight: 700;
+  }
+
+  .row__name { font-size: 24px; line-height: 1.1; }
+
+  .row__desc {
+    overflow: hidden;
+    margin: 0;
+    color: var(--color-text-webflow);
+    font-size: .96rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .row__address {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: .82rem;
+  }
+
+  .row__arrow {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    color: var(--color-muted);
+    transition: transform 160ms ease, color 160ms ease;
+  }
+
+  .row:hover .row__arrow { color: var(--color-text); transform: translateX(3px); }
+
+  mark {
+    padding: 0 .1em;
+    color: inherit;
+    background: rgb(221 120 63 / 22%);
+    border-radius: 2px;
+  }
+
+  .empty {
+    padding: 64px 32px;
+    margin: 32px 0 96px;
+    text-align: center;
+    background: var(--color-surface);
+    border: 1px dashed rgb(23 23 23 / 14%);
+    border-radius: var(--radius-lg);
+  }
+
+  .empty[hidden] { display: none; }
+  .empty h2 { margin-bottom: 8px; font-size: 24px; }
+  .empty p { margin: 0 0 20px; color: var(--color-text-webflow); }
+
+  .empty button {
+    min-height: 44px;
+    padding: 0 20px;
+    color: var(--color-page);
+    background: var(--color-text);
+    border: 0;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .results[hidden] { display: none; }
+
+  .site-footer {
+    padding: 40px 0 56px;
+    border-top: 1px solid rgb(23 23 23 / 8%);
+  }
+
+  .site-footer p { margin: 0; color: var(--color-muted); font-size: .85rem; }
+
+  @media (max-width: 991px) {
+    .row { grid-template-columns: 56px minmax(0, 1fr) 160px 24px; }
+    .row__desc { display: none; }
+  }
+
+  @media (max-width: 767px) {
+    .container { width: calc(100% - 28px); }
+    .site-nav { display: none; }
+    .hero { padding-top: 58px; }
+    .big-search { padding-left: 18px; }
+    .big-search input { min-height: 64px; font-size: 1.1rem; }
+    .big-search__submit { display: none; }
+    .toolbar { top: 80px; }
+    .toolbar__inner { flex-wrap: wrap; gap: 10px; }
+    .toolbar__meta { margin-left: 0; width: 100%; justify-content: space-between; }
+    .letter-group__head { grid-template-columns: 44px minmax(0, 1fr); gap: 16px; }
+    .row { grid-template-columns: 44px minmax(0, 1fr) 24px; gap: 14px; padding-right: 4px; }
+    .row__address { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .row:hover .row__arrow { transform: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#">Barrio Bisquertt</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#">Inicio</a>
+      <a class="is-active" href="#" aria-current="page">Directorio</a>
+      <a href="#">Noticias</a>
+      <a href="#">Historias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero container">
+      <p class="eyebrow">Barrio Bisquertt</p>
+      <h1>Directorio</h1>
+      <p class="lead">Encuentra el local que buscas entre los 20 comercios de Avenida Bisquertt. Escribe parte del nombre, la dirección o la actividad.</p>
+
+      <form class="big-search" role="search" onsubmit="return false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path>
+        </svg>
+        <label class="sr-only" for="q">Buscar en el directorio</label>
+        <input id="q" type="search" placeholder="Sushi, pizzas, Bisquertt 380…" autocomplete="off" aria-describedby="result-count">
+        <button class="big-search__submit" type="submit">Buscar</button>
+      </form>
+
+      <ul class="suggestions" aria-label="Búsquedas sugeridas">
+        <li><span>Prueba con</span></li>
+        <li><button type="button" data-term="sushi">Sushi</button></li>
+        <li><button type="button" data-term="pizza">Pizza</button></li>
+        <li><button type="button" data-term="café">Café</button></li>
+        <li><button type="button" data-term="waffles">Waffles</button></li>
+        <li><button type="button" data-term="mariscos">Mariscos</button></li>
+      </ul>
+    </div>
+
+    <div class="toolbar">
+      <div class="container toolbar__inner">
+        <ul class="alpha" id="alpha" aria-label="Filtrar por letra inicial"></ul>
+        <div class="toolbar__meta">
+          <p class="toolbar__count" id="result-count" role="status" aria-live="polite">20 locales</p>
+          <p class="toolbar__order">Orden alfabético</p>
+          <button class="toolbar__clear" type="button" id="reset" hidden>Limpiar</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="container results" id="results" aria-label="Resultados del directorio"></section>
+
+    <div class="container">
+      <div class="empty" id="empty" hidden>
+        <p class="eyebrow">Sin resultados</p>
+        <h2>Nada por acá con «<span id="empty-term"></span>»</h2>
+        <p>Revisa la ortografía o prueba con el nombre del local, la calle o el tipo de comida.</p>
+        <button type="button" id="empty-reset">Ver los 20 locales</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Barrio Bisquertt · Rengo, Región de O'Higgins · #Búsqueda protagonista</p>
+    </div>
+  </footer>
+
+<script>
+  const entries = [
+    ['Barroco', 'Av. Bisquertt 319', 'Terraza, coctelería y una carta cuidada en el gran estreno de la avenida.'],
+    ['CasaQuinta', 'Pasaje 1 150-C', 'Casa de té y objetos de colección reunidos por Juan Carlos Morales.'],
+    ['Clima Baluarte', 'Av. Bisquertt 310', 'Venta, instalación y mantención de sistemas de aire acondicionado.'],
+    ['Cultura Zeta Consultora', 'Fortunato Venegas 75', 'Desarrollo cultural y creativo para la Región de O\'Higgins.'],
+    ['Dom Black', 'Av. Bisquertt 362', 'Tragos, cafetería y pizzas con estética de container.'],
+    ['Hey Coffee Restobar', 'Av. Bisquertt 284', 'De los churros a una carta de restobar abierta todo el día.'],
+    ['I Love Sushi', 'Av. Bisquert 380 local C', 'Sushi fresco, con versiones ilimitadas en el corazón del barrio.'],
+    ['Instituto Baluarte Cicap', 'Av. Bisquertt 310', 'OTEC con cursos presenciales y capacitación para el mundo laboral.'],
+    ['K-Calafate', 'Av. Bisquertt 383 A', 'Waffles, café y postres preparados con creatividad en el momento.'],
+    ['La Mazza', 'Av. Bisquertt 357', 'Pizzería en el histórico Club de Pesca y Caza Caupolicán.'],
+    ['La República', 'Av. Bisquertt 365', 'Cervecería independiente con cocina de barrio y ambiente de encuentro.'],
+    ['Mandala Verde Café', 'Colo Colo 138', 'Desayunos, almuerzos y talleres abiertos a la comunidad.'],
+    ['Mi Piace', 'Av. Bisquertt 284 local 4', 'Restaurante y pizzería de reunión durante todo el día.'],
+    ['Minimarket Paso de la Muerte', 'Av. Bisquertt 523', 'Almacén de esquina con botillería y productos de paso.'],
+    ['Pescadería Mares del Sur', 'Av. Bisquertt 438 A-B', 'Pescados y mariscos frescos que llegan de la costa cada mañana.'],
+    ['Restoba Pizza Steve\'s', 'Av. Bisquertt 380', 'Pizzas de 52 centímetros, virales por su tamaño, hasta el cierre.'],
+    ['Smash Burger', 'Av. Bisquertt 426', 'Hamburguesas directo a la plancha con espíritu nocturno.'],
+    ['Sonríe Té', 'Daniel Morán 21 local 3', 'Té, terraza interior y repostería en un espacio tranquilo.'],
+    ['Tu Esquina', 'Av. Bisquertt 265', 'Pub y restobar de encuentro entre amigos y familias.'],
+    ['Umbral', 'Daniel Morán 21', 'Ecotienda a granel, cafetería y espacio de bienestar.']
+  ];
+
+  const normalize = (value) => value
+    .toLocaleLowerCase('es')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  // Coincide por subcadena o por inicio de palabra: «pizza» encuentra «pizzería»
+  const matchesField = (text, needle) => {
+    if (!needle) return true;
+    const plain = normalize(text);
+    if (plain.includes(needle)) return true;
+    return plain.split(/[^a-z0-9]+/).some((word) => word.startsWith(needle));
+  };
+
+  const items = entries
+    .map(([name, address, description]) => ({
+      name,
+      address,
+      description,
+      initial: normalize(name).charAt(0).toLocaleUpperCase('es')
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, 'es'));
+
+  const results = document.getElementById('results');
+  const alpha = document.getElementById('alpha');
+  const empty = document.getElementById('empty');
+  const emptyTerm = document.getElementById('empty-term');
+  const count = document.getElementById('result-count');
+  const reset = document.getElementById('reset');
+  const input = document.getElementById('q');
+  const plural = (n) => n === 1 ? '1 local' : `${n} locales`;
+
+  function escape(value) {
+    return value.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function highlight(text, term) {
+    if (!term) return escape(text);
+    const plain = normalize(text);
+    const needle = normalize(term);
+    let index = plain.indexOf(needle);
+    if (index === -1) return escape(text);
+    // Solo marca coincidencias al inicio de palabra, igual que el filtro
+    while (index > 0 && /[a-z0-9]/.test(plain[index - 1])) {
+      index = plain.indexOf(needle, index + 1);
+      if (index === -1) return escape(text);
+    }
+    return escape(text.slice(0, index))
+      + '<mark>' + escape(text.slice(index, index + term.length)) + '</mark>'
+      + escape(text.slice(index + term.length));
+  }
+
+  let activeLetter = null;
+
+  function matches(item, needle) {
+    return matchesField(item.name, needle)
+      || matchesField(item.address, needle)
+      || matchesField(item.description, needle);
+  }
+
+  function render() {
+    const term = input.value.trim();
+    const needle = normalize(term);
+    const visible = items.filter((item) =>
+      (!activeLetter || item.initial === activeLetter) && matches(item, needle));
+
+    const present = new Set(
+      items.filter((item) => matches(item, needle)).map((item) => item.initial)
+    );
+    const letters = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('');
+    alpha.innerHTML = `<li><button class="alpha__all" type="button" data-letter="" aria-pressed="${activeLetter === null}">Todas</button></li>
+      <li class="alpha__sep" aria-hidden="true"></li>` + letters.map((letter) => `
+      <li><button type="button" data-letter="${letter}" aria-pressed="${activeLetter === letter}" ${present.has(letter) ? '' : 'disabled'}>${letter}</button></li>
+    `).join('');
+
+    const groups = new Map();
+    visible.forEach((item) => {
+      if (!groups.has(item.initial)) groups.set(item.initial, []);
+      groups.get(item.initial).push(item);
+    });
+
+    results.innerHTML = [...groups.entries()].map(([letter, group]) => `
+      <div class="letter-group" id="letra-${letter}">
+        <div class="letter-group__head">
+          <h2 class="letter-group__letter">${letter}</h2>
+          <p class="letter-group__count">${plural(group.length)}</p>
+        </div>
+        ${group.map((item) => `
+          <a class="row" href="#">
+            <span class="row__mark" aria-hidden="true">${escape(item.initial)}</span>
+            <h3 class="row__name">${highlight(item.name, term)}</h3>
+            <p class="row__desc">${highlight(item.description, term)}</p>
+            <p class="row__address">${highlight(item.address, term)}</p>
+            <span class="row__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12h13M13 6l6 6-6 6"></path>
+              </svg>
+            </span>
+          </a>`).join('')}
+      </div>
+    `).join('');
+
+    const isEmpty = visible.length === 0;
+    empty.hidden = !isEmpty;
+    results.hidden = isEmpty;
+    emptyTerm.textContent = term || (activeLetter ? `la letra ${activeLetter}` : 'estos filtros');
+    count.textContent = plural(visible.length);
+    reset.hidden = !term && !activeLetter;
+  }
+
+  alpha.addEventListener('click', (event) => {
+    const btn = event.target.closest('button');
+    if (!btn || btn.disabled) return;
+    activeLetter = btn.dataset.letter || null;
+    render();
+  });
+
+  document.querySelectorAll('.suggestions button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      input.value = btn.dataset.term;
+      activeLetter = null;
+      render();
+      input.focus();
+    });
+  });
+
+  input.addEventListener('input', () => {
+    if (activeLetter) activeLetter = null;
+    render();
+  });
+
+  reset.addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+
+  document.getElementById('empty-reset').addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+
+  render();
+</script>
+</body>
+</html>

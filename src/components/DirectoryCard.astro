@@ -1,0 +1,49 @@
+---
+import { imageSrc } from '../lib/site';
+import { letterOf } from '../lib/directory';
+
+interface Props {
+  href: string;
+  name: string;
+  description?: string | null;
+  address?: string | null;
+  rubro?: string | null;
+  image?: { publicPath: string | null; original: string; status: string } | null;
+}
+
+const { href, name, description = null, address = null, rubro = null, image = null } = Astro.props;
+const src = imageSrc(image);
+const letter = letterOf(name);
+---
+
+<a
+  class="content-card content-card--directory"
+  href={href}
+  data-directory-card
+  data-name={name}
+  data-address={address ?? ''}
+  data-description={description ?? ''}
+  data-rubro={rubro ?? ''}
+  data-letter={letter}
+>
+  {src && (
+    <figure class="content-card__media">
+      <img src={src} alt={name} loading="lazy" />
+      {rubro && <span class="content-card__rubro">{rubro}</span>}
+    </figure>
+  )}
+  <div class="content-card__body">
+    {!src && rubro && <span class="content-card__rubro content-card__rubro--inline">{rubro}</span>}
+    <h2 data-directory-name>{name}</h2>
+    {description && <p data-directory-description>{description}</p>}
+    {address && (
+      <p class="content-card__address">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"></path>
+          <circle cx="12" cy="10" r="2.4"></circle>
+        </svg>
+        <span data-directory-address-text>{address}</span>
+      </p>
+    )}
+  </div>
+</a>

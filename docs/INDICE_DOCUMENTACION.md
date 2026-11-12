@@ -12,6 +12,7 @@ Regla operativa: `data/` es la fuente local desde donde se consume informacion y
 - `DISCREPANCIAS_Y_DECISIONES.md`: conflictos entre fuentes, inconsistencias editoriales y decisiones pendientes o aprobadas.
 - `ARQUITECTURA_PROPUESTA.md`: arquitectura Astro, modelo de datos, assets y estrategia tecnica.
 - `INFORME_FASE_1_FASE_2_INICIAL.md`: informe del primer bloque ejecutado de FASE 1 y FASE 2, actualizado con el estado implementado de FASE 3.
+- `DISENO_DIRECTORIO_BUSQUEDA.md`: propuesta visual de buscador y filtro alfabetico para `/directorio` (tableros en `design/directorio-busqueda-al-az/`, sin implementar).
 
 ## Evidencia visual
 

@@ -1,0 +1,27 @@
+{
+  "title": "Directorio: buscador y filtro alfabético",
+  "brief": "Buscador por nombre, dirección o actividad más filtro A-Z para la página /directorio de Barrio Bisquertt, sobre los tokens y componentes que ya existen en el sitio.",
+  "artboards": [
+    {
+      "file": "01-filtro-integrado.html",
+      "title": "Filtro integrado",
+      "tradeoff": "Cambio minimo sobre la pagina actual: la grilla de tarjetas se mantiene y el buscador con las letras queda arriba del listado, desplazandose con la pagina. Ocupa una franja vertical que se pierde al scrollear y no ofrece conteos por letra.",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "file": "02-indice-lateral.html",
+      "title": "Índice lateral A-Z",
+      "tradeoff": "El alfabeto como metáfora de navegación: riel fijo con conteos por letra y resultados agrupados por inicial. Gana orientación, pierde ancho de tarjeta y peso visual del hero.",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "file": "03-busqueda-protagonista.html",
+      "title": "Búsqueda protagonista",
+      "tradeoff": "El buscador manda: campo grande con sugerencias, letras en barra pegajosa y resultados en filas compactas agrupadas por letra. La forma más rápida de encontrar un local, la más lejana a la grilla de tarjetas actual.",
+      "width": 1440,
+      "height": 1000
+    }
+  ]
+}

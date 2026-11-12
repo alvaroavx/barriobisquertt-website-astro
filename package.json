@@ -7,6 +7,7 @@
     "dev": "astro dev --host 0.0.0.0",
     "start": "astro dev --host 0.0.0.0",
     "migrate:content": "node scripts/migrate-content.mjs",
+    "test": "node --test tests/directory.test.ts tests/directory-rubros.test.ts",
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0"
   },

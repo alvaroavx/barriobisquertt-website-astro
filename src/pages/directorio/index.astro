@@ -1,31 +1,159 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ContentCard from '../../components/ContentCard.astro';
-import { orders, sortBySlugOrder } from '../../lib/site';
+import DirectoryCard from '../../components/DirectoryCard.astro';
+import DirectoryFilters from '../../components/DirectoryFilters.astro';
+import { availableLetters, sortByName } from '../../lib/directory';
+import { rubroFor } from '../../data/directory-rubros';
 
-const entries = sortBySlugOrder(await getCollection('directorio'), orders.directorio);
+const entries = sortByName(await getCollection('directorio'), (entry) => entry.data.name);
+const letters = availableLetters(entries.map((entry) => entry.data.name));
+const total = entries.length;
 ---
 
 <BaseLayout title="Directorio" description="Directorio de comercios de Barrio Bisquertt.">
-  <main>
+  <main data-directory>
     <header class="page-hero container">
       <p class="eyebrow">Barrio Bisquertt</p>
       <h1>Directorio</h1>
+      <p>Comercios, oficios y servicios de Avenida Bisquertt y sus calles cercanas. Busca por nombre, dirección o actividad, o salta a una letra.</p>
     </header>
-    <section class="container">
-      <div class="card-grid">
+
+    <DirectoryFilters letters={letters} total={total} />
+
+    <section class="container" aria-label="Resultados del directorio">
+      <div class="card-grid" data-directory-grid>
         {entries.map((entry) => (
-          <ContentCard
+          <DirectoryCard
             href={entry.data.route}
-            title={entry.data.name}
+            name={entry.data.name}
             description={entry.data.description}
+            address={entry.data.address}
+            rubro={rubroFor(entry.data.slug)}
             image={entry.data.mainImage}
-            variant="directory"
           />
         ))}
+      </div>
+
+      <div class="directory-empty" data-directory-empty hidden>
+        <p class="eyebrow">Sin resultados</p>
+        <h2>No encontramos locales con «<span data-directory-empty-term></span>»</h2>
+        <p>Prueba con otra palabra o vuelve a ver el directorio completo.</p>
+        <button class="directory-empty__reset" type="button" data-directory-empty-reset>Limpiar los filtros</button>
       </div>
     </section>
   </main>
 </BaseLayout>
 
+<script>
+  import { highlightParts, matchesText } from '../../lib/directory';
+
+  const root = document.querySelector<HTMLElement>('[data-directory]');
+  const input = root?.querySelector<HTMLInputElement>('[data-directory-input]');
+  const clearButton = root?.querySelector<HTMLButtonElement>('[data-directory-clear]');
+  const resetButton = root?.querySelector<HTMLButtonElement>('[data-directory-reset]');
+  const count = root?.querySelector<HTMLElement>('[data-directory-count]');
+  const grid = root?.querySelector<HTMLElement>('[data-directory-grid]');
+  const empty = root?.querySelector<HTMLElement>('[data-directory-empty]');
+  const emptyTerm = root?.querySelector<HTMLElement>('[data-directory-empty-term]');
+  const emptyReset = root?.querySelector<HTMLButtonElement>('[data-directory-empty-reset]');
+  const letterButtons = root ? [...root.querySelectorAll<HTMLButtonElement>('[data-directory-letter]')] : [];
+  const cards = root ? [...root.querySelectorAll<HTMLElement>('[data-directory-card]')] : [];
+
+  if (input && count && grid && empty) {
+    let activeLetter: string | null = null;
+
+    const plural = (value: number) => (value === 1 ? '1 local' : `${value} locales`);
+
+    // Resalta la coincidencia con nodos de texto: nunca se interpreta HTML del contenido.
+    function setText(element: Element | null, value: string, query: string) {
+      if (!element) return;
+      const parts = query ? highlightParts(value, query) : [{ text: value, match: false }];
+      if (parts.length === 1 && !parts[0].match) {
+        element.textContent = value;
+        return;
+      }
+      element.replaceChildren(
+        ...parts.map((part) => {
+          if (!part.match) return document.createTextNode(part.text);
+          const mark = document.createElement('mark');
+          mark.textContent = part.text;
+          return mark;
+        }),
+      );
+    }
+
+    function syncLetters() {
+      letterButtons.forEach((button) => {
+        const value = button.dataset.directoryLetter ?? '';
+        const pressed = value === '' ? activeLetter === null : value === activeLetter;
+        button.setAttribute('aria-pressed', String(pressed));
+      });
+    }
+
+    function apply() {
+      const query = input!.value.trim();
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const name = card.dataset.name ?? '';
+        const address = card.dataset.address ?? '';
+        const description = card.dataset.description ?? '';
+        const cardLetter = card.dataset.letter ?? '';
+        const matchLetter = !activeLetter || cardLetter === activeLetter;
+        const matchQuery = !query
+          || matchesText(name, query)
+          || matchesText(address, query)
+          || matchesText(description, query)
+          || matchesText(card.dataset.rubro ?? '', query);
+        const show = matchLetter && matchQuery;
+
+        card.toggleAttribute('hidden', !show);
+        if (!show) return;
+
+        visible += 1;
+        setText(card.querySelector('[data-directory-name]'), name, query);
+        setText(card.querySelector('[data-directory-description]'), description, query);
+        setText(card.querySelector('[data-directory-address-text]'), address, query);
+      });
+
+      count!.textContent = plural(visible);
+      grid!.hidden = visible === 0;
+      empty!.hidden = visible !== 0;
+      if (emptyTerm) emptyTerm.textContent = query || (activeLetter ? `la letra ${activeLetter}` : 'los filtros');
+      if (clearButton) clearButton.hidden = input!.value.length === 0;
+      syncLetters();
+    }
+
+    function reset() {
+      input!.value = '';
+      activeLetter = null;
+      apply();
+      input!.focus();
+    }
+
+    input.addEventListener('input', () => {
+      activeLetter = null;
+      apply();
+    });
+
+    letterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (button.disabled) return;
+        activeLetter = button.dataset.directoryLetter || null;
+        apply();
+      });
+    });
+
+    clearButton?.addEventListener('click', () => {
+      input.value = '';
+      apply();
+      input.focus();
+    });
+
+    resetButton?.addEventListener('click', reset);
+    emptyReset?.addEventListener('click', reset);
+
+    apply();
+  }
+</script>

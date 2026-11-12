@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "chosen": "01-filtro-integrado.html",
+  "handoffs": {
+    "01-filtro-integrado.html": {
+      "status": "implemented",
+      "queued": false,
+      "sentAt": "2026-11-12T12:54:11.442Z",
+      "startedAt": "2026-11-12T12:54:56.822Z",
+      "implementedAt": "2026-11-12T13:15:32.977Z",
+      "note": "Panel sin sticky (se desplaza con la página) y badge reemplazado por pill de rubro: 12 rubros editoriales en src/data/directory-rubros.ts con prueba que exige una entrada por ficha. El rubro también entra en la búsqueda.",
+      "previewUrl": "http://127.0.0.1:4321/directorio/"
+    }
+  }
+}

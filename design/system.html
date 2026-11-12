@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barrio Bisquertt — Sistema de diseño</title>
+<style>
+  :root {
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+
+    --color-page: #f7f4f5;
+    --color-page-alt: #f5f2f3;
+    --color-surface: #ffffff;
+    --color-text: #171717;
+    --color-text-webflow: #333333;
+    --color-muted: #999999;
+    --color-nav-active: #b7bcd8;
+    --color-footer: #945e4c;
+    --color-footer-button: #c18b79;
+    --color-card-tint: #dab5cf;
+    --color-border: #dddddd;
+    --color-accent-orange: #dd783f;
+    --color-accent-orange-hover: #f17228;
+    --color-accent-green: #5cc489;
+    --color-slate: #243039;
+
+    --radius-sm: 3px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 24px;
+    --radius-pill: 999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  h1, h2, h3 { font-weight: 300; margin: 0; }
+  a { color: inherit; }
+
+  :focus-visible {
+    outline: 3px solid var(--color-text);
+    outline-offset: 4px;
+  }
+
+  .board {
+    width: 1440px;
+    padding: 56px 48px 96px;
+  }
+
+  .board-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 0.95;
+    max-width: 980px;
+  }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .intro {
+    max-width: 720px;
+    margin: 22px 0 0;
+    color: var(--color-text-webflow);
+    font-size: 1.1rem;
+  }
+
+  section { margin-top: 64px; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgb(23 23 23 / 8%);
+  }
+
+  .section-head h2 { font-size: 25px; line-height: 44px; }
+  .section-head p { margin: 0; color: var(--color-muted); font-size: 0.82rem; }
+
+  .grid { display: grid; gap: 16px; }
+  .grid--colors { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  .swatch {
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+
+  .swatch__chip { height: 76px; border-bottom: 1px solid rgb(23 23 23 / 7%); }
+
+  .swatch__meta { padding: 12px 14px; }
+  .swatch__meta strong { display: block; font-size: 0.9rem; font-weight: 400; }
+  .swatch__meta code { color: var(--color-muted); font-size: 0.78rem; }
+
+  .type-row {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid rgb(23 23 23 / 7%);
+  }
+
+  .type-row:last-child { border-bottom: 0; }
+  .type-row__spec { color: var(--color-muted); font-size: 0.82rem; }
+
+  .t-page { font-size: 3rem; line-height: 0.95; font-weight: 300; }
+  .t-section { font-size: 25px; line-height: 44px; font-weight: 300; }
+  .t-card { font-size: 22px; line-height: 1.05; font-weight: 300; }
+  .t-body { font-size: 1.1rem; line-height: 1.55; color: var(--color-text-webflow); }
+  .t-meta { font-size: 0.82rem; color: var(--color-muted); }
+  .t-eyebrow { font-size: 0.875rem; font-weight: 700; text-transform: uppercase; color: var(--color-muted); }
+  .t-serif { font-family: var(--font-serif); font-size: 2rem; font-weight: 300; }
+
+  .scale { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end; }
+
+  .bar {
+    background: var(--color-nav-active);
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  }
+
+  .bar span {
+    display: block;
+    margin-top: 8px;
+    color: var(--color-muted);
+    font-size: 0.74rem;
+  }
+
+  .radius-demo {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .radius-demo div {
+    display: grid;
+    place-items: center;
+    height: 112px;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    color: var(--color-muted);
+    font-size: 0.78rem;
+  }
+
+  .shadow-demo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .shadow-demo div {
+    display: grid;
+    gap: 8px;
+    padding: 22px;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-md);
+    font-size: 0.82rem;
+    color: var(--color-muted);
+  }
+
+  .shadow-demo .lift {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 36px rgb(23 23 23 / 10%);
+  }
+
+  .header-demo {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 14px;
+    background: rgb(247 244 245 / 92%);
+    border: 1px solid rgb(23 23 23 / 8%);
+    border-radius: var(--radius-pill);
+  }
+
+  .wordmark {
+    padding: 0 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .nav { display: flex; gap: 8px; }
+
+  .nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.98rem;
+    text-decoration: none;
+  }
+
+  .nav a.is-active { background: var(--color-nav-active); }
+
+  .card-demo {
+    display: grid;
+    color: inherit;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .card-demo__media {
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, var(--color-card-tint), var(--color-page-alt));
+  }
+
+  .card-demo__body { display: grid; gap: 10px; padding: 20px; }
+  .card-demo__meta { display: flex; justify-content: space-between; margin: 0; color: var(--color-muted); font-size: 0.82rem; }
+  .card-demo h3 { font-size: 22px; font-weight: 300; line-height: 1.05; }
+  .card-demo p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 0; }
+
+  .card-demo--tint {
+    background: var(--color-card-tint);
+    border: 0;
+    padding: 20px;
+  }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 18px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.98rem;
+  }
+
+  .chip.is-active { background: var(--color-text); color: var(--color-page); border-color: var(--color-text); }
+
+  .field {
+    min-height: 48px;
+    padding: 0 18px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    font: inherit;
+  }
+
+  .footer-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    padding: 32px;
+    color: #fff;
+    background: var(--color-footer);
+    border-radius: var(--radius-md);
+  }
+
+  .footer-demo .field { border: 0; }
+
+  .footer-demo button {
+    min-height: 48px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-footer-button);
+    color: var(--color-text);
+    font: inherit;
+  }
+
+  .notes { display: grid; gap: 12px; margin: 0; padding-left: 20px; color: var(--color-text-webflow); }
+  .notes code { color: var(--color-muted); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<main class="board">
+  <p class="eyebrow">Barrio Bisquertt</p>
+  <h1 class="board-title">Sistema de diseño</h1>
+  <p class="intro">
+    Tokens y reglas de componentes tomados de <code>src/styles/tokens.css</code>,
+    <code>src/styles/layout.css</code>, <code>src/styles/global.css</code> y
+    <code>src/styles/fonts.css</code>. Las tipografías del proyecto (Acidgrotesk y Timesnow)
+    no se cargan aquí: los tableros usan pilas del sistema como aproximación.
+  </p>
+
+  <section>
+    <div class="section-head">
+      <h2>Color</h2>
+      <p>16 tokens · src/styles/tokens.css</p>
+    </div>
+    <div class="grid grid--colors">
+      <div class="swatch"><div class="swatch__chip" style="background:#f7f4f5"></div><div class="swatch__meta"><strong>Page</strong><code>--color-page #f7f4f5</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#f5f2f3"></div><div class="swatch__meta"><strong>Page alt</strong><code>--color-page-alt #f5f2f3</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#ffffff"></div><div class="swatch__meta"><strong>Surface</strong><code>--color-surface #ffffff</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#171717"></div><div class="swatch__meta"><strong>Text</strong><code>--color-text #171717</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#333333"></div><div class="swatch__meta"><strong>Body copy</strong><code>--color-text-webflow #333333</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#999999"></div><div class="swatch__meta"><strong>Muted</strong><code>--color-muted #999999</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#b7bcd8"></div><div class="swatch__meta"><strong>Nav active</strong><code>--color-nav-active #b7bcd8</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#945e4c"></div><div class="swatch__meta"><strong>Footer</strong><code>--color-footer #945e4c</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#c18b79"></div><div class="swatch__meta"><strong>Footer button</strong><code>--color-footer-button #c18b79</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#dab5cf"></div><div class="swatch__meta"><strong>Card tint</strong><code>--color-card-tint #dab5cf</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#dddddd"></div><div class="swatch__meta"><strong>Border</strong><code>--color-border #dddddd</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#dd783f"></div><div class="swatch__meta"><strong>Accent orange</strong><code>--color-accent-orange #dd783f</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#f17228"></div><div class="swatch__meta"><strong>Accent hover</strong><code>--color-accent-orange-hover #f17228</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#5cc489"></div><div class="swatch__meta"><strong>Accent green</strong><code>--color-accent-green #5cc489</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:#243039"></div><div class="swatch__meta"><strong>Slate</strong><code>--color-slate #243039</code></div></div>
+      <div class="swatch"><div class="swatch__chip" style="background:rgb(23 23 23 / 8%)"></div><div class="swatch__meta"><strong>Hairline</strong><code>rgb(23 23 23 / 8%)</code></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Tipografía</h2>
+      <p>Acidgrotesk → Helvetica/Arial · Timesnow → Georgia</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.page-hero h1<br>clamp(3rem, 8vw, 7rem) / 0.95 / 300</p>
+      <p class="t-page">Directorio</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.home-section__header h2<br>25px / 44px / 300</p>
+      <p class="t-section">Últimas noticias</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.content-card h2<br>22px / 1.05 / 300</p>
+      <p class="t-card">Hey Coffee Restobar</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.page-hero p<br>1.1rem / 1.55</p>
+      <p class="t-body">Directorio de comercios, oficios y servicios de Avenida Bisquertt.</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.eyebrow<br>0.875rem / 700 / uppercase</p>
+      <p class="t-eyebrow">Barrio Bisquertt</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">.content-card__meta<br>0.82rem / muted</p>
+      <p class="t-meta">Av. Bisquertt 319 · Rengo</p>
+    </div>
+    <div class="type-row">
+      <p class="type-row__spec">--font-serif<br>Georgia / 300</p>
+      <p class="t-serif">Historias del barrio</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Espaciado</h2>
+      <p>Contenedores, gaps y paddings medidos</p>
+    </div>
+    <div class="scale">
+      <div class="bar" style="width:12px;height:12px"><span>12</span></div>
+      <div class="bar" style="width:18px;height:18px"><span>18</span></div>
+      <div class="bar" style="width:20px;height:20px"><span>20</span></div>
+      <div class="bar" style="width:28px;height:28px"><span>28</span></div>
+      <div class="bar" style="width:44px;height:44px"><span>44</span></div>
+      <div class="bar" style="width:48px;height:48px"><span>48</span></div>
+      <div class="bar" style="width:72px;height:72px"><span>72</span></div>
+      <div class="bar" style="width:80px;height:80px"><span>80</span></div>
+      <div class="bar" style="width:96px;height:96px"><span>96</span></div>
+    </div>
+    <p class="t-meta" style="margin-top:16px">
+      Contenedor <code>min(100% - 48px, 1500px)</code> · home 1475px · artículo 950px · ficha 810px · móvil <code>min(100% - 28px, …)</code>
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Radio</h2>
+      <p>5 tokens</p>
+    </div>
+    <div class="radius-demo">
+      <div style="border-radius:3px">sm · 3px</div>
+      <div style="border-radius:12px">md · 12px</div>
+      <div style="border-radius:20px">lg · 20px</div>
+      <div style="border-radius:24px">xl · 24px</div>
+      <div style="border-radius:999px">pill · 999px</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Profundidad</h2>
+      <p>Borde hairline y elevación de tarjeta</p>
+    </div>
+    <div class="shadow-demo">
+      <div>Borde <code>1px rgb(23 23 23 / 7%)</code></div>
+      <div>Header <code>blur(12px)</code> + <code>rgb(247 244 245 / 92%)</code></div>
+      <div class="lift">Hover <code>0 18px 36px rgb(23 23 23 / 10%)</code></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Componentes</h2>
+      <p>Header, navegación, tarjetas, controles y footer</p>
+    </div>
+
+    <div class="header-demo">
+      <span class="wordmark">Barrio Bisquertt</span>
+      <nav class="nav" aria-label="Navegación de ejemplo">
+        <a href="#">Inicio</a>
+        <a class="is-active" href="#">Directorio</a>
+        <a href="#">Noticias</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="grid grid--two" style="margin-top:24px">
+      <a class="card-demo" href="#">
+        <div class="card-demo__media"></div>
+        <div class="card-demo__body">
+          <p class="card-demo__meta"><span>Gastronomía</span><time>26 de diciembre, 2025</time></p>
+          <h3>Barroco</h3>
+          <p>Una ambientación elegante, terraza con vida y una propuesta gastronómica muy cuidada convirtieron a Barroco en el gran estreno de Avenida Bisquertt.</p>
+        </div>
+      </a>
+      <div class="card-demo card-demo--tint">
+        <p class="card-demo__meta"><span>Directorio</span></p>
+        <h3 style="font-size:1rem;line-height:1.3">Umbral Eco Café</h3>
+        <p style="font-size:0.875rem">Ecotienda a granel y cafetería en Daniel Morán 21.</p>
+      </div>
+    </div>
+
+    <div class="controls" style="margin-top:24px">
+      <button class="chip is-active" type="button">Todas</button>
+      <button class="chip" type="button">A</button>
+      <button class="chip" type="button">B</button>
+      <button class="chip" type="button" disabled style="opacity:.45">Q</button>
+      <input class="field" type="search" placeholder="Buscar en el directorio" aria-label="Buscar en el directorio">
+    </div>
+
+    <div class="footer-demo" style="margin-top:24px">
+      <span>Recibí novedades del barrio</span>
+      <input class="field" type="email" placeholder="tucorreo@ejemplo.cl" aria-label="Correo electrónico">
+      <button type="button">Suscribirme</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Reglas de accesibilidad</h2>
+      <p>src/styles/global.css</p>
+    </div>
+    <ul class="notes">
+      <li>Foco visible: <code>outline: 3px solid #171717; outline-offset: 4px</code>.</li>
+      <li>Texto secundario sobre <code>--color-page</code> usa <code>#333333</code>, no <code>#999999</code>, cuando es contenido y no metadata.</li>
+      <li>Transiciones de 180–200 ms con <code>ease</code>; cualquier movimiento nuevo debe respetar <code>prefers-reduced-motion</code>.</li>
+      <li>El sitio no tiene buscador, filtro ni índice alfabético todavía: cualquier control nuevo reutiliza pill, hairline y metadata muted.</li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

@@ -25,7 +25,7 @@ Fuente principal: `data/descarga-barrio-bisquertt/barrio-bisquertt-mirror`.
 | `/` | Barrio Bisquertt | 3 | Home principal |
 | `/?57c7d2a2_page=1` | Barrio Bisquertt | 3 | Variante paginada Webflow |
 | `/?57c7d2a2_page=2` | Barrio Bisquertt | 3 | Variante paginada Webflow |
-| `/directorio` | Directorio | 21 | Indice con H1 repetidos por tarjetas |
+| `/directorio` | Directorio | 21 | Indice con H1 repetidos por tarjetas; replica con orden alfabetico, buscador y filtro A-Z |
 | `/blog` | Blog | 1 | Indice de historias |
 | `/noticias` | Noticias | 1 | Indice de noticias |
 | `/patrimonio` | Patrimonio | 1 | Indice patrimonial |

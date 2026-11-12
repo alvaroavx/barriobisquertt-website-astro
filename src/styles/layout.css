@@ -198,6 +198,15 @@
   line-height: 1.55;
 }
 
+/* Descripcion de tarjeta recortada a 3 lineas, como en el sitio publicado:
+   evita alturas desparejas entre tarjetas de la misma grilla. */
+.content-card__body > p:last-child {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
 .article-header {
   padding: 82px 0 36px;
 }
@@ -610,6 +619,11 @@
   max-width: 560px;
 }
 
+.footer-form label {
+  grid-column: 1 / -1;
+  font-weight: 700;
+}
+
 .footer-form input {
   min-height: 48px;
   padding: 0 18px;
@@ -621,7 +635,7 @@
 .footer-form button {
   min-height: 48px;
   padding: 0 22px;
-  color: #fff;
+  color: var(--color-text);
   border: 0;
   border-radius: var(--radius-pill);
   background: var(--color-footer-button);
@@ -631,6 +645,10 @@
 .footer-form button:disabled,
 .footer-form input:disabled {
   opacity: 0.65;
+}
+
+.footer-form__honey {
+  display: none;
 }
 
 .form-status {
@@ -652,6 +670,16 @@
   max-width: 170px;
   max-height: 74px;
   object-fit: contain;
+}
+
+.site-credit {
+  margin: 28px 0 0;
+  font-size: 0.9rem;
+}
+
+.site-credit a {
+  color: inherit;
+  font-weight: 700;
 }
 
 @media (max-width: 991px) {
@@ -766,3 +794,428 @@
   }
 }
 
+
+/* Directorio: buscador y filtro alfabetico.
+   Spec visual: design/directorio-busqueda-al-az/01-filtro-integrado.html
+   Tokens: design/system.md (src/styles/tokens.css). */
+.card-grid[hidden],
+.content-card[hidden] {
+  display: none;
+}
+
+.directory-filters {
+  padding: 0 0 20px;
+}
+
+.directory-filters__panel {
+  display: grid;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--color-surface);
+  border: 1px solid rgb(23 23 23 / 7%);
+  border-radius: var(--radius-lg);
+}
+
+.directory-filters__row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.directory-search {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.directory-search__icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  color: var(--color-muted);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.directory-search__input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 48px;
+  color: var(--color-text);
+  background: var(--color-page-alt);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 1.02rem;
+}
+
+.directory-search__input::placeholder {
+  color: var(--color-muted);
+}
+
+.directory-search__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.directory-search__input:focus {
+  background: var(--color-surface);
+  border-color: var(--color-text);
+  outline: none;
+}
+
+.directory-search__input:focus-visible {
+  outline: 3px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.directory-search__clear {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  color: var(--color-text);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.directory-search__clear:hover {
+  background: rgb(23 23 23 / 6%);
+}
+
+.directory-search__clear[hidden] {
+  display: none;
+}
+
+.directory-count {
+  flex: 0 0 auto;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.directory-reset {
+  min-height: 40px;
+  padding: 0 16px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.directory-reset:hover {
+  border-color: var(--color-text);
+}
+
+.directory-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.directory-alphabet__button {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.directory-alphabet__button:hover:not(:disabled) {
+  background: var(--color-page-alt);
+  border-color: rgb(23 23 23 / 8%);
+}
+
+.directory-alphabet__button[aria-pressed='true'] {
+  color: #fff;
+  background: var(--color-footer);
+  border-color: var(--color-footer);
+}
+
+.directory-alphabet__button:disabled {
+  color: rgb(23 23 23 / 22%);
+  cursor: default;
+}
+
+.directory-alphabet__button--all {
+  padding: 0 16px;
+  font-size: 0.9rem;
+}
+
+.directory-alphabet__separator {
+  width: 1px;
+  height: 22px;
+  margin: 0 8px;
+  background: rgb(23 23 23 / 10%);
+}
+
+/* Ficha del directorio: reutiliza .content-card y agrega badge de letra y direccion. */
+.content-card--directory .content-card__media {
+  position: relative;
+}
+
+.content-card__rubro {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  color: var(--color-text);
+  background: rgb(255 255 255 / 88%);
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.content-card__rubro--inline {
+  position: static;
+  justify-self: start;
+  background: var(--color-page-alt);
+}
+
+/* La descripcion mantiene el recorte a 3 lineas; la direccion no se recorta. */
+.content-card--directory .content-card__body > p[data-directory-description] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.content-card--directory .content-card__body > p:last-child:not([data-directory-description]) {
+  display: flex;
+  overflow: visible;
+}
+
+.content-card__address {
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.content-card__address svg {
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  transform: translateY(1px);
+}
+
+.content-card--directory mark {
+  padding: 0 0.1em;
+  color: inherit;
+  background: color-mix(in srgb, var(--color-accent-orange) 22%, transparent);
+  border-radius: 2px;
+}
+
+.directory-empty {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+  padding: 56px 32px;
+  margin-bottom: 72px;
+  background: var(--color-surface);
+  border: 1px dashed rgb(23 23 23 / 14%);
+  border-radius: var(--radius-lg);
+}
+
+.directory-empty[hidden] {
+  display: none;
+}
+
+.directory-empty h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.directory-empty p {
+  margin: 0;
+  color: var(--color-text-webflow);
+}
+
+.directory-empty__reset {
+  min-height: 44px;
+  padding: 0 20px;
+  color: var(--color-page);
+  background: var(--color-text);
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .directory-filters__panel {
+    padding: 14px;
+  }
+
+  .directory-filters__row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .directory-filters__row:first-child .directory-count {
+    order: 3;
+    width: 100%;
+  }
+
+  .directory-empty {
+    padding: 40px 20px;
+  }
+}
+
+/* Boton volver arriba: aparece despues de un scroll corto (logica en SiteScripts). */
+.back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  color: #fff;
+  background: var(--color-footer);
+  border: 0;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 18px 36px rgb(23 23 23 / 10%);
+  cursor: pointer;
+}
+
+.back-to-top[hidden] {
+  display: none;
+}
+
+.back-to-top:hover {
+  background: #845546;
+}
+
+.back-to-top svg {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .back-to-top {
+    animation: back-to-top-in 180ms ease;
+  }
+
+  @keyframes back-to-top-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Entrada de pagina: fade del contenido principal y un micro desplazamiento
+   solo en los encabezados.
+   Importante: `main` no lleva transform. Un transform ahi lo convierte en
+   bloque contenedor de los `position: fixed` hijos (el lightbox de la galeria
+   pasaba a medir el alto del documento en vez del viewport).
+   Arranca en opacidad 0.35 para que el primer pintado ya muestre contenido
+   y no se retrase el LCP. */
+@media (prefers-reduced-motion: no-preference) {
+  main {
+    animation: page-enter 620ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
+
+  @keyframes page-enter {
+    from {
+      opacity: 0.35;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .page-hero,
+  .article-header {
+    animation: page-lift 620ms cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+  }
+
+  @keyframes page-lift {
+    from {
+      transform: translateY(8px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main,
+  .page-hero,
+  .article-header {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* Header de vidrio: se activa apenas el contenido empieza a pasar por debajo.
+   Conserva un tinte claro y un borde luminoso para que se lea el vidrio. */
+.site-header {
+  transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease,
+    backdrop-filter 240ms ease;
+}
+
+.site-header.is-glass {
+  background: rgb(247 244 245 / 55%);
+  border-color: rgb(255 255 255 / 70%);
+  box-shadow: 0 14px 34px rgb(23 23 23 / 12%), inset 0 1px 0 rgb(255 255 255 / 60%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}

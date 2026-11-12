@@ -1,0 +1,82 @@
+---
+import { ALPHABET } from '../lib/directory';
+
+interface Props {
+  letters: string[];
+  total: number;
+}
+
+const { letters, total } = Astro.props;
+const available = new Set(letters);
+---
+
+<div class="directory-filters" data-directory-filters>
+  <div class="container">
+    <div class="directory-filters__panel">
+      <div class="directory-filters__row">
+        <div class="directory-search">
+          <label class="sr-only" for="directorio-busqueda">Buscar en el directorio</label>
+          <svg
+            class="directory-search__icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="m15.5 15.5 4.5 4.5"></path>
+          </svg>
+          <input
+            id="directorio-busqueda"
+            class="directory-search__input"
+            type="search"
+            placeholder="Buscar por nombre, dirección o actividad"
+            autocomplete="off"
+            aria-describedby="directorio-count"
+            data-directory-input
+          />
+          <button
+            class="directory-search__clear"
+            type="button"
+            aria-label="Borrar la búsqueda"
+            data-directory-clear
+            hidden
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18"></path>
+            </svg>
+          </button>
+        </div>
+        <p class="directory-count" id="directorio-count" role="status" aria-live="polite" data-directory-count>{total} locales</p>
+        <button class="directory-reset" type="button" data-directory-reset>Limpiar filtros</button>
+      </div>
+
+      <div class="directory-filters__row">
+        <ul class="directory-alphabet" aria-label="Filtrar por letra inicial">
+          <li>
+            <button
+              class="directory-alphabet__button directory-alphabet__button--all"
+              type="button"
+              data-directory-letter=""
+              aria-pressed="true"
+            >Todas</button>
+          </li>
+          <li class="directory-alphabet__separator" aria-hidden="true"></li>
+          {ALPHABET.map((letter) => (
+            <li>
+              <button
+                class="directory-alphabet__button"
+                type="button"
+                data-directory-letter={letter}
+                aria-pressed="false"
+                disabled={!available.has(letter)}
+                title={available.has(letter) ? undefined : `Sin locales que empiecen con ${letter}`}
+              >{letter}</button>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directorio — Índice lateral A–Z</title>
+<style>
+  :root {
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --color-page: #f7f4f5;
+    --color-page-alt: #f5f2f3;
+    --color-surface: #ffffff;
+    --color-text: #171717;
+    --color-text-webflow: #333333;
+    --color-muted: #999999;
+    --color-nav-active: #b7bcd8;
+    --color-card-tint: #dab5cf;
+    --color-border: #dddddd;
+    --radius-sm: 3px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+
+  h1, h2, h3 { margin: 0; font-weight: 300; }
+  a { color: inherit; text-underline-offset: .18em; }
+
+  :focus-visible { outline: 3px solid var(--color-text); outline-offset: 4px; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  .container { width: min(100% - 48px, 1500px); margin-inline: auto; }
+
+  .site-header {
+    position: sticky;
+    top: 16px;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100% - 48px, 1180px);
+    margin: 16px auto 0;
+    padding: 10px 14px;
+    background: rgb(247 244 245 / 92%);
+    border: 1px solid rgb(23 23 23 / 8%);
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(12px);
+  }
+
+  .wordmark {
+    padding: 0 8px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .site-nav { display: flex; align-items: center; gap: 8px; }
+
+  .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border-radius: var(--radius-pill);
+    font-size: .98rem;
+    text-decoration: none;
+  }
+
+  .site-nav a:hover,
+  .site-nav a.is-active { background: var(--color-nav-active); }
+
+  .page-hero { padding: 96px 0 40px; }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-muted);
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: .95;
+    max-width: 980px;
+  }
+
+  .page-hero p {
+    max-width: 620px;
+    margin: 22px 0 0;
+    color: var(--color-text-webflow);
+    font-size: 1.1rem;
+    line-height: 1.55;
+  }
+
+  /* Dos columnas: índice fijo a la izquierda, resultados a la derecha */
+  .directory {
+    display: grid;
+    grid-template-columns: 288px minmax(0, 1fr);
+    gap: 56px;
+    padding-bottom: 96px;
+  }
+
+  .rail {
+    position: sticky;
+    top: 104px;
+    align-self: start;
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-lg);
+  }
+
+  .search { position: relative; }
+
+  .search svg {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    width: 17px;
+    height: 17px;
+    color: var(--color-muted);
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .search input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px 0 44px;
+    color: var(--color-text);
+    background: var(--color-page-alt);
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .95rem;
+  }
+
+  .search input::placeholder { color: var(--color-muted); }
+
+  .search input:focus {
+    background: var(--color-surface);
+    border-color: var(--color-text);
+    outline: none;
+  }
+
+  .rail__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(23 23 23 / 8%);
+  }
+
+  .rail__head p { margin: 0; }
+
+  .rail__count {
+    color: var(--color-muted);
+    font-size: .8rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .index { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+
+  .index button {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    min-height: 38px;
+    padding: 0 12px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .index button:hover { background: var(--color-page-alt); }
+
+  .index button span:first-child {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+
+  .index button span:last-child {
+    color: var(--color-muted);
+    font-size: .78rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .index button[aria-pressed="true"] {
+    color: var(--color-page);
+    background: var(--color-text);
+    border-color: var(--color-text);
+  }
+
+  .index button[aria-pressed="true"] span:last-child { color: rgb(247 244 245 / 70%); }
+
+  .index button:disabled {
+    color: rgb(23 23 23 / 25%);
+    cursor: default;
+    background: transparent;
+  }
+
+  .index button:disabled span:last-child { color: rgb(23 23 23 / 20%); }
+
+  .rail__reset {
+    min-height: 40px;
+    padding: 0 16px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .88rem;
+    cursor: pointer;
+  }
+
+  .rail__reset:hover { border-color: var(--color-text); }
+
+  /* Grupos por letra */
+  .group { margin-bottom: 48px; scroll-margin-top: 120px; }
+
+  .group__head {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgb(23 23 23 / 10%);
+  }
+
+  .group__letter {
+    font-family: var(--font-serif);
+    font-size: 2.6rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  .group__rule { flex: 1 1 auto; }
+
+  .group__count {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: .82rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .content-card {
+    display: grid;
+    color: inherit;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 36px rgb(23 23 23 / 10%);
+  }
+
+  .content-card__media {
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    background: var(--color-page-alt);
+  }
+
+  .content-card__media svg { display: block; width: 100%; height: 100%; }
+
+  .content-card__body { display: grid; gap: 8px; padding: 18px; }
+
+  .content-card h3 { font-size: 21px; line-height: 1.06; }
+
+  .content-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+    color: var(--color-text-webflow);
+    font-size: .92rem;
+  }
+
+  .content-card__address {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    color: var(--color-muted);
+    font-size: .8rem;
+  }
+
+  mark {
+    padding: 0 .1em;
+    color: inherit;
+    background: rgb(218 181 207 / 60%);
+    border-radius: 2px;
+  }
+
+  .empty {
+    padding: 48px 28px;
+    background: var(--color-surface);
+    border: 1px dashed rgb(23 23 23 / 14%);
+    border-radius: var(--radius-lg);
+  }
+
+  .empty[hidden] { display: none; }
+  .empty h2 { margin-bottom: 8px; font-size: 22px; }
+  .empty p { margin: 0 0 18px; color: var(--color-text-webflow); }
+
+  .empty button {
+    min-height: 42px;
+    padding: 0 18px;
+    color: var(--color-page);
+    background: var(--color-text);
+    border: 0;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .92rem;
+    cursor: pointer;
+  }
+
+  .directory[hidden] { display: none; }
+
+  @media (max-width: 991px) {
+    .directory { grid-template-columns: 1fr; gap: 32px; }
+    .rail { position: static; }
+    .index { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; gap: 2px; }
+    .index button { min-width: 52px; }
+    .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  @media (max-width: 767px) {
+    .container { width: calc(100% - 28px); }
+    .site-nav { display: none; }
+    .page-hero { padding-top: 58px; }
+    .card-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .content-card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#">Barrio Bisquertt</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#">Inicio</a>
+      <a class="is-active" href="#" aria-current="page">Directorio</a>
+      <a href="#">Noticias</a>
+      <a href="#">Historias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero container">
+      <p class="eyebrow">Barrio Bisquertt</p>
+      <h1>Directorio</h1>
+      <p>Veinte locales en Avenida Bisquertt y sus calles cercanas, ordenados alfabéticamente. Busca por nombre, dirección o actividad, o elige una letra en el índice.</p>
+    </div>
+
+    <div class="container">
+      <div class="directory">
+        <aside class="rail" aria-labelledby="indice-titulo">
+          <form class="search" role="search" onsubmit="return false">
+            <label class="sr-only" for="q">Buscar en el directorio</label>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path>
+            </svg>
+            <input id="q" type="search" placeholder="Buscar local" autocomplete="off" aria-describedby="rail-count">
+          </form>
+
+          <div class="rail__head">
+            <p class="eyebrow" id="indice-titulo" style="margin:0">Índice A–Z</p>
+            <p class="rail__count" id="rail-count" role="status" aria-live="polite">20 locales</p>
+          </div>
+
+          <ul class="index" id="index" aria-label="Filtrar por letra inicial"></ul>
+
+          <button class="rail__reset" type="button" id="reset">Ver todo el directorio</button>
+        </aside>
+
+        <section id="results" aria-label="Resultados del directorio"></section>
+
+        <div class="empty" id="empty" hidden>
+          <p class="eyebrow">Sin resultados</p>
+          <h2>Ningún local coincide con «<span id="empty-term"></span>»</h2>
+          <p>Prueba con otra palabra, revisa la dirección o vuelve al listado completo.</p>
+          <button type="button" id="empty-reset">Limpiar los filtros</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<script>
+  const entries = [
+    ['Barroco', 'Av. Bisquertt 319', 'Terraza, coctelería y una carta cuidada en el gran estreno de la avenida.'],
+    ['CasaQuinta', 'Pasaje 1 150-C', 'Casa de té y objetos de colección reunidos por Juan Carlos Morales.'],
+    ['Clima Baluarte', 'Av. Bisquertt 310', 'Venta, instalación y mantención de sistemas de aire acondicionado.'],
+    ['Cultura Zeta Consultora', 'Fortunato Venegas 75', 'Desarrollo cultural y creativo para la Región de O\'Higgins.'],
+    ['Dom Black', 'Av. Bisquertt 362', 'Tragos, cafetería y pizzas con estética de container.'],
+    ['Hey Coffee Restobar', 'Av. Bisquertt 284', 'De los churros a una carta de restobar abierta todo el día.'],
+    ['I Love Sushi', 'Av. Bisquert 380 local C', 'Sushi fresco, con versiones ilimitadas en el corazón del barrio.'],
+    ['Instituto Baluarte Cicap', 'Av. Bisquertt 310', 'OTEC con cursos presenciales y capacitación para el mundo laboral.'],
+    ['K-Calafate', 'Av. Bisquertt 383 A', 'Waffles, café y postres preparados con creatividad en el momento.'],
+    ['La Mazza', 'Av. Bisquertt 357', 'Pizzería en el histórico Club de Pesca y Caza Caupolicán.'],
+    ['La República', 'Av. Bisquertt 365', 'Cervecería independiente con cocina de barrio y ambiente de encuentro.'],
+    ['Mandala Verde Café', 'Colo Colo 138', 'Desayunos, almuerzos y talleres abiertos a la comunidad.'],
+    ['Mi Piace', 'Av. Bisquertt 284 local 4', 'Restaurante y pizzería de reunión durante todo el día.'],
+    ['Minimarket Paso de la Muerte', 'Av. Bisquertt 523', 'Almacén de esquina con botillería y productos de paso.'],
+    ['Pescadería Mares del Sur', 'Av. Bisquertt 438 A-B', 'Pescados y mariscos frescos que llegan de la costa cada mañana.'],
+    ['Restoba Pizza Steve\'s', 'Av. Bisquertt 380', 'Pizzas de 52 centímetros, virales por su tamaño, hasta el cierre.'],
+    ['Smash Burger', 'Av. Bisquertt 426', 'Hamburguesas directo a la plancha con espíritu nocturno.'],
+    ['Sonríe Té', 'Daniel Morán 21 local 3', 'Té, terraza interior y repostería en un espacio tranquilo.'],
+    ['Tu Esquina', 'Av. Bisquertt 265', 'Pub y restobar de encuentro entre amigos y familias.'],
+    ['Umbral', 'Daniel Morán 21', 'Ecotienda a granel, cafetería y espacio de bienestar.']
+  ];
+
+  const tints = [
+    ['#dab5cf', '#f5f2f3'], ['#b7bcd8', '#f7f4f5'], ['#c18b79', '#f5f2f3'],
+    ['#dd783f', '#f7f4f5'], ['#5cc489', '#f5f2f3'], ['#243039', '#f7f4f5']
+  ];
+
+  const normalize = (value) => value
+    .toLocaleLowerCase('es')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  // Coincide por subcadena o por inicio de palabra: «pizza» encuentra «pizzería»
+  const matchesField = (text, needle) => {
+    if (!needle) return true;
+    const plain = normalize(text);
+    if (plain.includes(needle)) return true;
+    return plain.split(/[^a-z0-9]+/).some((word) => word.startsWith(needle));
+  };
+
+  const items = entries
+    .map(([name, address, description], index) => ({
+      name,
+      address,
+      description,
+      initial: normalize(name).charAt(0).toLocaleUpperCase('es'),
+      tint: tints[index % tints.length]
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, 'es'));
+
+  const indexList = document.getElementById('index');
+  const results = document.getElementById('results');
+  const empty = document.getElementById('empty');
+  const emptyTerm = document.getElementById('empty-term');
+  const railCount = document.getElementById('rail-count');
+  const input = document.getElementById('q');
+  const plural = (n) => n === 1 ? '1 local' : `${n} locales`;
+
+  function escape(value) {
+    return value.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function highlight(text, term) {
+    if (!term) return escape(text);
+    const plain = normalize(text);
+    const needle = normalize(term);
+    let index = plain.indexOf(needle);
+    if (index === -1) return escape(text);
+    // Solo marca coincidencias al inicio de palabra, igual que el filtro
+    while (index > 0 && /[a-z0-9]/.test(plain[index - 1])) {
+      index = plain.indexOf(needle, index + 1);
+      if (index === -1) return escape(text);
+    }
+    return escape(text.slice(0, index))
+      + '<mark>' + escape(text.slice(index, index + term.length)) + '</mark>'
+      + escape(text.slice(index + term.length));
+  }
+
+  function media(entry) {
+    const [from, to] = entry.tint;
+    return `<svg viewBox="0 0 400 300" role="presentation" focusable="false">
+      <rect width="400" height="300" fill="${to}"/>
+      <circle cx="300" cy="82" r="104" fill="${from}" opacity=".85"/>
+      <circle cx="96" cy="246" r="74" fill="${from}" opacity=".45"/>
+    </svg>`;
+  }
+
+  let activeLetter = null;
+
+  function matches(item, needle) {
+    return matchesField(item.name, needle)
+      || matchesField(item.address, needle)
+      || matchesField(item.description, needle);
+  }
+
+  function counts(needle) {
+    const map = new Map();
+    items.forEach((item) => {
+      if (!matches(item, needle)) return;
+      map.set(item.initial, (map.get(item.initial) || 0) + 1);
+    });
+    return map;
+  }
+
+  function buildIndex(needle) {
+    const map = counts(needle);
+    const letters = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('');
+    const total = [...map.values()].reduce((a, b) => a + b, 0);
+    indexList.innerHTML = `<li>
+        <button type="button" data-letter="" aria-pressed="${activeLetter === null}">
+          <span>Todas</span><span>${total}</span>
+        </button>
+      </li>` + letters.map((letter) => {
+      const n = map.get(letter) || 0;
+      return `<li>
+        <button type="button" data-letter="${letter}" aria-pressed="${activeLetter === letter}" ${n === 0 ? 'disabled' : ''}>
+          <span>${letter}</span><span>${n}</span>
+        </button>
+      </li>`;
+    }).join('');
+  }
+
+  function render() {
+    const term = input.value.trim();
+    const needle = normalize(term);
+    const visible = items.filter((item) =>
+      (!activeLetter || item.initial === activeLetter) && matches(item, needle));
+
+    const groups = new Map();
+    visible.forEach((item) => {
+      if (!groups.has(item.initial)) groups.set(item.initial, []);
+      groups.get(item.initial).push(item);
+    });
+
+    results.innerHTML = [...groups.entries()].map(([letter, group]) => `
+      <div class="group" id="letra-${letter}">
+        <div class="group__head">
+          <h2 class="group__letter">${letter}</h2>
+          <span class="group__rule" aria-hidden="true"></span>
+          <p class="group__count">${plural(group.length)}</p>
+        </div>
+        <div class="card-grid">
+          ${group.map((item) => `
+            <a class="content-card" href="#">
+              <figure class="content-card__media">${media(item)}</figure>
+              <div class="content-card__body">
+                <h3>${highlight(item.name, term)}</h3>
+                <p>${highlight(item.description, term)}</p>
+                <p class="content-card__address">${highlight(item.address, term)}</p>
+              </div>
+            </a>`).join('')}
+        </div>
+      </div>
+    `).join('');
+
+    const isEmpty = visible.length === 0;
+    empty.hidden = !isEmpty;
+    results.hidden = isEmpty;
+    emptyTerm.textContent = term || (activeLetter ? `la letra ${activeLetter}` : 'los filtros');
+    railCount.textContent = plural(visible.length);
+    buildIndex(needle);
+  }
+
+  indexList.addEventListener('click', (event) => {
+    const btn = event.target.closest('button');
+    if (!btn || btn.disabled) return;
+    activeLetter = btn.dataset.letter || null;
+    render();
+  });
+
+  input.addEventListener('input', () => {
+    if (activeLetter) activeLetter = null;
+    render();
+  });
+
+  document.getElementById('reset').addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+
+  document.getElementById('empty-reset').addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+
+  render();
+</script>
+</body>
+</html>

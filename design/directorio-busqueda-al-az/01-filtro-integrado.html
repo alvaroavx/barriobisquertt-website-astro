@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Directorio — Filtro integrado</title>
+<style>
+  :root {
+    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --color-page: #f7f4f5;
+    --color-page-alt: #f5f2f3;
+    --color-surface: #ffffff;
+    --color-text: #171717;
+    --color-text-webflow: #333333;
+    --color-muted: #999999;
+    --color-nav-active: #b7bcd8;
+    --color-card-tint: #dab5cf;
+    --color-footer: #945e4c;
+    --color-border: #dddddd;
+    --color-accent-orange: #dd783f;
+    --radius-sm: 3px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+  }
+
+  h1, h2 { margin: 0; font-weight: 300; }
+  a { color: inherit; text-underline-offset: .18em; }
+
+  :focus-visible { outline: 3px solid var(--color-text); outline-offset: 4px; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  .container { width: min(100% - 48px, 1500px); margin-inline: auto; }
+
+  /* Header: copia del componente actual del sitio */
+  .site-header {
+    position: sticky;
+    top: 16px;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(100% - 48px, 1180px);
+    margin: 16px auto 0;
+    padding: 10px 14px;
+    background: rgb(247 244 245 / 92%);
+    border: 1px solid rgb(23 23 23 / 8%);
+    border-radius: var(--radius-pill);
+    backdrop-filter: blur(12px);
+  }
+
+  .wordmark {
+    padding: 0 8px;
+    font-size: 1.02rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .site-nav { display: flex; align-items: center; gap: 8px; }
+
+  .site-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 18px;
+    border-radius: var(--radius-pill);
+    font-size: .98rem;
+    text-decoration: none;
+  }
+
+  .site-nav a:hover,
+  .site-nav a.is-active { background: var(--color-nav-active); }
+
+  .page-hero { padding: 96px 0 36px; }
+
+  .eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-muted);
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    line-height: .95;
+    max-width: 980px;
+  }
+
+  .page-hero p {
+    max-width: 720px;
+    margin: 22px 0 0;
+    color: var(--color-text-webflow);
+    font-size: 1.1rem;
+    line-height: 1.55;
+  }
+
+  /* Panel de filtros: se pega bajo el header al scrollear */
+  .filters {
+    padding: 0 0 20px;
+  }
+
+  .filters__panel {
+    display: grid;
+    gap: 14px;
+    padding: 18px 20px;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-lg);
+  }
+
+  .search-row { display: flex; align-items: center; gap: 16px; }
+
+  .search {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .search svg {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    color: var(--color-muted);
+    pointer-events: none;
+  }
+
+  .search input {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 48px 0 48px;
+    color: var(--color-text);
+    background: var(--color-page-alt);
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: 1.02rem;
+  }
+
+  .search input::placeholder { color: var(--color-muted); }
+
+  .search input:focus {
+    background: var(--color-surface);
+    border-color: var(--color-text);
+    outline: none;
+  }
+
+  .search input:focus-visible { outline: 3px solid var(--color-text); outline-offset: 2px; }
+
+  .search__clear {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    color: var(--color-text);
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .search__clear:hover { background: rgb(23 23 23 / 6%); }
+  .search__clear[hidden] { display: none; }
+
+  .count {
+    flex: 0 0 auto;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: .86rem;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .alpha-btn {
+    display: grid;
+    place-items: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .95rem;
+    cursor: pointer;
+  }
+
+  .alpha-btn:hover { background: var(--color-page-alt); border-color: rgb(23 23 23 / 8%); }
+
+  .alpha-btn[aria-pressed="true"] {
+    color: #fff;
+    background: var(--color-footer);
+    border-color: var(--color-footer);
+  }
+
+  .alpha-btn--all { padding: 0 16px; font-size: .9rem; }
+
+  /* Letras sin locales: presentes para no romper el orden, pero inertes */
+  .alpha-btn:disabled {
+    color: rgb(23 23 23 / 22%);
+    cursor: default;
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .alpha-sep {
+    width: 1px;
+    height: 22px;
+    margin: 0 8px;
+    background: rgb(23 23 23 / 10%);
+  }
+
+  .reset {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 16px;
+    color: var(--color-text);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .85rem;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .reset:hover { border-color: var(--color-text); }
+
+  /* Grilla de tarjetas: misma que /directorio hoy */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    padding: 8px 0 88px;
+  }
+
+  .card-grid[hidden] { display: none; }
+
+  .content-card {
+    display: grid;
+    color: inherit;
+    background: var(--color-surface);
+    border: 1px solid rgb(23 23 23 / 7%);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+  }
+
+  .content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 36px rgb(23 23 23 / 10%);
+  }
+
+  .content-card__media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    margin: 0;
+    background: var(--color-page-alt);
+  }
+
+  .content-card__media svg { display: block; width: 100%; height: 100%; }
+
+  .content-card__rubro {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    color: var(--color-text);
+    background: rgb(255 255 255 / 89%);
+    border-radius: var(--radius-pill);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    backdrop-filter: blur(6px);
+  }
+
+  .content-card__body { display: grid; gap: 10px; padding: 20px; }
+
+  .content-card h2 {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.05;
+  }
+
+  .content-card p {
+    margin: 0;
+    color: var(--color-text-webflow);
+    font-size: .95rem;
+  }
+
+  .content-card__body > p:last-of-type {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .content-card__address {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    color: var(--color-muted);
+    font-size: .82rem;
+  }
+
+  .content-card__address svg {
+    width: 12px;
+    height: 12px;
+    flex: 0 0 auto;
+    transform: translateY(1px);
+  }
+
+  mark {
+    padding: 0 .1em;
+    color: inherit;
+    background: rgb(221 120 63 / 22%);
+    border-radius: 2px;
+  }
+
+  /* Estado vacío */
+  .empty {
+    display: grid;
+    justify-items: start;
+    gap: 14px;
+    padding: 56px 32px;
+    margin-bottom: 96px;
+    background: var(--color-surface);
+    border: 1px dashed rgb(23 23 23 / 14%);
+    border-radius: var(--radius-lg);
+  }
+
+  .empty[hidden] { display: none; }
+  .empty h2 { font-size: 22px; font-weight: 300; }
+
+  .empty p { margin: 0; color: var(--color-text-webflow); }
+
+  .empty button {
+    min-height: 44px;
+    padding: 0 20px;
+    color: var(--color-page);
+    background: var(--color-text);
+    border: 0;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-size: .95rem;
+    cursor: pointer;
+  }
+
+  .site-footer {
+    padding: 48px 0 64px;
+    color: #fff;
+    background: #945e4c;
+  }
+
+  .site-footer .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    width: min(100% - 48px, 1180px);
+  }
+
+  .site-footer p { margin: 0; font-size: .9rem; }
+
+  @media (max-width: 991px) {
+    .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  }
+
+  @media (max-width: 767px) {
+    .container { width: calc(100% - 28px); }
+    .site-nav { display: none; }
+    .page-hero { padding-top: 58px; }
+    .filters__panel { padding: 14px; }
+    .search-row { flex-wrap: wrap; gap: 10px; }
+    .count { order: 3; width: 100%; }
+    .card-grid { grid-template-columns: 1fr; gap: 18px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+    .content-card:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#">Barrio Bisquertt</a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#">Inicio</a>
+      <a class="is-active" href="#" aria-current="page">Directorio</a>
+      <a href="#">Noticias</a>
+      <a href="#">Historias</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero container">
+      <p class="eyebrow">Barrio Bisquertt</p>
+      <h1>Directorio</h1>
+      <p>Comercios, oficios y servicios de Avenida Bisquertt y sus calles cercanas. Busca por nombre, dirección o actividad, o salta a una letra.</p>
+    </div>
+
+    <div class="filters container">
+      <form class="filters__panel" role="search" aria-label="Buscar y filtrar el directorio" onsubmit="return false">
+        <div class="search-row">
+          <div class="search">
+            <label class="sr-only" for="q">Buscar en el directorio</label>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4.5 4.5"></path>
+            </svg>
+            <input id="q" type="search" placeholder="Buscar por nombre, dirección o actividad" autocomplete="off" aria-describedby="result-count">
+            <button class="search__clear" type="button" id="clear" aria-label="Borrar la búsqueda" hidden>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18"></path>
+              </svg>
+            </button>
+          </div>
+          <p class="count" id="result-count" role="status" aria-live="polite">20 locales</p>
+          <button class="reset" type="button" id="reset">Limpiar filtros</button>
+        </div>
+
+        <div class="search-row">
+          <ul class="alphabet" id="alphabet" aria-label="Filtrar por letra inicial"></ul>
+        </div>
+      </form>
+    </div>
+
+    <section class="container" aria-labelledby="results-heading">
+      <h2 class="sr-only" id="results-heading">Resultados del directorio</h2>
+      <div class="card-grid" id="grid"></div>
+
+      <div class="empty" id="empty" hidden>
+        <p class="eyebrow">Sin resultados</p>
+        <h2>No encontramos locales con «<span id="empty-term"></span>»</h2>
+        <p>Prueba con otra palabra o vuelve a ver el directorio completo.</p>
+        <button type="button" id="empty-reset">Limpiar los filtros</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Barrio Bisquertt · Rengo, Región de O'Higgins</p>
+      <p>#Filtro integrado · A–Z</p>
+    </div>
+  </footer>
+
+<script>
+  const entries = [
+    ['Barroco', 'Av. Bisquertt 319', 'Terraza, coctelería y una carta cuidada en el gran estreno de la avenida.', 'Restobar'],
+    ['CasaQuinta', 'Pasaje 1 150-C', 'Casa de té y objetos de colección reunidos por Juan Carlos Morales.', 'Cultura'],
+    ['Clima Baluarte', 'Av. Bisquertt 310', 'Venta, instalación y mantención de sistemas de aire acondicionado.', 'Servicios'],
+    ['Cultura Zeta Consultora', 'Fortunato Venegas 75', 'Desarrollo cultural y creativo para la Región de O\'Higgins.', 'Cultura'],
+    ['Dom Black', 'Av. Bisquertt 362', 'Tragos, cafetería y pizzas con estética de container.', 'Restobar'],
+    ['Hey Coffee Restobar', 'Av. Bisquertt 284', 'De los churros a una carta de restobar abierta todo el día.', 'Cafetería'],
+    ['I Love Sushi', 'Av. Bisquert 380 local C', 'Sushi fresco, con versiones ilimitadas en el corazón del barrio.', 'Restaurante'],
+    ['Instituto Baluarte Cicap', 'Av. Bisquertt 310', 'OTEC con cursos presenciales y capacitación para el mundo laboral.', 'Educación'],
+    ['K-Calafate', 'Av. Bisquertt 383 A', 'Waffles, café y postres preparados con creatividad en el momento.', 'Cafetería'],
+    ['La Mazza', 'Av. Bisquertt 357', 'Pizzería en el histórico Club de Pesca y Caza Caupolicán.', 'Pizzería'],
+    ['La República', 'Av. Bisquertt 365', 'Cervecería independiente con cocina de barrio y ambiente de encuentro.', 'Cervecería'],
+    ['Mandala Verde Café', 'Colo Colo 138', 'Desayunos, almuerzos y talleres abiertos a la comunidad.', 'Cafetería'],
+    ['Mi Piace', 'Av. Bisquertt 284 local 4', 'Restaurante y pizzería de reunión durante todo el día.', 'Restaurante'],
+    ['Minimarket Paso de la Muerte', 'Av. Bisquertt 523', 'Almacén de esquina con botillería y productos de paso.', 'Almacén'],
+    ['Pescadería Mares del Sur', 'Av. Bisquertt 438 A-B', 'Pescados y mariscos frescos que llegan de la costa cada mañana.', 'Pescadería'],
+    ['Restoba Pizza Steve\'s', 'Av. Bisquertt 380', 'Pizzas de 52 centímetros, virales por su tamaño, hasta el cierre.', 'Pizzería'],
+    ['Smash Burger', 'Av. Bisquertt 426', 'Hamburguesas directo a la plancha con espíritu nocturno.', 'Hamburguesería'],
+    ['Sonríe Té', 'Daniel Morán 21 local 3', 'Té, terraza interior y repostería en un espacio tranquilo.', 'Cafetería'],
+    ['Tu Esquina', 'Av. Bisquertt 265', 'Pub y restobar de encuentro entre amigos y familias.', 'Restobar'],
+    ['Umbral', 'Daniel Morán 21', 'Ecotienda a granel, cafetería y espacio de bienestar.', 'Ecotienda']
+  ];
+
+  const tints = [
+    ['#dab5cf', '#f5f2f3'], ['#b7bcd8', '#f7f4f5'], ['#c18b79', '#f5f2f3'],
+    ['#dd783f', '#f7f4f5'], ['#5cc489', '#f5f2f3'], ['#243039', '#f7f4f5']
+  ];
+
+  const normalize = (value) => value
+    .toLocaleLowerCase('es')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  // Coincide por subcadena o por inicio de palabra: «pizza» encuentra «pizzería»
+  const matchesField = (text, needle) => {
+    if (!needle) return true;
+    const plain = normalize(text);
+    if (plain.includes(needle)) return true;
+    return plain.split(/[^a-z0-9]+/).some((word) => word.startsWith(needle));
+  };
+
+  const items = entries
+    .map(([name, address, description, rubro], index) => ({
+      name,
+      address,
+      description,
+      rubro,
+      initial: normalize(name).charAt(0).toLocaleUpperCase('es'),
+      tint: tints[index % tints.length]
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, 'es'));
+
+  const grid = document.getElementById('grid');
+  const alphabet = document.getElementById('alphabet');
+  const count = document.getElementById('result-count');
+  const empty = document.getElementById('empty');
+  const emptyTerm = document.getElementById('empty-term');
+  const clearBtn = document.getElementById('clear');
+  const input = document.getElementById('q');
+  const plural = (n) => n === 1 ? '1 local' : `${n} locales`;
+
+  function escape(value) {
+    return value.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function highlight(text, term) {
+    if (!term) return escape(text);
+    const plain = normalize(text);
+    const needle = normalize(term);
+    let index = plain.indexOf(needle);
+    if (index === -1) return escape(text);
+    // Solo marca coincidencias al inicio de palabra, igual que el filtro
+    while (index > 0 && /[a-z0-9]/.test(plain[index - 1])) {
+      index = plain.indexOf(needle, index + 1);
+      if (index === -1) return escape(text);
+    }
+    return escape(text.slice(0, index))
+      + '<mark>' + escape(text.slice(index, index + term.length)) + '</mark>'
+      + escape(text.slice(index + term.length));
+  }
+
+  function media(entry) {
+    const [from, to] = entry.tint;
+    return `<svg viewBox="0 0 400 300" role="presentation" focusable="false">
+      <rect width="400" height="300" fill="${to}"/>
+      <circle cx="288" cy="96" r="112" fill="${from}" opacity=".85"/>
+      <circle cx="120" cy="238" r="86" fill="${from}" opacity=".45"/>
+      <rect x="40" y="40" width="120" height="2" fill="${from}" opacity=".9"/>
+    </svg>`;
+  }
+
+  let activeLetter = null;
+
+  function render() {
+    const term = input.value.trim();
+    const needle = normalize(term);
+    const visible = items.filter((item) => {
+      const matchLetter = !activeLetter || item.initial === activeLetter;
+      const matchText = matchesField(item.name, needle)
+        || matchesField(item.address, needle)
+        || matchesField(item.description, needle);
+      return matchLetter && matchText;
+    });
+
+    grid.innerHTML = visible.map((item) => `
+      <a class="content-card" href="#">
+        <figure class="content-card__media">
+          ${media(item)}
+          <span class="content-card__rubro">${escape(item.rubro)}</span>
+        </figure>
+        <div class="content-card__body">
+          <h2>${highlight(item.name, term)}</h2>
+          <p>${highlight(item.description, term)}</p>
+          <p class="content-card__address">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/>
+            </svg>
+            ${highlight(item.address, term)}
+          </p>
+        </div>
+      </a>
+    `).join('');
+
+    const isEmpty = visible.length === 0;
+    empty.hidden = !isEmpty;
+    grid.hidden = isEmpty;
+    emptyTerm.textContent = term || (activeLetter ? `letra ${activeLetter}` : 'estos filtros');
+    count.textContent = plural(visible.length);
+    clearBtn.hidden = term.length === 0;
+    document.querySelectorAll('.alpha-btn').forEach((btn) => {
+      btn.setAttribute('aria-pressed', String(btn.dataset.letter ? btn.dataset.letter === activeLetter : activeLetter === null));
+    });
+  }
+
+  function buildAlphabet() {
+    const present = new Set(items.map((item) => item.initial));
+    const letters = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ'.split('');
+    const all = document.createElement('li');
+    all.innerHTML = '<button class="alpha-btn alpha-btn--all" type="button" data-letter="">Todas</button>';
+    alphabet.append(all);
+    const sep = document.createElement('li');
+    sep.className = 'alpha-sep';
+    sep.setAttribute('aria-hidden', 'true');
+    alphabet.append(sep);
+    letters.forEach((letter) => {
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'alpha-btn';
+      btn.dataset.letter = letter;
+      btn.textContent = letter;
+      btn.setAttribute('aria-pressed', 'false');
+      if (!present.has(letter)) {
+        btn.disabled = true;
+        btn.title = `Sin locales que empiecen con ${letter}`;
+      }
+      li.append(btn);
+      alphabet.append(li);
+    });
+  }
+
+  alphabet.addEventListener('click', (event) => {
+    const btn = event.target.closest('button.alpha-btn');
+    if (!btn || btn.disabled) return;
+    activeLetter = btn.dataset.letter || null;
+    render();
+  });
+
+  input.addEventListener('input', render);
+  document.getElementById('reset').addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    render();
+    input.focus();
+  });
+  document.getElementById('empty-reset').addEventListener('click', () => {
+    input.value = '';
+    activeLetter = null;
+    render();
+    input.focus();
+  });
+
+  buildAlphabet();
+  render();
+</script>
+</body>
+</html>
