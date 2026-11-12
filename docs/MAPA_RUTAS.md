@@ -1,5 +1,7 @@
 # Mapa de rutas publicas detectadas
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 Fuente principal: `data/descarga-barrio-bisquertt/barrio-bisquertt-mirror`.
 
 ## Resumen

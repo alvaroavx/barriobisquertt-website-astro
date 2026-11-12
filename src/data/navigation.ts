@@ -1,24 +1,20 @@
 export const navigationItems = [
-  { label: 'Inicio', href: '/' },
-  { label: 'Directorio', href: '/directorio' },
-  { label: 'Historias', href: '/blog' },
-  { label: 'Noticias', href: '/noticias' },
-  { label: 'Patrimonio', href: '/patrimonio' },
+  { label: 'Inicio', href: '/', activePrefixes: ['/'] },
+  { label: 'Directorio', href: '/directorio', activePrefixes: ['/directorio'] },
+  { label: 'Historias', href: '/blog', activePrefixes: ['/blog', '/post'] },
+  { label: 'Noticias', href: '/noticias', activePrefixes: ['/noticias'] },
+  { label: 'Patrimonio', href: '/patrimonio', activePrefixes: ['/patrimonio'] },
 ] as const;
 
-// Buzon publicado del sitio: es la direccion publica que usa el formulario en
-// barriobisquertt.cl, por lo que no es un secreto. Se puede sobreescribir por env.
-const formsubmitInbox = 'barriobisquerttrengo@gmail.com';
+const contactEndpoint = import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT || '';
 
 export const formConfig = {
-  endpoint: import.meta.env.PUBLIC_CONTACT_FORM_ENDPOINT || `https://formsubmit.co/${formsubmitInbox}`,
-  ajaxEndpoint:
-    import.meta.env.PUBLIC_CONTACT_FORM_AJAX_ENDPOINT || `https://formsubmit.co/ajax/${formsubmitInbox}`,
+  endpoint: contactEndpoint,
+  // FormSubmit responde JSON en /ajax/; otros receptores reciben el POST HTML normal.
+  ajaxEndpoint: contactEndpoint.replace(/^https:\/\/formsubmit\.co\/(?!ajax\/)/, 'https://formsubmit.co/ajax/'),
   subject: 'Nuevo contacto desde barriobisquertt.cl',
-  disabledMessage: 'El canal de contacto aun no esta habilitado.',
-  messages: {
-    sending: 'Enviando…',
-    success: 'Gracias, recibimos tu correo. Te contactaremos pronto.',
-    error: 'No pudimos enviar tu correo. Inténtalo nuevamente más tarde.',
-  },
+  disabledMessage: 'El canal de contacto aún no está habilitado.',
+  sendingMessage: 'Enviando…',
+  successMessage: 'Gracias, recibimos tu correo. Te contactaremos pronto.',
+  errorMessage: 'No pudimos enviar tu correo. Inténtalo nuevamente más tarde.',
 } as const;

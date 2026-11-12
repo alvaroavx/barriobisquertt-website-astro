@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Página no encontrada"
+  description="La página solicitada no existe en el sitio de Barrio Bisquertt."
+  noIndex
+>
+  <main class="error-page container">
+    <p class="eyebrow">Error 404</p>
+    <h1>Esta dirección no forma parte del recorrido.</h1>
+    <p>La página pudo cambiar o ya no estar disponible. Puedes volver al inicio o explorar el directorio del barrio.</p>
+    <div class="detail-actions">
+      <a href="/">Volver al inicio</a>
+      <a href="/directorio">Explorar el directorio</a>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .error-page {
+    min-height: 62vh;
+    padding-block: clamp(80px, 14vw, 180px);
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0;
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 300;
+    line-height: 0.95;
+  }
+
+  .error-page > p:not(.eyebrow) {
+    max-width: 640px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+</style>

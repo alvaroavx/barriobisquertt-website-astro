@@ -1,5 +1,7 @@
 # Discrepancias y decisiones pendientes
 
+Última revisión documental: 2026-10-21. Estado: registro editorial de fuentes y decisiones; contrastar comportamiento implementado con el código actual.
+
 ## Regla de autoridad
 
 1. Mirror HTML y activos descargados: determina lo publicado.
@@ -71,12 +73,32 @@
 - Corregir `Smash Burguer`.
 - Definir canonica de noticias duplicadas.
 - Definir canonica `sustentabilidad` vs `sustentabilidad-2`.
-- Definir destino del formulario.
+- ~~Definir destino del formulario.~~ Resuelto 2026-10-21 (A13).
 - Definir si embeds YouTube externos son aceptables.
 - Definir si se corrigen fechas en espanol durante replica base o en FASE 6.
 - Definir si se publican paginas `/categories`.
 
 Estas decisiones quedan diferidas para FASE 5 o FASE 6, no para la replica base.
+
+## Cambios de la auditoría integral (rama feat/auditoria-integral-2026-10)
+
+Aplicados en código; los marcados **pendiente de aprobación** contradicen o adelantan decisiones previas de esta matriz y deben confirmarse antes de publicar (o revertirse).
+
+| ID | Cambio | Relación con decisiones previas | Estado |
+| --- | --- | --- | --- |
+| A01 | Rótulo de menú `Home` → `Inicio` (src/data/navigation.ts) | Contradice D08 (mantener Home) | **Pendiente de aprobación** |
+| A02 | Rótulo `Blog` → `Historias`; h1 de /blog "Historias del barrio"; la ruta `/blog` se mantiene y /post/* activa el ítem | Contradice D09 (mantener Blog); ruta sin cambios | **Pendiente de aprobación** |
+| A03 | Fechas visibles en español (`formatDate`, es-CL) en tarjetas, noticias, historias, patrimonio y eventos | Resuelve D12 antes de FASE 6 | **Pendiente de aprobación** |
+| A04 | Portada con h1 visible y texto nuevo ("Una avenida con historias, sabores y patrimonio.", eyebrow "Rengo · Región de O’Higgins"), botón de pausa de video y enlace a YouTube separado del video | Texto no proviene del mirror; contradice "mantener textos literales" | **Pendiente de aprobación** |
+| A05 | Home muestra todos los eventos (antes los 4 primeros) | Cambio de presentación | **Pendiente de aprobación** |
+| A06 | Crédito "Implementado por AVX Informática" en el pie | No existe en mirror | **Pendiente de aprobación** |
+| A07 | Ruta `/auditoria` eliminada (antes pública con manifiestos) | Cierra Q-002/TD-003/RISK-002 | Aplicado |
+| A08 | `site: https://barriobisquertt.cl`, sitemap.xml, robots.txt, 404.html (noindex), OG/Twitter/JSON-LD | Dominio asumido, ver Q-001; sitemap incluye ambas rutas duplicadas (D05–D07) sin canonical consolidado | Aplicado; dominio por confirmar |
+| A09 | Descripción por defecto del sitio y descripciones de /blog y /patrimonio reescritas | Texto SEO nuevo (antes "Sitio web oficial de Barrio Bisquertt.") | Aplicado (técnico SEO, D13) |
+| A10 | Accesibilidad: un h1 por página, skip-link, `aria-current`, lightbox como `<dialog>`, etiqueta visible en el correo del pie, contraste de `--color-muted` (#999 → #655f63) y botón del pie, anuncios de pestaña nueva, `prefers-reduced-motion` | Ajuste técnico permitido por D14 y política de correcciones | Aplicado |
+| A11 | Teléfonos del directorio divididos por `/` o `|` en enlaces `tel:` normalizados (`phoneLinks`) | Texto visible igual; solo cambia el href | Aplicado |
+| A13 | Canal de contacto habilitado con FormSubmit hacia barriobisquerttrengo@gmail.com (.env.production) con mensajes de estado en español | Resuelve D15 y "Definir destino del formulario"; pendiente activación en FormSubmit y alias | Aplicado por solicitud 2026-10-21 |
+| A12 | Categoría en detalles enlaza a `/categories/<slug>` solo cuando el valor coincide con un slug publicado | Sin cambio de datos | Aplicado |
 
 ## Registro de descarte potencial
 

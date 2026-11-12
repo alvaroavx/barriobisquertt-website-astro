@@ -1,5 +1,7 @@
 # Plan de migracion a Astro - Barrio Bisquertt
 
+Última revisión documental: 2026-09-16. Estado: fuente histórica de la reconstrucción; contrastar afirmaciones de implementación con el código actual.
+
 ## 1. Resumen ejecutivo
 
 El material en `data` permite reconstruir el sitio publico actual de Barrio Bisquertt en Astro con una base solida: existe un mirror HTML completo de Webflow, CSV exportados desde CMS, activos locales, videos, tipografias, capturas y dos informes. La primera etapa debe ser una replica base funcional y verificable del sitio publicado, sin aplicar todavia el redisenio propuesto.

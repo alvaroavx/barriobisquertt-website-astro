@@ -1,6 +1,9 @@
 export const site = {
   name: 'Barrio Bisquertt',
-  description: 'Sitio web oficial de Barrio Bisquertt.',
+  description:
+    'Descubre el patrimonio, los emprendimientos, las historias y las actividades de Barrio Bisquertt en Rengo, Región de O’Higgins.',
+  url: 'https://barriobisquertt.cl',
+  locale: 'es-CL',
   instagram: 'https://www.instagram.com/barriobisquertt/',
   mapSrc:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.2103874951467!2d-70.8670167372671!3d-34.40736988490241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96649e4bc5369991%3A0x4239195bf62a0ea0!2sJos%C3%A9%20Bisquertt%20%26%20Mor%C3%A1n%2C%202940234%20Rengo%2C%20O'Higgins!5e0!3m2!1ses-419!2scl!4v1766884759869!5m2!1ses-419!2scl",
@@ -23,6 +26,8 @@ export const assets = {
     '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/694f23253919421d0f393239_video2_mp4.mp4',
   heroWebm:
     '/assets/barrio-bisquertt/mirror/69172c950e54b69c53ea0394/694f23253919421d0f393239_video2_webm.webm',
+  socialImage:
+    '/assets/barrio-bisquertt/mirror/69172c960e54b69c53ea0443/69503cd7cc042324a9610950_Barrio aéreo.png',
 };
 
 export const orders = {
@@ -116,26 +121,39 @@ export function isoDate(value: string | null | undefined) {
   return date.toISOString();
 }
 
-// Fechas legibles en espanol para fichas y listados: «29 de diciembre de 2025».
-const DATE_FORMAT = new Intl.DateTimeFormat('es-CL', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-});
-
-const DATE_TIME_FORMAT = new Intl.DateTimeFormat('es-CL', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-  hour: '2-digit',
-  minute: '2-digit',
-});
-
-export function formatDateEs(value: string | null | undefined, options: { withTime?: boolean } = {}) {
+export function formatDate(value: string | null | undefined) {
   if (!value) return null;
   const date = new Date(value);
   if (Number.isNaN(date.valueOf())) return null;
-  return (options.withTime ? DATE_TIME_FORMAT : DATE_FORMAT).format(date);
+  return date.toLocaleDateString(site.locale, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
+}
+
+export function metaDescription(value: string | null | undefined) {
+  const normalized = plainText(value).replace(/\s+/g, ' ').trim();
+  if (!normalized) return site.description;
+  return normalized.length > 160 ? `${normalized.slice(0, 157).trimEnd()}…` : normalized;
+}
+
+export function phoneLinks(value: string | null | undefined) {
+  if (!value) return [];
+  return value
+    .split(/\s*[/|]\s*/)
+    .map((label) => label.trim())
+    .filter(Boolean)
+    .map((label) => {
+      const compact = label.replace(/(?!^\+)\D/g, '');
+      return { label, href: `tel:${compact}` };
+    })
+    .filter((item) => /\d{6,}/.test(item.href));
+}
+
+export function categoryPath(value: string | null | undefined) {
+  return value && orders.categorias.includes(value) ? `/categories/${value}` : null;
 }
 
 export function demoteBodyHeadings(html: string | null | undefined) {

@@ -7,12 +7,9 @@ import { orders, sortBySlugOrder } from '../lib/site';
 const entries = sortBySlugOrder(await getCollection('historias'), orders.historias);
 ---
 
-<BaseLayout
-  title="Historias"
-  description="Historias de anfitriones, emprendimientos y vida local de Barrio Bisquertt en Rengo."
->
+<BaseLayout title="Historias" description="Historias de anfitriones, emprendimientos y vida local de Barrio Bisquertt en Rengo.">
   <main>
-    <header class="page-hero container">
+    <header class="page-hero page-hero--editorial container">
       <p class="eyebrow">Barrio Bisquertt</p>
       <h1>Historias del barrio</h1>
     </header>
@@ -33,4 +30,3 @@ const entries = sortBySlugOrder(await getCollection('historias'), orders.histori
     </section>
   </main>
 </BaseLayout>
-

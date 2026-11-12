@@ -8,9 +8,9 @@ interface Props {
 
 const { currentPath } = Astro.props;
 
-function isActive(href: string) {
-  if (href === '/') return currentPath === '/';
-  return currentPath === href || currentPath.startsWith(`${href}/`);
+function isActive(item: (typeof navigationItems)[number]) {
+  if (item.href === '/') return currentPath === '/';
+  return item.activePrefixes.some((prefix) => currentPath === prefix || currentPath.startsWith(`${prefix}/`));
 }
 ---
 
@@ -19,18 +19,21 @@ function isActive(href: string) {
     <img src={assets.logoBlack} alt="Barrio Bisquertt" width="121" height="47" />
   </a>
 
-  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
-    <span class="sr-only">Abrir menu</span>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú">
+    <span class="sr-only">Abrir menú</span>
     <span></span>
     <span></span>
   </button>
 
-  <nav id="site-navigation" class="site-nav" aria-label="Navegacion principal">
+  <nav id="site-navigation" class="site-nav" aria-label="Navegación principal">
     {navigationItems.map((item) => (
-      <a class:list={['site-nav__link', { 'is-active': isActive(item.href) }]} href={item.href}>
+      <a
+        class:list={['site-nav__link', { 'is-active': isActive(item) }]}
+        href={item.href}
+        aria-current={isActive(item) ? 'page' : undefined}
+      >
         {item.label}
       </a>
     ))}
   </nav>
 </header>
-
