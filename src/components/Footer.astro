@@ -3,12 +3,13 @@ import { navigationItems, formConfig } from '../data/navigation';
 import { assets, site } from '../lib/site';
 
 const formEnabled = Boolean(formConfig.endpoint);
+const ajaxEnabled = Boolean(formConfig.ajaxEndpoint);
 ---
 
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="/" aria-label="Barrio Bisquertt Home">
+      <a href="/" aria-label="Ir al inicio de Barrio Bisquertt">
         <img src={assets.logoWhite} alt="Barrio Bisquertt" width="268" />
       </a>
       <div class="footer-links">
@@ -29,17 +30,46 @@ const formEnabled = Boolean(formConfig.endpoint);
         action={formEnabled ? formConfig.endpoint : undefined}
         data-contact-form
         data-enabled={formEnabled ? 'true' : 'false'}
+        data-ajax-endpoint={ajaxEnabled ? formConfig.ajaxEndpoint : undefined}
+        data-sending-message={formConfig.messages.sending}
+        data-success-message={formConfig.messages.success}
+        data-error-message={formConfig.messages.error}
       >
-        <label class="sr-only" for="footer-email">Email</label>
-        <input id="footer-email" name="email" type="email" placeholder="Contáctanos" required disabled={!formEnabled} />
+        <input type="hidden" name="_subject" value={formConfig.subject} />
+        <input type="hidden" name="_template" value="table" />
+        <input
+          class="footer-form__honey"
+          type="text"
+          name="_honey"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
+        <label for="footer-email">Correo electrónico</label>
+        <input
+          id="footer-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          placeholder="nombre@ejemplo.cl"
+          required
+          disabled={!formEnabled}
+        />
         <button type="submit" disabled={!formEnabled}>Enviar</button>
-        {!formEnabled && <p class="form-status">{formConfig.disabledMessage}</p>}
+        <p class="form-status" data-form-status role="status">
+          {!formEnabled && formConfig.disabledMessage}
+        </p>
       </form>
       <div class="institutional-logos" aria-label="Logos institucionales">
         <img src={assets.gore} alt="Gobierno Regional de O'Higgins" />
         <img src={assets.sercotec} alt="Sercotec" />
         <img src={assets.barrios} alt="Barrios Comerciales" />
       </div>
+      <p class="site-credit">
+        Implementado por <a href="https://avx.cl/" target="_blank" rel="noopener noreferrer"
+          >AVX Informática<span class="sr-only"> (abre en una pestaña nueva)</span></a
+        >
+      </p>
     </div>
   </div>
 </footer>
