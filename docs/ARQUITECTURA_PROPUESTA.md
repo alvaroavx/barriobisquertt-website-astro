@@ -301,3 +301,30 @@ Compatibilidad:
 - Mantener `DISCREPANCIAS_Y_DECISIONES.md` como registro editorial.
 - Mantener `asset-map.json` para trazabilidad.
 - No acoplar componentes a nombres de clases Webflow.
+
+## Rendimiento e interacciones globales
+
+### Fuentes criticas precargadas
+
+El sintoma era un "blink" al cambiar de pagina. Medicion con Edge headless sobre `/blog` del build de produccion:
+
+| Estado | Primer pintado | Fuentes listas | Desplazamiento acumulado |
+| --- | ---: | ---: | ---: |
+| Sin precarga | 736 ms | 792-872 ms | 0.0566 |
+| Con precarga | 164 ms | 36-49 ms | 0 |
+
+`src/lib/fonts.ts` declara las dos caras criticas (AcidGrotesk Light 300 y Regular 400) y `BaseLayout.astro` las emite con `<link rel="preload" as="font" crossorigin="anonymous">`. Las rutas deben coincidir con `src/styles/fonts.css`. Sin precarga el texto se pintaba con la fuente de respaldo y saltaba cuando llegaba AcidGrotesk.
+
+### Boton volver arriba
+
+`src/components/BackToTop.astro` aporta el boton y `SiteScripts.astro` la logica: fijo abajo a la derecha con el cafe del footer (`--color-footer`), oculto hasta 400 px de scroll, vuelve al inicio con desplazamiento suave (instantaneo con `prefers-reduced-motion`) y devuelve el foco al logo para no perderlo cuando el boton se oculta. Sin JavaScript queda oculto y no estorba.
+
+### Entrada de pagina
+
+`main` anima `page-enter` en 620 ms (solo `opacity`, de 0.35 a 1) y los encabezados `.page-hero`/`.article-header` animan `page-lift` (`translateY(8px)` a 0, con `fill-mode: backwards` para no dejar transform aplicado). Arranca visible para no retrasar el primer pintado y se desactiva con `prefers-reduced-motion: reduce`.
+
+Invariante: **nunca aplicar `transform`, `filter` ni `backdrop-filter` a `main`**. Cualquiera de esos valores lo convierte en bloque contenedor de los `position: fixed` hijos: el lightbox de la galeria pasaba a medir el alto del documento (2000 px) en vez del viewport (807 px). Medido y corregido.
+
+### Header de vidrio
+
+Pasados 64 px de scroll el header recibe `.is-glass`: fondo `rgb(247 244 245 / 55%)`, borde `rgb(255 255 255 / 70%)`, `backdrop-filter: blur(18px) saturate(140%)` y sombra con brillo interior. El vidrio se nota cuando las tarjetas y fotos pasan por debajo. La transicion de 240 ms cubre fondo, borde, sombra y blur, y se anula con `prefers-reduced-motion`.

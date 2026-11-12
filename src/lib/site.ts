@@ -116,6 +116,28 @@ export function isoDate(value: string | null | undefined) {
   return date.toISOString();
 }
 
+// Fechas legibles en espanol para fichas y listados: «29 de diciembre de 2025».
+const DATE_FORMAT = new Intl.DateTimeFormat('es-CL', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const DATE_TIME_FORMAT = new Intl.DateTimeFormat('es-CL', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+
+export function formatDateEs(value: string | null | undefined, options: { withTime?: boolean } = {}) {
+  if (!value) return null;
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return null;
+  return (options.withTime ? DATE_TIME_FORMAT : DATE_FORMAT).format(date);
+}
+
 export function demoteBodyHeadings(html: string | null | undefined) {
   return String(html || '')
     .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')

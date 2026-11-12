@@ -1,8 +1,10 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BackToTop from '../components/BackToTop.astro';
 import SiteScripts from '../components/SiteScripts.astro';
 import { site } from '../lib/site';
+import { criticalFonts } from '../lib/fonts';
 import '../styles/global.css';
 import '../styles/layout.css';
 
@@ -28,6 +30,9 @@ const pageTitle = title === site.name ? site.name : `${title} - ${site.name}`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {criticalFonts.map((font) => (
+      <link rel="preload" href={font.href} as="font" type={font.type} crossorigin="anonymous" />
+    ))}
     <meta name="description" content={description || site.description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/assets/barrio-bisquertt/mirror/img/favicon.ico" sizes="any" />
@@ -38,6 +43,7 @@ const pageTitle = title === site.name ? site.name : `${title} - ${site.name}`;
     {!hideHeader && <Header currentPath={Astro.url.pathname} />}
     <slot />
     <Footer />
+    <BackToTop />
     <SiteScripts />
   </body>
 </html>
